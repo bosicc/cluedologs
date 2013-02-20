@@ -1,0 +1,295 @@
+--- V.1.2.7 --------------------------------------
+Исправлена ошибка в игре Cluedo - Super DE(German) (спасибо Kevin Sanchez Mendez)
+--- V.1.2.6 --------------------------------------
+Добавлена локализация приложения для Норвегии (спасибо Bjarte Rolland)
+--- V.1.2.5 --------------------------------------
+Добавлена игра Cluedo - Super DE(German)
+--- V.1.2.4 --------------------------------------
+Добавлена игра Cluedo - Avslor hemmelighetene (Norwegian)
+--- V.1.2.3 --------------------------------------
+Добавлено описание HOW TO START и FAQ. Потому что у людей возникают сложности при выборе игры на своем языке.
+Изменен порядок игр в списке. Теперь первой стоит игра на Английском, да простят меня пользователи из СНГ :)
+--- V.1.2.2 --------------------------------------
+Добавлено автоматическое отлавливание ошибок приложения. Отчеты об ошибках отправляются через интернет автоматически.
+Добавлена игра Cluedo: Mystery beyond the mansion
+--- V.1.2.1 --------------------------------------
+Добавлена локализация приложения для Италии
+--- V.1.2.0 --------------------------------------
+Добавлена локализация приложения для Словакии
+Добавлена игра Cluedo: Harry Potter (DE)
+--- V.1.1.9 --------------------------------------
+Добавлена игра Clue: Spanish edition
+--- V.1.1.8 --------------------------------------
+Добавлена Шведская локализация приложения
+Добавлена игра Cluedo:  Svensk version
+--- V.1.1.7 --------------------------------------
+Исправлены ошибки в Немецкой локализации
+Добавлена игра Cluedo: Das klassische Detektiv-Spiel
+--- V.1.1.6 --------------------------------------
+Закончена локализация для Польского языка. Большое спасибо Pawel Kolodziej за перевод.
+--- V.1.1.5 --------------------------------------
+Добавлена игра Cluedo: Odkryj najciemniejsze tajemnice. Польская версия игры Discover the Secrets.
+Добавлена локализация для польского языка (не полная).
+--- V.1.1.4 --------------------------------------
+Добавлена игра Cluedo: Afslor hemmelighederne. Датская версия игры Discover the Secrets.
+--- V.1.1.3 --------------------------------------
+Добавлена локализация для Французкого языка. Если кто найдет ошибки в переводе, напишите мне Email.
+--- V.1.1.2 --------------------------------------
+Добавлена игра Cluedo: Дорожная версия 
+--- V.1.1.1 --------------------------------------
+Добавлен новый тип маркера - Спросил. Ним можно отмечать вещи про которые спрашивал игрок.
+Добавлена игра Clue: English original(Русская версия)
+Добавлена возможность менять того кто ходит в течении всего хода. Для этого нужно нажать на его имя.
+Изменено поведение при записи лога. Теперь кнопки становятся неактивными.
+*Большое спасибо Roman Nagorkin за участие в этом релизе.
+--- V.1.1.0 --------------------------------------
+Добавлена новые возможность сортировки ходов. Теперь доступны сортировки:
+- Кто ходил
+- Кто подтвердил
+- Кто убил (персонаж)
+- Где убили (место)
+- Чем убили (оружие)
+--- V.1.0.9 --------------------------------------
+Исправлена ошибка при переключении игры SFX на English original
+--- V.1.0.8 --------------------------------------
+Исправлена локализация ru и uk. 
+Изменено меню в каждой закладке.
+Добавлена игра Cluedo: Entdecken sie die Geheimnisse(DE)
+Добавлена игра Clue: SFX/FX
+--- V.1.0.7 --------------------------------------
+Добавлена фильтрация отображения только играющих Персонажей(те которые ходят). 
+Добавлен вариант когда слух не подтвержден.
+Изменены  внешний вид записи логов (убраны строка с текстом). 
+Добавлена форма ввода имен игроков.
+Добавлена игра Clue: The Scooby Doo
+Добавлена игра Clue: Leeds Centenary
+Добавлена игра Cluedo: Super Sleuth
+Добавлена игра Clue: Master Detective
+Добавлена игра Clue: Original VCR Game
+Добавлена игра Clue II: Murder in Disguise
+Добавлена игра Cluedo: Passport to Murder
+Добавлена игра Clue: Discover the Secrets
+Добавлена игра Clue: Dungeons and Dragons Edition
+Добавлена игра Clue: The Seinfeld Edition
+Добавлена игра Clue: Mystery at Sea
+Добавлена игра Cluedo: Super Challenge
+--- V.1.0.6 --------------------------------------
+Добавлена локализация DE(German). 
+Изменены кнопки для записи логов. 
+Добавлена игра Clue: English original
+Добавлена игра Clue: Limited Gift Edition
+Добавлена игра Clue: The Simpsons
+Добавлена игра Clue: The Simpsons 3rd edition
+Добавлена игра Clue: The Harry Potter
+--- V.1.0.5 --------------------------------------
+Добавлена игра Clue: The 24 Edition
+Добавлена игра Clue: The Office
+--- V.1.0.4 --------------------------------------
+Добавлена локализация RU, UA и по умолчанию US. 
+Добавлена игра Clue: Secrets in Paris
+--- V.1.0.3 --------------------------------------
+Исправлена ошибка связанная с обновлением приложения. Перед установкой этой версии удалите старую (в дальнейшем это делать не нужно). 
+--- V.1.0.2 --------------------------------------
+Добавлена сортировка по игрокам кто ходил и кто подтвердил слух.
+Добавлена возможность вводить имена игроков.
+Добавлены все иконки для русской версии игры.
+Добавлена вкладка с отображением ходов игры в текстовом виде.
+--- V.1.0.1 --------------------------------------
+Добавлена сводная таблица всех игроков и их карт.
+Добавлена возможность ведения записей ходов игроков.
+
+
+
+Записывайте хода игроков и отмечайте их карты в настольной игре Cluedo.
+
+=== ABOUT ====
+Cluedo logs это программа помощник ведения записей в настольной игре Cluedo. 
+Она позволяет отмечать проверенные карты и делать пометки, на картах где вы не уверены. 
+Также, в программе предусмотрена возможность ведения логирования игры, а именно, запись всех ходов игроков, что позволяет не пропустить мельчайшие детали.
+Это не настоящая игра Cluedo. Для того, что бы пользоваться программой у вас должна быть настольная игра.
+
+Поддерживаемые языки:
+ Русский, Украинский, Английский, Немецкий, Французкий, Итальянский, Словацкий, Шведский, Польский, Норвежский
+ 
+Поддерживаемые типы игр:
+- .. -
+
+Если в списке нет Вашей игры, напишите мне и я ее добавлю.
+
+Все замечания и пожелания отправляйте на email, я с удовольствием учту все замечания.
+
+
+
+
+
+
+==== ENG ====
+Cluedo logs is an application that is help to keep all records in a board game Cluedo.
+It allows you to mark checked cards and to make notes on clues where you are not sure.
+Also, the program allows make logs of the game and record all the moves of players. You don't miss any smallest details.
+This is not a real game Cluedo. In order to use the program, you must have a real board game.
+
+Supported languages:
+ English, German, French, Italian, Polish, Sweden, Norwegian, Slovak, Ukrainian, Russian
+
+Supported types of games:
+* Cluedo: Раскройте все секреты (Ru)
+* Cluedo: Дорожная версия (Ru)
+* Cluedo: Classic detective game (Ru)
+* Clue: Discover the Secrets (Eng)
+* Cluedo: Entdecken sie die Geheimnisse (De)
+* Cluedo: Afslor hemmelighederne (Da)
+* Cluedo: Odkryj najciemniejsze tajemnice (Pl)
+* Clue: Secrets in Paris
+* Clue: The 24 Edition
+* Clue: The Office
+* Clue: English original
+* Clue: Original(Russian version)
+* Clue: Original(Spanish version)
+* Clue: Limited Gift Edition
+* Clue: The Simpsons
+* Clue: The Simpsons 3rd edition
+* Clue: The Harry Potter
+* Clue: The Scooby Doo
+* Clue: Leeds Centenary
+* Cluedo: Super Sleuth
+* Clue: Master Detective
+* Clue: Original VCR Game
+* Clue II: Murder in Disguise
+* Cluedo: Passport to Murder
+* Clue: Dungeons and Dragons Edition
+* Clue: The Seinfeld Edition
+* Clue: Mystery at Sea
+* Cluedo: Super Challenge
+* Clue: SFX/FX
+* Cluedo: Das klassische Detektiv-Spiel (De)
+* Cluedo: Svensk version (Sv)
+* Cluedo: Harry Potter (DE)
+* Cluedo: Mystery beyond the mansion
+* Cluedo: Avslor hemmelighetene (Norwegian)
+* Cluedo: Super DE (German)
+* Cluedo: Game to Go
+* Cluedo: Le Jeu Des Grands Detectives (Fr)
+* Cluedo: Die nachste Generation (DE)
+* Cluedo: Sherlock Edition
+* Clue: Juegos de Viaje
+* Cluedo: Prima versione italiana
+* Cluedo: Seconda versione italiana
+
+
+If you have a an unsupported Cluedo board please contact me and I'll add it.
+
+All suggestions and wishes send on email, I'll be pleased to read and add your wish.
+
+--- V.1.3.0 --------------------------------------
+add game new game type Cluedo: Prima versione italiana
+add game new game type Cluedo: Seconda versione italiana
+--- V.1.2.9 --------------------------------------
+add game new game type Cluedo: Le Jeu Des Grands Detectives (Fr)
+add game new game type Cluedo: Die nachste Generation (DE)
+add game new game type Cluedo: Sherlock Edition
+add game new game type Clue: Juegos de Viaje
+Fixed bug!
+--- V.1.2.8 --------------------------------------
+add game new game type Cluedo - game to Go
+add game new game type Cluedo - Classic detective game (russian)
+Fixed bug with 50-th Aniversary game!
+--- V.1.2.7 --------------------------------------
+fixed bug in game Cluedo - Super DE(German) (thanks to Kevin Sanchez Mendez)
+--- V.1.2.6 --------------------------------------
+add Norwegian localization (thanks to Bjarte Rolland)
+--- V.1.2.5 --------------------------------------
+add new game type Cluedo - Super DE(German)
+--- V.1.2.4 --------------------------------------
+add new game type Cluedo - Avslor hemmelighetene (Norwegian)
+--- V.1.2.3 --------------------------------------
+Added HOW TO START and FAQ text to About page.
+Changed game ypes order in the list. Now English game by default.
+--- V.1.2.2 --------------------------------------
+Add auto error monitoring. If error occure report will be automaticaly generated and send to developers by internet.
+add new game type Cluedo: Mystery beyond the mansion
+--- V.1.2.1 --------------------------------------
+add Italian localization (thanks to Andy Star)
+--- V.1.2.0 --------------------------------------
+add Slovak localization (thanks to Vladimir Jankovic)
+add new game type Cluedo: Harry Potter (DE) (thanks to Daniel)
+--- V.1.1.9 --------------------------------------
+add new game type Clue: Original (Spanish edition)
+--- V.1.1.8 --------------------------------------
+add Swedish localization.
+add new game type Cluedo:  Svensk version
+--- V.1.1.7 --------------------------------------
+Fix mistakes in German localization
+Add new game type Cluedo - Das klassische Detektiv-Spiel
+--- V.1.1.6 --------------------------------------
+finish Polish localization. Big thanks to Pawel Kolodziej.
+--- V.1.1.5 --------------------------------------
+add a new game type Cluedo: Odkryj najciemniejsze tajemnice. Polish translation of original game Discover the Secrets.
+add Polish localization (not full).
+--- V.1.1.4 --------------------------------------
+add a new game type Cluedo: Afslor hemmelighederne. Danish translation of original game Discover the Secrets.
+--- V.1.1.3 --------------------------------------
+add French localization
+--- V.1.1.2 --------------------------------------
+add game type Cluedo: Дорожная версия (Russian version)
+--- V.1.1.1 --------------------------------------
+Added a new type of marker - Asked. You can mark things that are asked about the player.
+Added game type Clue: English original((Russian version)
+Added ability to change the one who move in current the entire course. To do this, click on its name.
+Changed behavior for log entries. Now the buttons could be enable/disable.
+* Many thanks to Roman Nagorkin for participation in this release.
+--- V.1.1.0 --------------------------------------
+Added new types of Logs list sort. Now you can sort by:
+- Players move
+- Players confirm
+- Who kill (person)
+- Where (place)
+- By what item (weapon)
+--- V.1.0.9 --------------------------------------
+Fixed bug while game type switching from SFX to English original
+--- V.1.0.8 --------------------------------------
+Changed localization for ru and uk. 
+Changed menu items in all activities.
+add game type Cluedo: Entdecken sie die Geheimnisse(DE)
+add game type Clue: SFX/FX
+--- V.1.0.7 --------------------------------------
+Add filters - show only played persons in popup lists. 
+Add confirm suggestion - not confirm.
+Logs design changed. 
+Add new Dialog for Player,s name edit
+add game type Clue: The Scooby Doo
+add game type Clue: Leeds Centenary
+add game type Cluedo: Super Sleuth
+add game type Clue: Master Detective
+add game type Clue: Original VCR Game
+add game type Clue II: Murder in Disguise
+add game type Cluedo: Passport to Murder
+add game type Discover the Secrets
+add game type Clue: Dungeons and Dragons Edition
+add game type Clue: The Seinfeld Edition
+add game type Clue: Mystery at Sea
+add game type Cluedo: Super Challenge
+--- V.1.0.6 --------------------------------------
+add localization DE(German). 
+Buttons changed in Logs recorder. 
+add game type Clue: English original
+add game type Clue: Limited Gift Edition
+add game type Clue: The Simpsons
+add game type Clue: The Simpsons 3rd edition
+add game type Clue: The Harry Potter
+--- V.1.0.5 --------------------------------------
+add game type Clue: The 24 Edition
+add game type Clue: The Office
+--- V.1.0.4 --------------------------------------
+Добавлена локализация RU, UA и по умолчанию US. 
+Добавлена игра Clue: Secrets in Paris
+--- V.1.0.3 --------------------------------------
+Исправлена ошибка связанная с обновлением приложения. Перед установкой этой версии удалите старую (в дальнейшем это делать не нужно). 
+--- V.1.0.2 --------------------------------------
+Добавлена сортировка по игрокам кто ходил и кто подтвердил слух.
+Добавлена возможность вводить имена игроков.
+Добавлены все иконки для русской версии игры.
+Добавлена вкладка с отображением ходов игры в текстовом виде.
+--- V.1.0.1 --------------------------------------
+Добавлена сводная таблица всех игроков и их карт.
+Добавлена возможность ведения записей ходов игроков.

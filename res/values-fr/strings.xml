@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Main menu Activity -->
+    <string name="mainmenu_players">les noms des joueurs</string>
+    <string name="mainmenu_new">Nouveau jeu</string>
+    <string name="mainmenu_about">A propos du jeu</string>
+    <string name="mainmenu_donate">Supportez-nous</string>
+    
+    <!-- Main Tab -->
+    <string name="maintab_menu_people">les noms des joueurs</string>
+    <string name="maintab_menu_logstext">Text Logs</string>
+    
+    <string name="title_people">invités</string>
+    <string name="title_place">chambers</string>
+    <string name="title_weapon">arsenal</string>
+    
+    <string name="tab_title_table">les cartes des joueurs</string>
+    <string name="tab_title_logs">Mouvements</string>
+    
+    <string name="tab_dialog_newgame_titile">Jeu actuel sera supprimé. Créer un nouveau jeu?</string>
+    <string name="tab_dialog_newgame_msg">Jeu actuel sera supprimé. Créer un nouveau jeu?</string>
+    <string name="tab_dialog_yes">Oui</string>
+    <string name="tab_dialog_no">Non</string>
+    
+    <!-- Table page -->
+    <string name="table_title_mark">avoir une carte</string>
+    <string name="table_you_text">tu</string>
+    <string name="table_notplay_text">X</string>
+    
+     <!-- Setup page -->
+    <string name="setup_txt1">Choisissez le type de jeu:</string>
+    <string name="setup_txt2">Choisissez votre personnage et les noms des joueurs:</string>
+    <string name="setup_txt3">Entrez les noms des joueurs et marquer ceux qui jouent</string>
+    <string name="setup_txt4">Choisissez une carte que vous avez sur la main:</string>
+    <string name="setup_dialog_notenoughtpcards_msg">Vous avez marqué moins de 3 cartes. Remarquez les  cartes  des rumeurs que vous avez sur la main.</string>
+    <string name="setup_dialog_info_msg">Choisissez votre personnage et le nombre de joueurs. Remarquez les  cartes  des rumeurs que vous avez sur la main.</string>
+    <string name="setup_edittext_hint">le nom du joueur - </string>
+    <string name="setup_txtbtnBack">arriere</string>
+    <string name="setup_txtbtnNext">ensuite</string>
+    <string name="setup_txtbtnStart">Commencer le jeu</string>
+     
+    <!-- Logs page -->
+    <string name="logs_txt1">Choisissez qui:  va, la remeur et qui l\'a confirmé</string>
+    <string name="logs_txt2">Choisissez qui a confirmé la rumeur en cours!</string>
+    <string name="logs_txt3">Créez une nouvelle rumeur, en choissant un nouveau joueur qui va.</string>
+    <string name="logs_txt4">Choisissez tous les trois cartes pour rumeur!</string>
+    <string name="logs_btnxodit">Va</string>
+    <string name="logs_btnpodtverdil">Confirmé</string>
+    <string name="logs_alert_title">Attention!</string>
+    <string name="logsmenu_sort_xodil">allé</string>
+    <string name="logsmenu_sort_podtverdil">Confirmé</string>
+    <string name="logsmenu_sort_all">Tout le monde</string>
+    <string name="logsmenu_sort">Sélectionner</string>
+    <string name="logs_alert_title_sort_xodil">Voir tous les mouvements:</string>
+    <string name="logs_alert_title_sort_podtverdil">Voir toutes les confirmations:</string>
+    <string name="logs_toast_xoda">tous les mouvements: </string>
+    <string name="logs_toast_podtverdil">Qui a confirmé: </string>
+    <string name="logs_notconfirm">PAS confirmé!</string>
+    
+    <string name="mark_yes">Oui</string>
+    <string name="mark_question">Je ne sais pas</string>
+    <string name="mark_no">Non</string>
+    <string name="mark_remove">Enlever la marquee</string>
+    <string name="mark_ask">Interrogé</string>
+    
+    
+     <!-- About page -->
+    <string name="about_main_text">Ce jeu est conçu pour faciliter la tenue des dossiers dans le Cluedo match. Il vous permet de marquer les cartes et contrôlés pour prendre des notes sur les cartes où vous n\'êtes pas sûr. En outre, le programme permet l\'enregistrement du jeu, à savoir l\'enregistrement de tous les mouvements de joueurs.</string>
+    <string name="about_dev_website">Visitez le Web site</string>
+    <string name="about_dev_email">Envoyer un message</string>
+    
+    
+    <string name="alert_dialog_ok">ОК</string>
+   
+   
+</resources>

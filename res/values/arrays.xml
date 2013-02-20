@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mark">
+        <item>@string/mark_yes</item>
+        <item>@string/mark_question</item>
+        <item>@string/mark_no</item>
+        <item>@string/mark_ask</item>
+        <item>@string/mark_remove</item>
+    </string-array>
+    
+    <string-array name="category">
+        <item>@string/title_people</item>
+        <item>@string/title_place</item>
+        <item>@string/title_weapon</item>
+    </string-array>
+    
+    <string-array name="sortlist">
+        <item>@string/logsmenu_sort_all</item>
+        <item>@string/logsmenu_sort_podtverdil</item>
+        <item>@string/logsmenu_sort_all</item>
+    </string-array>
+
+	<string-array name="gameTypes">
+        <item>Clue: Discover the Secrets</item>
+        <item>Cluedo: Entdecken sie die Geheimnisse</item>
+        <item>Cluedo: Afslør hemmelighederne</item>
+        <item>Cluedo: Odkryj najciemniejsze tajemnice</item>
+        <item>Cluedo: Раскрой все тайны</item>
+        <item>Cluedo: Дорожная игра</item>
+        <item>Cluedo: Классическая детективная игра</item>
+        <item>Clue: Secrets in Paris</item>
+        <item>Clue: The 24 Edition</item>
+        <item>Clue: The Office</item>
+        <item>Clue: English original</item>
+        <item>Clue: English original (Русская версия)</item>
+        <item>Clue: Spanish edition</item>
+        <item>Clue: Limited Gift (50th Anniversary) Edition</item> <!-- lim_gif -->
+        <item>Clue: The Simpsons</item>
+        <item>Clue: The Simpsons 3rd edition</item>
+        <item>Clue: The Harry Potter</item>
+        <item>Clue: The Scooby Doo</item>
+        <item>Clue: Leeds Centenary</item>
+        <item>Cluedo: Super Sleuth</item> <!-- Place: = lim_gif = 50th -->
+        <item>Clue: Master Detective</item>
+        <item>Clue: Original VCR Game</item>
+        <item>Clue II: Murder in Disguise</item>
+        <item>Cluedo: Passport to Murder</item>
+        <item>Clue: Dungeons and Dragons Edition</item>
+        <item>Clue: The Seinfeld Edition</item>						
+        <item>Clue: Mystery at Sea</item>		
+        <item>Cluedo: Super Challenge</item>
+        <item>Clue: SFX/FX</item>
+        <item>Cluedo: Das klassische Detektiv-Spiel</item>	 
+        <item>Cluedo: Svensk version</item>
+        <item>Cluedo: Harry Potter (De)</item>
+        <item>Cluedo: Mystery beyond the mansion</item>    
+        <item>Cluedo: Avslør hemmelighetene</item>  
+        <item>Cluedo: Super (De)</item>
+        <item>Cluedo: Games To Go</item>
+        <item>Cluedo: Le Jeu Des Grands Détectives (Fr)</item>
+		<item>Cluedo: Die nächste Generation (De)</item>
+		<item>Cluedo: Sherlock Edition</item>
+		<item>Clue: Juegos de Viaje</item>
+		<item>Cluedo: Prima versione italiana</item>
+		<item>Cluedo: Seconda versione italiana</item>
+		<!--    <item>Cluedo: World of Harry Potter</item> -->
+		<item>Cluedo: el gran juego de detectives (Sp)</item>
+		<item>Cluedo: Super</item>
+		<!-- <item>Cluedo: The Harry Potter Italian edition (It)</item> -->
+    </string-array>
+
+	
+
+
+
+	<!-- ========================================================================================= 
+	     ============== PEOPLE ===================================================================
+	     ========================================================================================= -->
+    <string-array name="people_ru"> <!-- ru version -->
+        <item>Горчичников</item> 	
+        <item>Черниченко</item>		
+        <item>Зеленович</item>
+        <item>Голубева</item>
+        <item>Краснова</item>
+        <item>Белых</item>
+    </string-array>
+    
+    <string-array name="people_discover"> <!-- discover -->
+        <item>Jack Mustard</item>
+ 		<item>Victor Plum</item>
+        <item>Jacob Green</item>
+        <item>Eleanor Peacock</item>
+ 		<item>Kasandra Scarlet</item>
+        <item>Diane White</item>
+    </string-array>
+    
+    <string-array name="people_Entdecken"> <!-- Entdecken -->
+        <item>Dennis Gatow</item>
+ 		<item>Felix Bloom</item>
+        <item>Tom Grün</item>
+        <item>Klara Porz</item>
+ 		<item>Gloria Roth</item>
+        <item>Diana Weiss</item>
+    </string-array>
+    
+    <string-array name="people_AfslorHemmelighederne"> <!-- AfslorHemmelighederne -->
+        <item>Søren Sennepsgul</item>
+ 		<item>Birger Blomme</item>
+        <item>Georg Grøn</item>
+        <item>Pia Påfugleblå</item>
+ 		<item>Pernille Purpurrød</item>
+        <item>Vivan Hvid</item>
+    </string-array>
+    
+    <string-array name="people_OdkryjNT"> <!-- OdkryjNT - PL-->
+        <item>Gorczyński</item>
+ 		<item>Purpulewski</item>
+        <item>Zielnicki</item>
+        <item>Kostkiewicz</item>
+ 		<item>Gwiazdowicz</item>
+        <item>Siwecka</item>
+    </string-array>
+       
+    <string-array name="people_paris"> <!-- secret in Paris-->
+        <item>Zach Mustard</item>
+        <item>Justin Plum</item>
+        <item>Ryan Green</item>
+        <item>Ashley Peacock</item>
+        <item>Samantha Scarlet</item>
+        <item>Emma White</item>
+    </string-array>
+    
+    <string-array name="people_office"> <!-- office -->
+        <item>Dwight</item>
+        <item>Stanley</item>
+        <item>Jim</item>
+        <item>Angela</item>
+        <item>Pam</item>
+        <item>Andy</item>
+    </string-array>
+    
+    <string-array name="people_24"> <!-- 24 -->
+        <item>Bill Buchanan</item>
+ 		<item>Chioe O\'Brain</item>
+        <item>Tony Almeida</item>
+        <item>Rudrey Raines</item>
+ 		<item>Nadia Yassir</item>
+        <item>Mike Doyle</item>
+    </string-array>
+    
+    <string-array name="people_original"> <!-- original -->
+        <item>Col.Mustard</item>
+ 		<item>Prof.Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+
+    <string-array name="people_original_rus"> <!-- original rus -->
+        <item>Полк.Мустард</item>
+ 		<item>Проф.Плам</item>
+        <item>О.Грин</item>
+        <item>Миссис Пикук</item>
+ 		<item>Мисс Скарлетт</item>
+        <item>Миссис Уайт</item>
+    </string-array>
+    
+    <string-array name="people_classic_rus"> <!-- classic rus -->
+        <item>Мистер Мустард</item>
+ 		<item>Мистер Плам</item>
+        <item>Мистер Грин</item>
+        <item>Леди Пикок</item>
+ 		<item>Леди Скарлетт</item>
+        <item>Леди Уайт</item>
+    </string-array>
+    
+    <string-array name="people_originalSpanish"> <!-- Spanish version -->
+        <item>Coronel Mustard</item> 	
+        <item>Profesor Plum </item>		
+        <item>Reverendo Green</item>
+        <item>Señora Celeste</item>
+        <item>Señorita Amapola </item>
+        <item>Señora Blanco</item>
+    </string-array>
+    
+	<string-array name="people_lim_gif"> <!-- lim_gif -->
+        <item>Colonel Mustard</item>
+ 		<item>Professor Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+
+    <string-array name="people_simpsons"> <!-- simpsons -->
+        <item>Krusty the Clown</item>
+ 		<item>Bart Simpson</item>
+        <item>Homer Simpson</item>
+        <item>Marge Simpson</item>
+ 		<item>Lisa Simpson</item>
+        <item>Waylon Smithers</item>
+    </string-array>    
+    
+    <string-array name="people_simpsons_3rd"> <!-- simpsons_3rd -->
+        <item>Bart Simpson</item>
+ 		<item>Homer Simpson</item>
+        <item>Fat Tony</item>
+        <item>Lisa Simpson</item>
+ 		<item>Edna Krabappel</item>
+        <item>Marge Simpson</item>
+    </string-array>
+    
+     <string-array name="people_potter"> <!-- potter -->
+        <item>Draco Malfoy</item>
+ 		<item>Crabbe and Goyle</item>
+        <item>Lucius Malfoy</item>
+        <item>Dolores Umbridge</item>
+ 		<item>Peter Pettigrew</item>
+        <item>Bellatrix Lestrange</item>
+    </string-array>
+    
+    <string-array name="people_scooby"> <!-- scooby -->
+        <item>Scooby-Doo</item>
+ 		<item>Shaggy</item>
+        <item>Daphne</item>
+        <item>Velma</item>
+ 		<item>Fred</item>
+        <item>Mrs.White</item>
+    </string-array>
+    
+    <string-array name="people_leeds"> <!-- leeds -->
+        <item>Jack Higgins</item>
+ 		<item>Denis Healey</item>
+        <item>Jimmy Savile</item>
+        <item>Elizabeth Peacock</item>
+ 		<item>Jilly Cooper</item>
+        <item>Barbara Taylor-Bradford</item>
+    </string-array>
+    
+    <string-array name="people_master"> <!-- master -->
+        <item>Col. Mustard</item>
+ 		<item>Prof. Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+        <item>Mme Rose</item>
+ 		<item>Sgt. Grey</item>
+        <item>M. Brunette</item>
+        <item>Miss Peach</item>
+    </string-array>
+    
+	<string-array name="people_orig_vcr_murder"> <!-- orig_vcr + murder in del -->
+		<item>Col. Mustard</item>
+		<item>Miss Scarlet</item>
+		<item>Prof. Plum</item>
+		<item>Mrs.Peacock</item>
+		<item>Mr. Green</item>
+		<item>Mrs.White</item>
+		<item>M. Brunette</item>
+		<item>Madam Rose</item>        
+		<item>Sgt. Grey</item>
+		<item>Miss Peach</item>
+	</string-array>
+	
+	 <string-array name="people_passport"> <!-- passport -->
+        <item>Col. Mustard</item>
+        <item>Miss Peach</item>
+ 		<item>Prof. Plum</item>
+        <item>Rev. Green</item>
+        <item>Mr. Brown</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlett</item>
+        <item>Mrs.White</item>
+        <item>Earl Grey</item>
+    </string-array>
+    
+    <string-array name="people_dd"> <!-- d&d -->
+        <item>Tordek</item>
+ 		<item>Nebin</item>
+        <item>Mialee</item>
+        <item>Lidda</item>
+ 		<item>Regdar</item>
+        <item>Ember</item>
+    </string-array>
+    
+    <string-array name="people_seinfeld"> <!-- seinfeld -->
+        <item>Jerry</item>
+        <item>Elaine</item>
+ 		<item>George</item>
+        <item>Kramer</item>
+        <item>Peterman</item>
+        <item>Puddy</item>
+    </string-array>
+    
+    <string-array name="people_sea_card"> <!-- sea_card -->
+        <item>Colonel Mustard</item>
+ 		<item>Professor Plum</item>
+        <item>Mr. Green</item>
+        <item>Mr. Boddy</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+    
+    <string-array name="people_challenge"> <!-- challenge -->
+        <item>Col. Mustard</item>
+        <item>Miss Peach</item>
+ 		<item>Prof. Plum</item>
+        <item>Rev. Green</item>
+        <item>Capt. Brown</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlett</item>
+        <item>Mrs.White</item>
+        <item>Mr. Slate-Grey</item>
+    </string-array>
+    
+    <string-array name="people_super_de"> <!-- super_de -->
+        <item>Oberst von Gatow</item>
+        <item>Professor Bloom </item>
+ 		<item>Herr Grün</item>
+        <item>Baronin von Porz</item>
+		<item>Fraulein Gloria</item>
+        <item>Frau Weiß </item>
+        <item>Madame Mystique</item>
+ 		<item>Lady Sahra</item>
+        <item>Inspektor Klein</item>
+        <item>Herr Braun</item>
+    </string-array>
+    
+    <string-array name="people_fx"> <!-- fx -->
+        <item>Col. Mustard</item>
+ 		<item>Prof. Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+        <item>Rusty</item>
+ 		<item>Mrs. Meadow-Brook</item>
+    </string-array> 
+    
+    <string-array name="people_original_de"> <!-- original_de - Das klassische Detektiv-Spiel -->
+        <item>Oberst von Gatow</item>
+ 		<item>Professor Bloom</item>
+        <item>Reverend Grün</item>
+        <item>Baronin von Porz</item>
+ 		<item>Fräulein Gloria</item>
+        <item>Frau Weiß</item>
+    </string-array>
+    
+    <string-array name="people_swedish"> <!-- Swedish names -->
+        <item>Jack Senap</item>
+ 		<item>Viktor Plommon</item>
+        <item>Greger Grön</item>
+        <item>Patricia Påfågel</item>
+ 		<item>Kassandra Schar- lakan</item>
+        <item>Vivi Vit</item>
+    </string-array>
+    
+    <string-array name="people_potter_de"> <!-- potter de-->
+        <item>Fenrir Greyback</item>
+ 		<item>Lucius Malfoy</item>
+        <item>Peter Pettigrew</item>
+        <item>Draco Malfoy</item>
+ 		<item>Greifer</item>
+        <item>Bellatrix Lestrange</item>
+    </string-array>
+    
+      <string-array name="people_mystery_mansion"> <!-- mystery_mansion -->
+        <item>Colonel Mustard</item>
+ 		<item>Professor Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+    
+    <string-array name="people_avslor_norw"> <!-- avslor_norw -->
+		<item>Mons Multe</item>
+		<item>Lars Lavendel</item>
+		<item>Birger Bregne</item>
+		<item>Barbro Blåklokke</item>
+		<item>Ragnhild Rose</item>
+		<item>Vigdis Hvitveis</item>
+	</string-array>
+	
+    <string-array name="people_gametogo"> <!-- gametogo -->
+        <item>Mustard</item>
+ 		<item>Plum</item>
+        <item>Green</item>
+        <item>Peacock</item>
+ 		<item>Scarlet</item>
+        <item>White</item>
+	</string-array>
+	
+    <string-array name="people_greate_detective_fr"> <!-- greate_detective -->
+        <item>M. Moutarde</item>
+ 		<item>Professeur Violet</item>
+        <item>M. Olive</item>
+        <item>Mme Pervenche</item>
+ 		<item>Mlle Rose</item>
+        <item>Mme Leblanc</item>
+	</string-array>
+	
+	<string-array name="people_next_generation_de"> <!-- Die nächste Generation (DE)-->
+		<item>Gastow</item>
+ 		<item>Bloom</item>
+        <item>Grün</item>
+        <item>Porz</item>
+ 		<item>Gloria</item>
+        <item>Weiß</item>
+	</string-array>
+	
+	<string-array name="people_sherlock_en"> <!-- Sherlock Edition -->
+ 		<item>Inspector Lestrade</item>
+ 		<item>Mrs Hudson</item>
+        <item>Irene Adler</item>
+        <item>John Watson</item>
+ 		<item>Sherlock Holmes </item>
+        <item>Mycroft Holmes</item>
+	</string-array>
+	
+	 <string-array name="people_juegos_sp"> <!-- juegos_sp -->
+        <item>Entr. Mostaza</item>
+ 		<item>Prof. Moradillo</item>
+        <item>Sr. Verdi</item>
+        <item>Sra. Azulino</item>
+ 		<item>Srta. Escarlata</item>
+        <item>Sra Blanco</item>
+    </string-array>
+    
+	<string-array name="people_italian1"> <!-- italian1 -->
+        <item>Jack Mustard</item>
+ 		<item>Victor Plum</item>
+        <item>Jacob Green</item>
+        <item>Eleanor Peacock</item>
+ 		<item>Kassandra Scarlet</item>
+        <item>Diane White</item>
+	</string-array>
+	
+	<string-array name="people_italian2"> <!-- italian2 -->
+        <item>Jack Mustard</item>
+ 		<item>Victor Plum</item>
+        <item>Jacob Green</item>
+        <item>Eleanor Peacock</item>
+ 		<item>Kassandra Scarlet</item>
+        <item>Diane White</item>
+	</string-array>
+	
+	<string-array name="people_sp_elgran"> <!-- sp_elgran -->
+        <item>Rubio</item>
+ 		<item>Mora</item>
+        <item>Prado</item>
+        <item>Celestek</item>
+ 		<item>Amapola</item>
+        <item>Blanco</item>
+	</string-array>
+	
+	<string-array name="people_super"> <!-- super -->
+        <item>Colonel Mustard</item>
+ 		<item>Professor Plum</item>
+        <item>Reverend Green</item>
+        <item>Mrs.Peacock</item>
+ 		<item>Miss.Scarlet</item>
+        <item>Mrs.White</item>
+        <item>Miss Peach</item>
+        <item>Mme Mystique</item>
+ 		<item>Inspector Grey</item>
+        <item>Mr. De\'ath</item>
+    </string-array>
+
+
+   	<!-- ================================================================================================== 
+     ============== PLACE ================================================================================= 
+     ====================================================================================================== -->
+    <string-array name="place_ru"> <!-- ru -->
+        <item>Прихожая</item>
+        <item>Столовая</item>
+        <item>Кухня</item>
+        <item>Терраса</item>
+        <item>Обсерватория</item>
+        <item>Демонстрационный зал</item>
+        <item>Гостиная</item>
+        <item>Ванная комната</item>
+        <item>Дом для гостей</item>
+    </string-array>
+    
+    <string-array name="place_ru_road"> <!-- ru road -->
+        <item>Хол</item>
+        <item>Столовая</item>
+        <item>Кухня</item>
+        <item>Терраса</item>
+        <item>Обсерватория</item>
+        <item>Кинотеатр</item>
+        <item>Гостиная</item>
+        <item>Ванная комната</item>
+        <item>Дом для гостей</item>
+    </string-array>
+   
+    <string-array name="place_discover"> <!-- discover -->
+        <item>Hall</item>
+ 		<item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>Patio</item>
+ 		<item>Observatory</item>
+        <item>Theater</item>
+        <item>Living Room</item>
+ 		<item>Spa</item>
+        <item>Guest House</item>
+    </string-array>
+    
+    <string-array name="place_Entdecken"> <!-- Entdecken -->
+        <item>Halle</item>
+ 		<item>Speisezimmer</item>
+        <item>Küche</item>
+        <item>Terrasse</item>
+ 		<item>Observatorium</item>
+        <item>Heimkino</item>
+        <item>Wohnzimmer</item>
+ 		<item>Wellnessraum</item>
+        <item>Gästehaus</item>
+    </string-array>
+    
+    <string-array name="place_AfslorHemmelighederne"> <!-- AfslorHemmelighederne -->
+        <item>Forhal</item>
+ 		<item>Spisestue</item>
+        <item>Køkken</item>
+        <item>Gårdhave</item>
+ 		<item>Observatorium</item>
+        <item>Biograf</item>
+        <item>Opholdsstue</item>
+ 		<item>Spa</item>
+        <item>Gæstehus</item>
+    </string-array>
+    
+    <string-array name="place_OdkryjNT"> <!-- place_OdkryjNT - PL -->
+        <item>Hol</item>
+ 		<item>Jadalnia</item>
+        <item>Kuchnia</item>
+        <item>Patio</item>
+ 		<item>Gabinet</item>
+        <item>Kino</item>
+        <item>Salon</item>
+ 		<item>Spa</item>
+        <item>Sypialnia</item>
+    </string-array>
+
+    <string-array name="place_paris"> <!-- Paris -->
+     	<item>Louvre</item>
+     	<item>Bastille</item>
+     	<item>Arc de Triomphe</item>
+        <item>Place des Vosges</item>
+        <item>Notre Dame</item>
+        <item>Orsay Museum</item>
+        <item>Paris Opera</item>
+        <item>Eiffel Tower</item>
+        <item>Sacred Heart Bastilica</item>
+    </string-array>
+    
+    <string-array name="place_office"> <!-- office -->
+        <item>Break Room</item>
+        <item>Kitchen</item>
+        <item>Accounting</item>
+        <item>Michael\'s Office</item>
+        <item>Annex</item>
+        <item>Reception</item>
+        <item>Parking lot</item>
+        <item>Conference Room</item>
+        <item>Warehouse</item>
+    </string-array>
+    
+    <string-array name="place_24"> <!-- 24 -->
+        <item>Panic Room</item>
+ 		<item>Holding Cell</item>
+        <item>Situation Room</item>
+        <item>Medical Clinic</item>
+ 		<item>Jack\'s Car</item>
+        <item>The Builipen</item>
+        <item>Field Ops Office</item>
+ 		<item>Tech Center</item>
+        <item>Director\'s Office</item>
+    </string-array>
+    
+     <string-array name="place_original"> <!-- original -->
+        <item>Hall</item>
+ 		<item>Lounge</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+ 		<item>Ball Room</item>
+        <item>Conservatory</item>
+        <item>Billiard Room</item>
+ 		<item>Library</item>
+        <item>Study</item>
+    </string-array>
+
+    <string-array name="place_original_rus"> <!-- original rus -->
+        <item>Холл</item>
+ 		<item>Гостиная</item>
+        <item>Столовая</item>
+        <item>Кухня</item>
+ 		<item>Зал для балов</item>
+        <item>Зимний сад</item>
+        <item>Бильярдная</item>
+ 		<item>Библиотека</item>
+        <item>Кабинет</item>
+    </string-array>
+    
+    <string-array name="place_classic_rus"> <!-- classic rus -->
+        <item>Внутренний двор</item>
+        <item>Бильярдная</item>
+        <item>Кабинет</item>
+        <item>Столовая</item>
+        <item>Гараж</item>
+        <item>Гостиная</item>
+        <item>Кухня</item>
+        <item>Спальня</item>
+        <item>Ванная комната</item>
+    </string-array>
+    
+    <string-array name="place_originalSpanish"> <!-- Spanish original -->
+        <item>Vestíbulo</item>
+ 		<item>Salón</item>
+        <item>Comedor</item>
+        <item>Cocina</item>
+ 		<item>Sala de baile</item>
+        <item>Invernadero</item>
+        <item>Sala de billar</item>
+ 		<item>Biblioteca</item>
+        <item>Estudio</item>
+    </string-array>
+
+    <string-array name="place_lim_gif"> <!-- lim_gif -->
+        <item>Hall</item>
+ 		<item>Lounge</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+ 		<item>Ball Room</item>
+        <item>Conservatory</item>
+        <item>Billiard Room</item>
+ 		<item>Library</item>
+        <item>Study</item>
+    </string-array>
+    
+    <string-array name="place_simpsons"> <!-- simpsons -->
+        <item>Barney\'s Bowl-A-Rama</item>
+ 		<item>Krustylu Studios</item>
+        <item>Nuclear Power Plant</item>
+        <item>The Simpsons House</item>
+ 		<item>The Flying Dutchman</item>
+        <item>Kwik-E-Mart</item>
+        <item>Burns Manor</item>
+ 		<item>Springfield Retirement Castle</item>
+        <item>The Android\'s Dungeon</item>
+    </string-array>    
+    
+   <string-array name="place_simpsons_3rd"> <!-- simpsons_3rd -->
+        <item>Egyptian Room</item>
+ 		<item>Dimosaur Room</item>
+        <item>Medieval Room</item>
+        <item>Greek Room</item>
+ 		<item>Early Man Room</item>
+        <item>Animal Diorama Room</item>
+        <item>Springfield History Room</item>
+ 		<item>Jewel Room</item>
+        <item>Great Inventions Room</item>
+    </string-array>
+    
+    <string-array name="place_potter"> <!-- potter -->
+        <item>Great Hall</item>
+ 		<item>Hospital Wing</item>
+        <item>Room of Requirement</item>
+        <item>Potions Classroom</item>
+ 		<item>Trophy Room</item>
+        <item>Divination Classroom</item>
+        <item>Owlery</item>
+ 		<item>Library</item>
+        <item>Defense Against Dark Arts</item>
+    </string-array>
+    
+    <string-array name="place_scooby"> <!-- scooby -->
+        <item>Dining Room</item>
+ 		<item>Kitchen</item>
+        <item>BallRoom</item>
+        <item>Billiard Room</item>
+ 		<item>Library</item>
+        <item>Graveyard</item>
+        <item>Courtyard</item>
+ 		<item>Conservatory</item>
+        <item>Lounge</item>
+    </string-array>
+    
+    <string-array name="place_leeds"> <!-- leeds -->
+        <item>Yorkshire Bank PLC</item>
+ 		<item>Leeds Permanent Building Society</item>
+        <item>John Weddington PLC</item>
+        <item>Yorkshire Wter</item>
+ 		<item>Yorkshire Post and Yorkshire Evening Post</item>
+        <item>Leeds and Holbeck Building Society</item>
+        <item>Yorkshire Television Limited</item>
+ 		<item>The Merrion Centere</item>
+        <item>Joshua Tetley and Son Limited</item>
+    </string-array>
+    
+    <string-array name="place_master"> <!-- master -->
+        <item>Courtyard</item>
+ 		<item>Gazebo</item>
+        <item>Drawing Room</item>
+        <item>Dining Room</item>
+ 		<item>Kitchen</item>
+        <item>Carriage House</item>
+        <item>Trophy Room</item>
+ 		<item>Conservatory</item>
+        <item>Studio</item>
+        <item>Billiard Room</item>
+ 		<item>Library</item>
+        <item>Fountain</item>
+    </string-array>
+    
+    <string-array name="place_orig_vcr"> <!-- orig_vcr -->
+        <item>Hall</item>
+        <item>Dining Room</item>
+        <item>Conservatory</item>
+        <item>Kitchen</item>
+ 		<item>Library</item>
+    </string-array>
+    
+    <string-array name="place_murder"> <!-- murder -->
+        <item>Hall</item>
+        <item>Dining Room</item>
+        <item>Billiard Rom</item>
+        <item>Lounge</item>
+ 		<item>Hotel Room</item>
+    </string-array>
+    
+    <string-array name="place_passport"> <!-- passport -->
+        <item>Cocktail Lounge</item>
+ 		<item>Waiting Room</item>
+        <item>Barber\'s Shop</item>
+        <item>Engine Room</item>
+ 		<item>Left Luggage</item>
+        <item>Dinning Car</item>
+        <item>Kiosk</item>
+ 		<item>Ticket Office</item>
+        <item>Lost Property</item>
+    </string-array>
+    
+    <string-array name="place_dd"> <!-- d&d -->
+        <item>Chamber of Tricks and Traps</item>
+ 		<item>Dungeon</item>
+        <item>Dragon\'s Lair</item>
+        <item>Lost Crypt</item>
+ 		<item>Magical Armory</item>
+        <item>Wizard\'s Tower</item>
+        <item>Grand Hall</item>
+ 		<item>Treasure Chamber</item>
+        <item>Library of Arcane Tomes</item>
+    </string-array>
+    
+    <string-array name="place_seinfeld"> <!-- seinfeld -->
+        <item>Jerry\'s Apt.</item>
+ 		<item>Elaine\'s Apt.</item>
+        <item>George\'s Ofc.</item>
+        <item>Kramer\'s Apt.</item>
+ 		<item>Soup Kitchen</item>
+        <item>Car Dealership</item>
+        <item>Chinese Restaurant</item>
+ 		<item>Monk\'s Restaurant</item>
+        <item>Peterman\'s Ofc.</item>
+    </string-array>
+    
+    <string-array name="place_sea_card"> <!-- sea_card -->
+        <item>Stateroom (Port)</item>
+ 		<item>Master Suite (Star board)</item>
+        <item>Galley (Port)</item>
+        <item>Salon (Star board)</item>
+ 		<item>Sun Deck (Port)</item>
+        <item>Dinning Room (Star board)</item>
+    </string-array>
+    
+    <string-array name="place_challenge"> <!-- challenge -->
+        <item>Hall</item>
+ 		<item>Lounge</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+ 		<item>BallRoom</item>
+        <item>Conservatory</item>
+        <item>Billiard Room</item>
+ 		<item>Library</item>
+        <item>Study</item>
+    </string-array>
+    
+    <string-array name="place_super_de"> <!-- super_de -->
+        <item>Garten</item>
+ 		<item>Pavillon</item>
+        <item>Lounge</item>
+        <item>Speisezimmer</item>
+ 		<item>Küche</item>
+        <item>Stallungen</item>
+        <item>Salon</item>
+ 		<item>Wintergarten</item>
+        <item>Billiardzimmer</item>
+        <item>Bibliothek</item>
+        <item>Springbrunnen</item>
+        <item>Arbeitszimmer</item>
+    </string-array>
+    
+    <string-array name="place_fx"> <!-- fx -->
+        <item>Tudor Mansion</item>
+ 		<item>Boat House</item>
+        <item>Gazebo</item>
+        <item>Swimming Pool</item>
+ 		<item>Stable</item>
+        <item>Gate House</item>
+        <item>Garden</item>
+ 		<item>Tennis Courts</item>
+        <item>Garage</item>
+    </string-array>
+    
+    <string-array name="place_original_de"> <!-- original_de - Das klassische Detektiv-Spiel -->
+        <item>Halle</item>
+ 		<item>Salon</item>
+        <item>Speisezimmer</item>
+        <item>Küche</item>
+ 		<item>Wintergarten</item>
+        <item>Musikzimmer</item>
+        <item>Billardzimmer</item>
+ 		<item>Bibliothek</item>
+        <item>Arbeitszimmer</item>
+    </string-array>
+    
+     <string-array name="place_swedish"> <!-- swedish -->
+        <item>Hallen</item>
+ 		<item>Matsalen</item>
+        <item>Köket</item>
+        <item>Uteplatsen</item>
+ 		<item>Observa- toriet</item>
+        <item>Bio- salongen</item>
+        <item>Vardags- rummet</item>
+ 		<item>Spaav- delningen</item>
+        <item>Gästhuset</item>
+    </string-array>
+    
+    <string-array name="place_potter_de"> <!-- potter DE-->
+        <item>Herrenhaus der Malfoys</item>
+ 		<item>Eberkopf</item>
+        <item>Heulende Hütte</item>
+        <item>Hogwarts</item>
+ 		<item>Verbotener Wald</item>
+        <item>Gringotts</item>
+        <item>Weasleys Zauberhafte Zauberscherze</item>
+ 		<item>Zaubereiministerium</item>
+        <item>Grimmauldplatz Nr. 12</item>
+    </string-array>
+    
+    <string-array name="place_mystery_mansion"> <!-- mystery_mansion-->
+        <item>Coney Island</item>
+ 		<item>Niagara Falls</item>
+        <item>Lincoln Memorial</item>
+        <item>Miami Beach</item>
+ 		<item>Mt Rushmore</item>
+        <item>Old Faithful</item>
+        <item>Golden Gate Bridge</item>
+ 		<item>The Alamo</item>
+        <item>Hoover Dam</item>
+    </string-array>
+  
+    <string-array name="place_avslor_norw"> <!-- avslor_norw -->
+		<item>Hallen</item>
+		<item>Spisestuen</item>
+		<item>Kjøkkenet</item>
+		<item>Patioen</item>
+		<item>Observatoriet</item>
+		<item>Kinoen</item>
+		<item>Dagligstuen</item>
+		<item>Spaet</item>
+		<item>Gjestehuset</item>
+	</string-array>
+	
+    <string-array name="place_gametogo"> <!-- gametogo -->
+        <item>Hall</item>
+		<item>Dining Room</item>
+		<item>Kitchen</item>
+		<item>Patio</item>
+		<item>Observatory</item>
+		<item>Theatre</item>
+		<item>Living Room</item>
+		<item>Spa</item>
+		<item>Guest House</item>
+	</string-array>
+	
+    <string-array name="place_greate_detective_fr"> <!-- greate_detective (FR) -->
+		<item>Hall</item>
+		<item>Salle à manger</item>
+		<item>Cuisine</item>
+		<item>Patio</item>
+		<item>Observatoire</item>
+		<item>Salle de projection</item>
+		<item>Salon</item>
+		<item>Spa</item>
+		<item>Chambre d\'amis</item>
+	</string-array>
+	
+    <string-array name="place_next_generation_de"> <!-- next_generation_de -->
+        <item>Hof</item>
+ 		<item>Spieleraum</item>
+        <item>Arbeitszimmer</item>
+        <item>Speisezimmer</item>
+ 		<item>Garage</item>
+        <item>Wohnzimmer</item>
+        <item>Küche</item>
+ 		<item>Schlafzimmer</item>
+        <item>Badezimmer</item>
+    </string-array>
+
+    <string-array name="place_sherlock_en"> <!-- Sherlock Edition -->
+        <item>Baskerville</item>
+ 		<item>221B Baker Street</item>
+        <item>The Tower of London</item>
+        <item>Irene\'s Flat</item>
+ 		<item>The Lab</item>
+        <item>Battersea Power Station</item>
+        <item>Dartmoor</item>
+ 		<item>Mrs Hudson\'s Kitchen</item>
+        <item>The Swimming Pool</item>
+    </string-array>
+        
+    <string-array name="place_juegos_sp"> <!-- juegos_sp -->
+        <item>Vestibulo</item>
+ 		<item>Comedor</item>
+        <item>Cocina</item>
+        <item>Patio</item>
+ 		<item>Observatorio</item>
+        <item>Teatro</item>
+        <item>Sala</item>
+ 		<item>Spa</item>
+        <item>Hab. Huespedes</item>
+    </string-array>
+    
+    <string-array name="place_italian1"> <!-- italian1 -->
+        <item>Cucina</item>
+ 		<item>Sala da pranzo</item>
+        <item>Veranda</item>
+        <item>Sala da ballo</item>
+ 		<item>Serra</item>
+        <item>Sala da biliardo</item>
+        <item>Biblioteca</item>
+ 		<item>Studio</item>
+        <item>Anticamera</item>
+    </string-array>
+    
+    <string-array name="place_italian2"> <!-- italian2 -->
+        <item>Cucina</item>
+ 		<item>Sala da pranzo</item>
+        <item>Dépandance</item>
+        <item>Terrazza</item>
+ 		<item>Spa</item>
+        <item>Sala home-theatre</item>
+        <item>Soggiorno</item>
+ 		<item>Osservatorio</item>
+        <item>Ingresso</item>
+    </string-array>
+    
+    <string-array name="place_sp_elgran"> <!-- sp_elgran -->
+        <item>Garaje</item>
+ 		<item>Sala de juegos</item>
+        <item>Dormitorio</item>
+        <item>Baño</item>
+ 		<item>Estudio</item>
+        <item>Cocina</item>
+        <item>Comedor</item>
+ 		<item>Salón</item>
+        <item>Patio</item>
+    </string-array>
+     
+    <string-array name="people_it_potter"> <!-- it_potter -->
+        <item>Draco Malfoy</item>
+ 		<item>Crabbe and Goyle</item>
+        <item>Lucius Malfoy</item>
+        <item>Dolores Umbridge</item>
+ 		<item>Peter Pettigrew</item>
+        <item>Bellatrix Lestrange</item>
+    </string-array>
+    
+    <string-array name="place_super"> <!-- super -->
+        <item>Garden</item>
+ 		<item>Gazebo</item>
+        <item>Drawing Room</item>
+        <item>Dining Room</item>
+ 		<item>Kitchen</item>
+        <item>Stables</item>
+        <item>Lounge</item>
+ 		<item>Conservatory</item>
+        <item>Billiard Room</item>
+        <item>Library</item>
+ 		<item>Fountain</item>
+        <item>Study</item>
+    </string-array>
+
+   	<!-- ================================================================================================ 
+     ============== WEAPON ============================================================================== 
+     ==================================================================================================== -->
+    <string-array name="weapon_ru"> <!-- russian -->
+        <item>Нож</item>
+        <item>Канделябр</item>
+        <item>Пистолет</item>
+        <item>Яд</item>
+        <item>Трофей</item>
+        <item>Веревка</item>
+        <item>Бита</item>
+        <item>Топор</item>
+        <item>Гантеля</item>
+    </string-array>
+    
+    <string-array name="weapon_ru_road"> <!-- russian road -->
+        <item>Нож</item>
+        <item>Канделябр</item>
+        <item>Пистолет</item>
+        <item>Яд</item>
+        <item>Веревка</item>
+        <item>Гантеля</item>
+    </string-array>
+    
+    <string-array name="weapon_classic_rus"> <!-- classic rus -->
+        <item>Веревка</item>
+        <item>Кинжал</item>
+        <item>Гаечный ключь</item>
+        <item>Револьвер</item>
+        <item>Подсвечник</item>
+        <item>Свинцовая труба</item>
+    </string-array>
+    
+   <string-array name="weapon_discover"> <!-- discover -->
+        <item>Knife</item>
+ 		<item>Candlestick</item>
+        <item>Pistol</item>
+        <item>Poison</item>
+ 		<item>Trophy</item>
+        <item>Rope</item>
+        <item>Bat</item>
+ 		<item>Axe</item>
+        <item>Dumbbell</item>
+    </string-array>
+    
+    <string-array name="weapon_super_de"> <!-- super_de -->
+        <item>Dolch</item>
+ 		<item>Leuchter</item>
+        <item>Pistole</item>
+        <item>Seil</item>
+ 		<item>Heizungsrohr</item>
+        <item>Rohrzange</item>
+        <item>Giftflasche</item>
+ 		<item>Hufeisen</item>
+    </string-array>
+    
+    <string-array name="weapon_Entdecken"> <!-- Entdecken -->
+        <item>Messer</item>
+ 		<item>Leuchter</item>
+        <item>Pistol</item>
+        <item>Gift</item>
+ 		<item>Trophäe</item>
+        <item>Seil</item>
+        <item>Keule</item>
+ 		<item>Axt</item>
+        <item>Hantel</item>
+    </string-array>
+    
+    <string-array name="weapon_AfslorHemmelighederne"> <!-- AfslorHemmelighederne -->
+        <item>Kniv</item>
+ 		<item>Lysestage</item>
+        <item>Pistol</item>
+        <item>Gift</item>
+ 		<item>Trofæ</item>
+        <item>Reb</item>
+        <item>Bat</item>
+ 		<item>Økse</item>
+        <item>Håndvægt</item>
+    </string-array>
+    
+    <string-array name="weapon_OdkryjNT"> <!-- weapon_OdkryjNT - PL -->
+        <item>Nóż</item>
+ 		<item>Świecznik</item>
+        <item>Rewolwer</item>
+        <item>Trucizna</item>
+ 		<item>Puchar</item>
+        <item>Lina</item>
+        <item>Kij baseballowy</item>
+ 		<item>Młotek</item>
+        <item>Ciężarek</item>
+    </string-array>
+    
+    <string-array name="weapon_paris"> <!-- in Paris -->
+ 		<item>Knife</item>
+        <item>Candlestick</item>
+        <item>Pistol</item>
+        <item>Poison</item>
+        <item>Trophy</item>
+        <item>Rope</item>
+        <item>Bat</item>
+        <item>Ax</item>
+        <item>Dumbbell</item>
+    </string-array>
+    
+    <string-array name="weapon_office"> <!-- the oficce -->
+        <item>Dundee Trophy</item>
+ 		<item>Poisoned Pretzel</item>
+        <item>Bacon Grill</item>
+        <item>Rabit Bat</item>
+        <item>Nunchucks</item>
+		<item>Mr.A.Knife</item>
+        <item>Ream of Paper</item>
+        <item>Bicycle Chaine</item>
+        <item>Wolrld\s Best Boss Coffe Mug</item>
+    </string-array>
+    
+    <string-array name="weapon_24"> <!-- 24 -->
+        <item>Bus</item>
+ 		<item>Computer</item>
+        <item>Money</item>
+        <item>Power Plant</item>
+ 		<item>CTU Badge</item>
+        <item>ID Card</item>
+        <item>Sattelite</item>
+ 		<item>Airport Tower</item>
+        <item>Wall Street Sign</item>
+    </string-array>
+    
+    <string-array name="weapon_original"> <!-- original -->
+        <item>Knife</item>
+ 		<item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+ 		<item>Lead Pipe</item>
+        <item>Wrench</item>
+    </string-array>
+
+    <string-array name="weapon_original_rus"> <!-- original rus -->
+        <item>Кинжал</item>
+ 		<item>Подсвечник</item>
+        <item>Револьвер</item>
+        <item>Верёвка</item>
+ 		<item>Свинцовая труба</item>
+        <item>Гаечный ключ</item>
+    </string-array>
+        
+    <string-array name="weapon_originalSpanish"> <!-- Spanish original -->
+        <item>Puñal</item>
+ 		<item>Candelabro</item>
+        <item>Pistola</item>
+        <item>Cuerda</item>
+ 		<item>Tubo de plomo</item>
+        <item>Llave inglesa</item>
+    </string-array>
+
+    <string-array name="weapon_lim_gif"> <!-- lim_gif -->
+        <item>Knife</item>
+ 		<item>Candlestick</item>
+        <item>Pistol</item>
+        <item>Rope</item>
+ 		<item>Lead Pipe</item>
+        <item>Wrench</item>
+        <item>Chalice</item>
+    </string-array>
+    
+    <string-array name="weapon_simpsons"> <!-- simpsons -->
+        <item>Poisoned Donut</item>
+ 		<item>Extend-O-Glove</item>
+        <item>Necklace</item>
+        <item>Slingshot</item>
+ 		<item>Plutonium Rod</item>
+ 		<item>Saxophone</item>
+    </string-array>
+    
+    <string-array name="weapon_simpsons_3rd"> <!-- simpsons_3rd -->
+        <item>Cobra</item>
+ 		<item>Bone</item>
+        <item>Mace</item>
+        <item>Greek Bust</item>
+ 		<item>Spear</item>
+ 		<item>Tarantula</item>
+    </string-array>
+
+    <string-array name="weapon_potter"> <!-- potter (Item)-->
+        <item>Sleeping Draught</item>
+ 		<item>Vanishing Cabinet</item>
+        <item>Portkey</item>
+        <item>Impedimenta</item>
+ 		<item>Petrificus Totalus</item>
+        <item>Mandrake</item>
+    </string-array>
+    
+    <string-array name="weapon_scooby"> <!-- scooby (Evidence)-->
+		<item>Funland Robot\'s Ray Gun</item>
+		<item>Carlotta\'s Spell Book</item>
+		<item>FranKenstein\'s Chain</item>
+		<item>Witch Doctor\'s Staff</item>
+		<item>Ghost Clown\'s Bomb</item>
+		<item>Redbeard\'s Sword</item>
+	</string-array>
+    
+    <string-array name="weapon_leeds"> <!-- leeds (Probable Implements) | = sleuth-->
+        <item>Dagger</item>
+ 		<item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+ 		<item>Lead Piping</item>
+        <item>Spanner</item>
+    </string-array>
+    
+    <string-array name="weapon_master"> <!-- master -->
+        <item>Knife</item>
+ 		<item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+ 		<item>Lead Pipe</item>
+        <item>Wrench</item>
+        <item>Poison</item>
+        <item>Horseshoe</item>
+    </string-array>
+    
+    <string-array name="weapon_orig_vcr_murder"> <!-- orig_vcr + murder-->
+        <item>Knife</item>
+ 		<item>Candlestick</item>
+        <item>Gun</item>
+        <item>Poison</item>
+ 		<item>Rope</item>
+    </string-array>
+    
+    <string-array name="weapon_passport"> <!-- passport = challenge-->
+        <item>Dagger</item>
+ 		<item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+ 		<item>Lead Piping</item>
+        <item>Spanner</item>
+        <item>Blunderbuss</item>
+ 		<item>Axe</item>
+        <item>Poison</item>
+    </string-array>
+    
+     <string-array name="weapon_dd"> <!-- d&d -->
+        <item>Vorpal Sword</item>
+ 		<item>Mace of Disruption</item>
+        <item>Ring of Magic Missiles</item>
+        <item>Staff of Power</item>
+ 		<item>Flaming Battle Axe</item>
+ 		<item>Dagger of Venom</item>
+    </string-array>
+    
+    <string-array name="weapon_seinfeld"> <!-- seinfeld -->
+        <item>Cigar Store Indian</item>
+ 		<item>Jerry\'s Microphone</item>
+        <item>J.F.K. Golf Clubs</item>
+        <item>Beef-a-reeno</item>
+ 		<item>Shower Head</item>
+        <item>Label Maker</item>
+        <item>Statue</item>
+        <item>Big Salad</item>
+ 		<item>Festivus Pole</item>
+    </string-array>
+    
+    <string-array name="weapon_sea_card"> <!-- sea_card -->
+        <item>Rope</item>
+ 		<item>Scarf</item>
+        <item>Chain</item>
+        <item>Oar</item>
+ 		<item>Telescope</item>
+        <item>Gaff</item>
+    </string-array>
+    
+       
+    <string-array name="weapon_challenge"> <!-- challenge -->
+        <item>Dagger</item>
+ 		<item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+ 		<item>Lead Piping</item>
+        <item>Spanner</item>
+        <item>Blunderbuss</item>
+ 		<item>Axe</item>
+        <item>Poison</item>
+    </string-array>
+    
+    
+    <string-array name="weapon_fx"> <!-- fx -->
+        <item>Horseshoe</item>
+ 		<item>Hammer</item>
+        <item>Garden Shears</item>
+        <item>Water Bucket</item>
+ 		<item>Tennis Racquet</item>
+ 		<item>Lawn Gnome</item>
+    </string-array>
+    
+    <string-array name="weapon_original_de"> <!-- original_de - Das klassische Detektiv-Spiel -->
+        <item>Dolch</item>
+ 		<item>Leuchter</item>
+        <item>Pistole</item>
+        <item>Seil</item>
+ 		<item>Heizungsrohr</item>
+        <item>Rohrzange</item>
+    </string-array>
+    
+    <string-array name="weapon_swedish"> <!-- swedish -->
+        <item>Kniv</item>
+ 		<item>Ljusstake</item>
+        <item>Pistol</item>
+        <item>Gift</item>
+ 		<item>Trofè</item>
+        <item>Rep</item>
+        <item>Slagträ</item>
+        <item>Yxa</item>
+        <item>Hantel</item>
+    </string-array>
+    
+    <string-array name="weapon_potter_de"> <!-- potter DE-->
+        <item>Verhexter Besen</item>
+ 		<item>Verfluchte Halskette</item>
+        <item>Liebestrank</item>
+        <item>Vergifteter Met</item>
+ 		<item>Incendio</item>
+        <item>Stupor</item>
+    </string-array>
+    
+    <string-array name="weapon_mystery_mansion"> <!-- mystery_mansion -->
+        <item>Airliner</item>
+        <item>Automobile</item>
+ 		<item>Train</item>
+        <item>Hot Air Balloon</item>
+        <item>Seaplane</item>
+ 		<item>Limousine</item>
+    </string-array>
+
+    <string-array name="weapon_avslor_norw"> <!-- avslor_norw -->
+		<item>Kniv</item>
+		<item>Lysestake</item>
+		<item>Pistol</item>
+		<item>Gift</item>
+		<item>Trofé</item>
+		<item>Tau</item>
+		<item>Balltre</item>
+		<item>Øks</item>
+		<item>Manual</item>
+	</string-array>
+	
+    <string-array name="weapon_gametogo"> <!-- gametogo -->
+		<item>Knife</item>
+		<item>Candlestick</item>
+		<item>Pistol</item>
+		<item>Poison</item>
+		<item>Rope</item>
+		<item>Dumbbell</item>
+	</string-array>
+	
+    <string-array name="weapon_greate_detective_fr"> <!-- greate_detective -->
+		<item>Poignard</item>
+		<item>Chandelier</item>
+		<item>Revolver</item>
+		<item>Poison</item>
+		<item>Trophée</item>
+		<item>Corde</item>
+		<item>Batte</item>
+		<item>Hache</item>
+		<item>Haltère</item>
+	</string-array>
+	
+    <string-array name="weapon_next_generation_de"> <!-- next_generation_de -->
+		<item>Seil</item>
+		<item>Dolch</item>
+		<item>Rohrzange</item>
+		<item>Pistole</item>
+		<item>Leuchter</item>
+		<item>Heizungsrohr</item>
+	</string-array>
+	
+    <string-array name="weapon_sherlock_en"> <!-- Sherlock Edition -->
+        <item>Dagger</item>
+		<item>Candlestick</item>
+		<item>Revolver</item>
+		<item>Rope</item>
+		<item>Lead Piping</item>
+		<item>Wrench</item>
+	</string-array>
+	
+    <string-array name="weapon_juegos_sp"> <!-- juegos_sp -->
+        <item>Cuchillo</item>
+		<item>Candelabro</item>
+		<item>Pistola</item>
+		<item>Veneno</item>
+		<item>Cuerda</item>
+		<item>Pesas</item>
+	</string-array>
+	
+    <string-array name="weapon_italian1"> <!-- italian1 -->
+        <item>Corda</item>
+		<item>Tubo di piombo</item>
+		<item>Pugnale</item>
+		<item>Chiave inglese</item>
+		<item>Candeliere</item>
+		<item>Rivoltella</item>
+	</string-array>
+	
+    <string-array name="weapon_italian2"> <!-- italian2 -->
+        <item>Coltello</item>
+		<item>Pistola</item>
+		<item>Veleno</item>
+		<item>Trofeo</item>
+		<item>Candeliere</item>
+		<item>Corda</item>
+		<item>Mazza da baseball</item>
+		<item>Ascia</item>
+		<item>Manubrio</item>
+	</string-array>
+	
+    <string-array name="weapon_sp_elgran"> <!-- sp_elgran -->
+        <item>Candelabro</item>
+		<item>Puñal</item>
+		<item>Cuerda</item>
+		<item>Herramienta</item>
+		<item>Tubería de plomo</item>
+		<item>Pistola</item>
+	</string-array>
+	
+    <string-array name="weapon_super"> <!-- super -->
+        <item>Dagger</item>
+ 		<item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+ 		<item>Lead Pipe</item>
+        <item>Spanner</item>
+        <item>Poison</item>
+        <item>Horseshoe</item>
+    </string-array>
+
+   	<!-- =============================================================================================== 
+     ============== Colors ============================================================================= 
+     =================================================================================================== -->
+	
+	<string-array name="colors_default">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+    </string-array>
+    
+    
+    <string-array name="colors_master">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeopleRose</item>
+        <item>@color/bgPeopleSgtGrey</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeoplePeach</item>
+    </string-array>
+    
+    <string-array name="colors_cvr">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeopleRose</item>
+        <item>@color/bgPeopleSgtGrey</item>
+        <item>@color/bgPeoplePeach</item>
+    </string-array>
+    
+    <string-array name="colors_pasport"> <!-- same as challenge -->
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePeach</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeopleSgtGrey</item>
+    </string-array>
+    
+    <string-array name="colors_super_de"> <!-- super de -->
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeoplePeach</item>
+        <item>@color/bgPeopleRose</item>
+        <item>@color/bgPeopleSgtGrey</item>
+        <item>@color/bgPeopleBrunette</item>
+    </string-array>
+    
+    <string-array name="colors_sea_card">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+    </string-array>
+    
+   <string-array name="colors_fx">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeoplePeach</item>
+        <item>@color/bgPeopleRose</item>
+    </string-array>
+    
+</resources>
