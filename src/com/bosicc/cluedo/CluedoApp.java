@@ -8,7 +8,6 @@ import android.content.res.Resources;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.utils.GameSave;
 
-
 /**
  * Android application's main class
  * 
@@ -16,68 +15,68 @@ import com.bosicc.cluedo.utils.GameSave;
  * 
  */
 public class CluedoApp extends Application {
-	
+
     @Override
-	public void onLowMemory() {
-		//Log.i(TAG, "onLowMemory()");
-		super.onLowMemory();
-	}
+    public void onLowMemory() {
+        // Log.i(TAG, "onLowMemory()");
+        super.onLowMemory();
+    }
 
-	@Override
-	public void onTerminate() {
-		//Log.i(TAG, "onTerminate()");
-		super.onTerminate();
-	}
+    @Override
+    public void onTerminate() {
+        // Log.i(TAG, "onTerminate()");
+        super.onTerminate();
+    }
 
-	//private static final String TAG = "[bosicc]CluedoApp";
+    // private static final String TAG = "[bosicc]CluedoApp";
 
-	private static ContentResolver resolver;
+    private static ContentResolver resolver;
 
     private boolean isScreenActive = true;
 
-	private GamePOJO game;
-	private GameSave SaveUtils;
-	
-	@Override
-	public void onCreate() {
-		super.onCreate();
-		
-		//Log.i(TAG,"onCreate()");
-		resolver = getContentResolver();
-		
-		game = new GamePOJO();
-		//Load default cards
-		Resources r = getResources();
-		game.mPeople = r.getStringArray(R.array.people_ru);
-		game.mPlace = r.getStringArray(R.array.place_ru);
-		game.mWeapon = r.getStringArray(R.array.weapon_ru);
-		
-		SaveUtils = new GameSave(getBaseContext());
-		
-		int ver = -1;
-	    try {
-	        ver = getPackageManager().getPackageInfo(getApplicationInfo().packageName, 0).versionCode;
-	    } catch (NameNotFoundException e) {
-	    }
-		
-		GamePOJO mLoadGame = SaveUtils.Load();
-		
-		if (mLoadGame != null){
-			if (ver == mLoadGame.getVersion()){
-				game = mLoadGame;
-			}
-		}
-		//Set current version
-		game.setVersion(ver);
+    private GamePOJO game;
+    private GameSave SaveUtils;
 
-	}
-	
-	public GamePOJO getGame(){
-		return this.game;
-	}
-	
-	public GameSave getSaveUtils(){
-		return this.SaveUtils;
-	}
-	
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        // Log.i(TAG,"onCreate()");
+        resolver = getContentResolver();
+
+        game = new GamePOJO();
+        // Load default cards
+        Resources r = getResources();
+        game.mPeople = r.getStringArray(R.array.people_ru);
+        game.mPlace = r.getStringArray(R.array.place_ru);
+        game.mWeapon = r.getStringArray(R.array.weapon_ru);
+
+        SaveUtils = new GameSave(getBaseContext());
+
+        int ver = -1;
+        try {
+            ver = getPackageManager().getPackageInfo(getApplicationInfo().packageName, 0).versionCode;
+        } catch (NameNotFoundException e) {
+        }
+
+        GamePOJO mLoadGame = SaveUtils.Load();
+
+        if (mLoadGame != null) {
+            if (ver == mLoadGame.getVersion()) {
+                game = mLoadGame;
+            }
+        }
+        // Set current version
+        game.setVersion(ver);
+
+    }
+
+    public GamePOJO getGame() {
+        return this.game;
+    }
+
+    public GameSave getSaveUtils() {
+        return this.SaveUtils;
+    }
+
 }

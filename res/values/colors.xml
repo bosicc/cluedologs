@@ -1,41 +1,40 @@
 <resources>
-	<color name="bgMain">#FFefefef</color>
-	<color name="bgSetupHeader">#33333333</color>
-	<color name="bgTransperent">#00000000</color>
 
-	<!-- People colors -->
-	<color name="bgPeopleMustard">#FFffff00</color>	<!-- Yelow -->
-	<color name="bgPeoplePlum">#FF674ea7</color>	<!-- Feoletovuy -->
-	<color name="bgPeopleGreen">#FF6aa84f</color>	<!-- Green -->
-	<color name="bgPeoplePeacock">#FF3d85c6</color>	<!-- Blue -->
-	<color name="bgPeopleScarlet">#FFff0000</color>	<!-- Red -->
-	<color name="bgPeopleWhite">#FFffffff</color>	<!-- White -->
-	<!--  -->
-	<color name="bgPeopleRose">#FFc79b9c</color>	<!-- Rozovuy -->
-	<color name="bgPeopleSgtGrey">#FF303a46</color>	<!-- Gray -->
-	<color name="bgPeopleBrunette">#FF482014</color> <!-- Brown -->
-	<color name="bgPeoplePeach">#FFc57849</color>	<!-- Persik -->
-	
-	<color name="bgBlack">#FF000000</color>
-	
-	<color name="bgPeoplelistSelect">#FFff0000</color>
-	
-	<!-- People colors for list -->
-	<color name="bgPeople1list">#33ffff00</color>
-	<color name="bgPeople2list">#33674ea7</color>
-	<color name="bgPeople3list">#446aa84f</color>
-	<color name="bgPeople4list">#333d85c6</color>
-	<color name="bgPeople5list">#33ff0000</color>
-	<color name="bgPeople6list">#33ffffff</color>
-	
-	<color name="textTitle">#FF000000</color>
-	<color name="textTitleLogs">#FFffffff</color>
-	<color name="textTitleAbout">#FF3366CC</color>
-	
-	<!--  -->
-	<color name="bgPeople7_master">#FFc79b9c</color>
-	<color name="bgPeople8_master">#FF303a46</color>
-	<color name="bgPeople9_master">#FF482014</color>
-	<color name="bgPeople10_master">#FFc57849</color>
+    <color name="bgMain">#FFefefef</color>
+    <color name="bgSetupHeader">#33333333</color>
+    <color name="bgTransperent">#00000000</color>
+
+    <!-- People colors -->
+    <color name="bgPeopleMustard">#FFffff00</color> <!-- Yelow -->
+    <color name="bgPeoplePlum">#FF674ea7</color> <!-- Feoletovuy -->
+    <color name="bgPeopleGreen">#FF6aa84f</color> <!-- Green -->
+    <color name="bgPeoplePeacock">#FF3d85c6</color> <!-- Blue -->
+    <color name="bgPeopleScarlet">#FFff0000</color> <!-- Red -->
+    <color name="bgPeopleWhite">#FFffffff</color> <!-- White -->
+    <!--  -->
+    <color name="bgPeopleRose">#FFc79b9c</color> <!-- Rozovuy -->
+    <color name="bgPeopleSgtGrey">#FF303a46</color> <!-- Gray -->
+    <color name="bgPeopleBrunette">#FF482014</color> <!-- Brown -->
+    <color name="bgPeoplePeach">#FFc57849</color> <!-- Persik -->
+
+    <color name="bgBlack">#FF000000</color>
+    <color name="bgPeoplelistSelect">#FFff0000</color>
+
+    <!-- People colors for list -->
+    <color name="bgPeople1list">#33ffff00</color>
+    <color name="bgPeople2list">#33674ea7</color>
+    <color name="bgPeople3list">#446aa84f</color>
+    <color name="bgPeople4list">#333d85c6</color>
+    <color name="bgPeople5list">#33ff0000</color>
+    <color name="bgPeople6list">#33ffffff</color>
+    <color name="textTitle">#FF000000</color>
+    <color name="textTitleLogs">#FFffffff</color>
+    <color name="textTitleAbout">#FF3366CC</color>
+
+    <!--  -->
+    <color name="bgPeople7_master">#FFc79b9c</color>
+    <color name="bgPeople8_master">#FF303a46</color>
+    <color name="bgPeople9_master">#FF482014</color>
+    <color name="bgPeople10_master">#FFc57849</color>
 
 </resources>
