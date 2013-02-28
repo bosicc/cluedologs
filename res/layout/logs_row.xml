@@ -82,9 +82,7 @@
         android:layout_alignParentBottom="true"
         android:background="@android:drawable/divider_horizontal_bright" />
 
-</LinearLayout>
-
-<!--
+</LinearLayout><!--
 <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_weight="1" android:layout_width="wrap_content">
 			<ImageButton android:id="@+id/btn1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:src="@drawable/btn_none" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false"></ImageButton>
 	    	<ImageButton android:id="@+id/btn2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:src="@drawable/btn_none" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false"></ImageButton>

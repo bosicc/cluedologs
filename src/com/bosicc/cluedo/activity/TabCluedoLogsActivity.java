@@ -2,27 +2,33 @@ package com.bosicc.cluedo.activity;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.TabActivity;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v4.view.ViewPager;
 import android.widget.TabHost;
 
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
-import com.bosicc.cluedo.dialogs.PlayersNameDialog;
+import com.bosicc.cluedo.adapters.TabsAdapter;
+import com.bosicc.cluedo.fragments.TableFragment;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.utils.CConstants;
 import com.bosicc.cluedo.utils.Utils;
 import com.flurry.android.FlurryAgent;
 
-public class TabCluedoLogsActivity extends TabActivity {
+public class TabCluedoLogsActivity extends SherlockFragmentActivity {
 
     // private static String TAG = "CluedoLogs";
+
+    private ViewPager mViewPager;
+    private TabsAdapter mTabsAdapter;
+    private ViewPager mPager;
+    public ActionBar mActionBar;
 
     private TabHost tabHost;
     private CluedoApp cApp;
@@ -58,11 +64,19 @@ public class TabCluedoLogsActivity extends TabActivity {
         game = cApp.getGame();
         utils = new Utils(this, game);
 
-        tabHost = getTabHost();
-        // tabHost.setOnTabChangedListener(this);
-
-        setTabs(0);
-
+        final ActionBar bar = getSupportActionBar();
+        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
+        
+        mTabsAdapter = new TabsAdapter(this, (ViewPager)findViewById(R.id.pager));
+        
+        mTabsAdapter.addTab(bar.newTab().setText(TAB_TABLE),
+                TableFragment.class, null);
+//        mTabsAdapter.addTab(bar.newTab().setText(TAB_LOGS),
+//                LogsFragment.class, null);
+//        mTabsAdapter.addTab(bar.newTab().setText(TAB_LOGSTEXT),
+//                LogsTextFragment.class, null);
+//       
     }
 
     @Override
@@ -78,7 +92,6 @@ public class TabCluedoLogsActivity extends TabActivity {
         FlurryAgent.onStartSession(this, CConstants.FLURRY_KEY);
         FlurryAgent.logEvent(CConstants.FLURRY_GAME_PLAY);
         // Log.i(TAG, "onStart()");
-
     }
 
     @Override
@@ -110,37 +123,6 @@ public class TabCluedoLogsActivity extends TabActivity {
         // Log.i(TAG, "onDestroy()");
     }
 
-    private void setTabs(int activeTab) {
-        setupTableTab(); // tab_1
-        setupLogsTab(); // tab_2
-        setupLogsTextTab(); // tab_2
-
-        tabHost.setCurrentTab(activeTab);
-    }
-
-    private void setupTableTab() {
-        tabHost.addTab(tabHost
-                .newTabSpec(TAB_TABLE)
-                .setIndicator(getResources().getString(R.string.maintab_table),
-                        getResources().getDrawable(R.drawable.tab_table_icon))
-                .setContent(new Intent(this, TableActivity.class)));
-    }
-
-    private void setupLogsTab() {
-        tabHost.addTab(tabHost
-                .newTabSpec(TAB_LOGS)
-                .setIndicator(getResources().getString(R.string.maintab_logs),
-                        getResources().getDrawable(R.drawable.tab_log2_icon))
-                .setContent(new Intent(this, LogsActivity.class)));
-    }
-
-    private void setupLogsTextTab() {
-        tabHost.addTab(tabHost
-                .newTabSpec(TAB_LOGSTEXT)
-                .setIndicator(getResources().getString(R.string.maintab_textlogs),
-                        getResources().getDrawable(R.drawable.tab_log_icon))
-                .setContent(new Intent(this, LogsTextActivity.class)));
-    }
 
     @Override
     protected Dialog onCreateDialog(int id) {
@@ -178,64 +160,65 @@ public class TabCluedoLogsActivity extends TabActivity {
         return null;
     }
 
-    // ==============================================================================
-    // Option Menu
-    // ==============================================================================
-    /**
-     * On options menu creation.
-     */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // ===
-        MenuItem item_new_contact = menu.add(group1Id, MENU_ITEM_PEOPLE, Menu.FIRST + 1, R.string.mainmenu_players);
-        item_new_contact.setIcon(android.R.drawable.ic_menu_myplaces);
+    // // ==============================================================================
+    // // Option Menu
+    // // ==============================================================================
+    // /**
+    // * On options menu creation.
+    // */
+    // @Override
+    // public boolean onCreateOptionsMenu(Menu menu) {
+    // // ===
+    // MenuItem item_new_contact = menu.add(group1Id, MENU_ITEM_PEOPLE, Menu.FIRST + 1, R.string.mainmenu_players);
+    // item_new_contact.setIcon(android.R.drawable.ic_menu_myplaces);
+    //
+    // // ===
+    // MenuItem item_2 = menu.add(group1Id, MENU_ITEM_NEW, Menu.FIRST + 1, R.string.mainmenu_new);
+    // item_2.setIcon(android.R.drawable.ic_menu_agenda);
+    //
+    // // ===
+    // MenuItem item_3 = menu.add(group1Id, MENU_ITEM_HELP, Menu.FIRST + 2, R.string.mainmenu_about);
+    // item_3.setIcon(android.R.drawable.ic_menu_info_details);
+    //
+    // // // ===
+    // // MenuItem item_4 = menu.add(group1Id, MENU_ITEM_LOGSTEXT,
+    // // Menu.FIRST+3, R.string.maintab_menu_logstext);
+    // // item_4.setIcon(R.drawable.tab_log2_icon);
+    //
+    // return super.onCreateOptionsMenu(menu);
+    // }
 
-        // ===
-        MenuItem item_2 = menu.add(group1Id, MENU_ITEM_NEW, Menu.FIRST + 1, R.string.mainmenu_new);
-        item_2.setIcon(android.R.drawable.ic_menu_agenda);
+    // /**
+    // * On options menu item selection.
+    // */
+    // @Override
+    // public boolean onOptionsItemSelected(MenuItem item) {
+    // switch (item.getItemId()) {
+    //
+    // case MENU_ITEM_PEOPLE: {
+    // PlayersNameDialog customizeDialog = new PlayersNameDialog(this, game);
+    // customizeDialog.show();
+    // return true;
+    // }
+    //
+    // case MENU_ITEM_NEW: {
+    // showDialog(DIALOG_NEWGAME);
+    // return true;
+    // }
+    //
+    // case MENU_ITEM_HELP: {
+    // startActivity(new Intent(TabCluedoLogsActivity.this, AboutActivity.class));
+    // return true;
+    // }
+    //
+    // case MENU_ITEM_LOGSTEXT: {
+    // startActivity(new Intent(TabCluedoLogsActivity.this, LogsTextActivity.class));
+    // return true;
+    // }
+    // }
+    //
+    // return super.onOptionsItemSelected(item);
+    // }
 
-        // ===
-        MenuItem item_3 = menu.add(group1Id, MENU_ITEM_HELP, Menu.FIRST + 2, R.string.mainmenu_about);
-        item_3.setIcon(android.R.drawable.ic_menu_info_details);
-
-        // // ===
-        // MenuItem item_4 = menu.add(group1Id, MENU_ITEM_LOGSTEXT,
-        // Menu.FIRST+3, R.string.maintab_menu_logstext);
-        // item_4.setIcon(R.drawable.tab_log2_icon);
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    /**
-     * On options menu item selection.
-     */
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-
-            case MENU_ITEM_PEOPLE: {
-                PlayersNameDialog customizeDialog = new PlayersNameDialog(this, game);
-                customizeDialog.show();
-                return true;
-            }
-
-            case MENU_ITEM_NEW: {
-                showDialog(DIALOG_NEWGAME);
-                return true;
-            }
-
-            case MENU_ITEM_HELP: {
-                startActivity(new Intent(TabCluedoLogsActivity.this, AboutActivity.class));
-                return true;
-            }
-
-            case MENU_ITEM_LOGSTEXT: {
-                startActivity(new Intent(TabCluedoLogsActivity.this, LogsTextActivity.class));
-                return true;
-            }
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
+   
 }

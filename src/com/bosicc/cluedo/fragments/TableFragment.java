@@ -1,20 +1,4 @@
-/*
- * Copyright (C) 2007 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-package com.bosicc.cluedo.activity;
+package com.bosicc.cluedo.fragments;
 
 // http://habrahabr.ru/blogs/android/103582/
 
@@ -23,9 +7,9 @@ package com.bosicc.cluedo.activity;
 import java.util.HashMap;
 import java.util.Map;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Paint;
@@ -39,6 +23,10 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.app.SherlockListFragment;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.pojo.GamePOJO;
@@ -50,7 +38,7 @@ import com.flurry.android.FlurryAgent;
 /**
  * A list view example where the data comes from a custom ListAdapter
  */
-public class TableActivity extends ListActivity {
+public class TableFragment extends SherlockListFragment {
 
     // private static String TAG = "Table";
     private static final int DIALOG_MARK = 1;
@@ -75,125 +63,146 @@ public class TableActivity extends ListActivity {
     private Coord mCurentItem = new Coord();
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.table);
-        mList = (ListView) findViewById(android.R.id.list);
-
-        cApp = (CluedoApp) getApplication();
-        game = cApp.getGame();
-        utils = new Utils(this, game);
-
-        header = new TextView[kolnaekrane];
-        header[0] = ((TextView) findViewById(R.id.txtPeople1));
-        header[1] = ((TextView) findViewById(R.id.txtPeople2));
-        header[2] = ((TextView) findViewById(R.id.txtPeople3));
-        header[3] = ((TextView) findViewById(R.id.txtPeople4));
-        header[4] = ((TextView) findViewById(R.id.txtPeople5));
-        header[5] = ((TextView) findViewById(R.id.txtPeople6));
-
-        mNavBtn = (ImageButton) findViewById(R.id.IbtnNav);
-
-        mCards = new String[game.cardnum];
-        int i = 0;
-        for (int j = 0; j < game.mPeople.length; j++) {
-            mCards[i] = game.mPeople[j];
-            i++;
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        if (container == null){
+            return null;
         }
-        for (int j = 0; j < game.mPlace.length; j++) {
-            mCards[i] = game.mPlace[j];
-            i++;
-        }
-        for (int j = 0; j < game.mWeapon.length; j++) {
-            mCards[i] = game.mWeapon[j];
-            i++;
-        }
-
-        if (game.mPeople.length > kolnaekrane) {
-            mNavBtn.setVisibility(View.VISIBLE);
-            mNavBtn.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    if (offset + kolnaekrane < game.mPeople.length) {
-                        offset = game.mPeople.length - kolnaekrane;
-                        mNavBtn.setImageResource(R.drawable.nav_left);
-                    } else {
-                        mNavBtn.setImageResource(R.drawable.nav_right);
-                        offset = 0;
-                    }
-                    mAdapter.notifyDataSetChanged();
-
-                }
-            });
-        } else {
-            mNavBtn.setVisibility(View.INVISIBLE);
-        }
-
-        // Set up our adapter
-        mAdapter = new MyListAdapter(this);
-        mList.setAdapter(mAdapter);
-
+        return inflater.inflate(R.layout.table, null);
     }
 
     @Override
-    protected void onResume() {
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        
+       
+    }
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    
+    }
+    
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+      super.onActivityCreated(savedInstanceState);
+      
+      
+
+      cApp = (CluedoApp) getActivity().getApplication();
+      game = cApp.getGame();
+      utils = new Utils(getActivity(), game);
+
+      header = new TextView[kolnaekrane];
+      header[0] = ((TextView) getView().findViewById(R.id.txtPeople1));
+      header[1] = ((TextView) getView().findViewById(R.id.txtPeople2));
+      header[2] = ((TextView) getView().findViewById(R.id.txtPeople3));
+      header[3] = ((TextView) getView().findViewById(R.id.txtPeople4));
+      header[4] = ((TextView) getView().findViewById(R.id.txtPeople5));
+      header[5] = ((TextView) getView().findViewById(R.id.txtPeople6));
+
+      mNavBtn = (ImageButton) getView().findViewById(R.id.IbtnNav);
+
+      mCards = new String[game.cardnum];
+      int i = 0;
+      for (int j = 0; j < game.mPeople.length; j++) {
+          mCards[i] = game.mPeople[j];
+          i++;
+      }
+      for (int j = 0; j < game.mPlace.length; j++) {
+          mCards[i] = game.mPlace[j];
+          i++;
+      }
+      for (int j = 0; j < game.mWeapon.length; j++) {
+          mCards[i] = game.mWeapon[j];
+          i++;
+      }
+
+      if (game.mPeople.length > kolnaekrane) {
+          mNavBtn.setVisibility(View.VISIBLE);
+          mNavBtn.setOnClickListener(new OnClickListener() {
+
+              @Override
+              public void onClick(View v) {
+                  if (offset + kolnaekrane < game.mPeople.length) {
+                      offset = game.mPeople.length - kolnaekrane;
+                      mNavBtn.setImageResource(R.drawable.nav_left);
+                  } else {
+                      mNavBtn.setImageResource(R.drawable.nav_right);
+                      offset = 0;
+                  }
+                  mAdapter.notifyDataSetChanged();
+
+              }
+          });
+      } else {
+          mNavBtn.setVisibility(View.INVISIBLE);
+      }
+
+      // Set up our adapter
+      mAdapter = new MyListAdapter(getActivity());
+      this.setListAdapter(mAdapter);
+    }
+
+    @Override
+    public void onResume() {
         super.onResume();
         SetHeaderText();
     }
 
-    @Override
-    protected Dialog onCreateDialog(int id) {
-        switch (id) {
-            case DIALOG_MARK:
-                return new AlertDialog.Builder(TableActivity.this).setTitle(" ")
-                        .setItems(R.array.mark, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
+//    @Override
+//    protected Dialog onCreateDialog(int id) {
+//        switch (id) {
+//            case DIALOG_MARK:
+//                return new AlertDialog.Builder(TableFragment.this).setTitle(" ")
+//                        .setItems(R.array.mark, new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//
+//                                switch (which) {
+//                                    case 0:
+//                                        // Set YES in position all other = NO
+//                                        utils.setTypeinRowNoData(mCurentItem.pos, mCurentItem.num, CardType.YES);
+//                                        break;
+//                                    case 1:
+//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.QUESTION);
+//                                        break;
+//                                    case 2:
+//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.NO);
+//                                        break;
+//                                    case 4:
+//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.DEFAULT);
+//                                        break;
+//                                    case 3:
+//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.ASK);
+//                                        break;
+//                                }
+//                                mAdapter.notifyDataSetChanged();
+//                            }
+//                        }).create();
+//
+//        }
+//        return null;
+//    }
 
-                                switch (which) {
-                                    case 0:
-                                        // Set YES in position all other = NO
-                                        utils.setTypeinRowNoData(mCurentItem.pos, mCurentItem.num, CardType.YES);
-                                        break;
-                                    case 1:
-                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.QUESTION);
-                                        break;
-                                    case 2:
-                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.NO);
-                                        break;
-                                    case 4:
-                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.DEFAULT);
-                                        break;
-                                    case 3:
-                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.ASK);
-                                        break;
-                                }
-                                mAdapter.notifyDataSetChanged();
-                            }
-                        }).create();
-
-        }
-        return null;
-    }
-
-    @Override
-    protected void onPrepareDialog(int id, Dialog dialog) {
-        super.onPrepareDialog(id, dialog);
-        switch (id) {
-            case DIALOG_MARK:
-                String text = game.mPlayers.get(mCurentItem.num).getName();
-                if (text.equals("")) {
-                    text = game.mPeople[mCurentItem.num];
-                }
-                String title = text + " " + getText(R.string.table_title_mark) + " " + mCards[mCurentItem.pos] + "?";
-                // Log.i(TAG, "onCreateDialog at mCurentItem.pos=" +
-                // mCurentItem.pos + " mCurentItem.num=" + mCurentItem.num);
-                // Log.i(TAG, "onCreateDialog at mPeople - " +
-                // mPeople[mCurentItem.num] + " Item=" +
-                // mCards[mCurentItem.pos]);
-                dialog.setTitle(title);
-        }
-    }
+//    @Override
+//    protected void onPrepareDialog(int id, Dialog dialog) {
+//        super.onPrepareDialog(id, dialog);
+//        switch (id) {
+//            case DIALOG_MARK:
+//                String text = game.mPlayers.get(mCurentItem.num).getName();
+//                if (text.equals("")) {
+//                    text = game.mPeople[mCurentItem.num];
+//                }
+//                String title = text + " " + getText(R.string.table_title_mark) + " " + mCards[mCurentItem.pos] + "?";
+//                // Log.i(TAG, "onCreateDialog at mCurentItem.pos=" +
+//                // mCurentItem.pos + " mCurentItem.num=" + mCurentItem.num);
+//                // Log.i(TAG, "onCreateDialog at mPeople - " +
+//                // mPeople[mCurentItem.num] + " Item=" +
+//                // mCards[mCurentItem.pos]);
+//                dialog.setTitle(title);
+//        }
+//    }
 
     /**
      * Item view cache holder.
@@ -362,7 +371,7 @@ public class TableActivity extends ListActivity {
                 // num);
                 mCurentItem.pos = mPosition;
                 mCurentItem.num = offset + num;
-                showDialog(DIALOG_MARK);
+                //showDialog(DIALOG_MARK); TODO: FIX here
             }
         }
 

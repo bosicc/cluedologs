@@ -1,20 +1,4 @@
-/*
- * Copyright (C) 2007 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-package com.bosicc.cluedo.activity;
+package com.bosicc.cluedo.fragments;
 
 //Need the following import to get access to the app resources, since this
 //class is in a sub-package.
@@ -22,15 +6,12 @@ import java.util.ArrayList;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.view.SubMenu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -42,6 +23,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.pojo.GamePOJO;
@@ -54,7 +36,7 @@ import com.bosicc.cluedo.utils.Utils;
 /**
  * A list view example where the data comes from a custom ListAdapter
  */
-public class LogsActivity extends ListActivity {
+public class LogsFragment extends SherlockFragmentActivity {
 
     // private static String TAG = "Logs";
 
@@ -125,7 +107,7 @@ public class LogsActivity extends ListActivity {
             public void onClick(View v) {
                 if (mViewMode == ShowModeType.ALL) {
                     if ((utils.getAllList().size() != 0) && (utils.getAllList().get(0).getPlayerPodtverdil() == -1)) {
-                        new AlertDialog.Builder(LogsActivity.this).setIcon(R.drawable.btn_info)
+                        new AlertDialog.Builder(LogsFragment.this).setIcon(R.drawable.btn_info)
                                 .setTitle(R.string.logs_alert_title).setMessage(R.string.logs_txt2)
                                 .setPositiveButton(R.string.alert_dialog_ok, null).show();
                     } else {
@@ -140,7 +122,7 @@ public class LogsActivity extends ListActivity {
             public void onClick(View v) {
                 if (mViewMode == ShowModeType.ALL) {
                     if (utils.getAllList().size() == 0) {
-                        new AlertDialog.Builder(LogsActivity.this).setIcon(R.drawable.btn_info)
+                        new AlertDialog.Builder(LogsFragment.this).setIcon(R.drawable.btn_info)
                                 .setTitle(R.string.logs_alert_title).setMessage(R.string.logs_txt3)
                                 .setPositiveButton(R.string.alert_dialog_ok, null).show();
                     } else {
@@ -173,7 +155,7 @@ public class LogsActivity extends ListActivity {
     protected Dialog onCreateDialog(int id) {
         switch (id) {
             case DIALOG_XODIT:
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.logs_btnxodit)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_btnxodit)
                         .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, final int which) {
                                 sendBroadcast(new Intent(CConstants.ACTION_UPDATE_DATA));
@@ -199,7 +181,7 @@ public class LogsActivity extends ListActivity {
                             }
                         }).create();
             case DIALOG_XODIT_EDIT:
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.logs_btnxodit)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_btnxodit)
                         .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, final int which) {
 
@@ -218,7 +200,7 @@ public class LogsActivity extends ListActivity {
                 int xodit = utils.getAllList().get(0).getPlayerXodit();
                 mCurentDialogList = utils.getPodtverdilList(xodit);
 
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.logs_btnpodtverdil)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_btnpodtverdil)
                         .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 mBtnXodit.setEnabled(true);
@@ -234,7 +216,7 @@ public class LogsActivity extends ListActivity {
                             }
                         }).create();
             case DIALOG_PEOPLE:
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.title_people)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.title_people)
                         .setItems(game.mPeople, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 utils.getAllList().get(0).setSlyxPerson(which);
@@ -242,7 +224,7 @@ public class LogsActivity extends ListActivity {
                             }
                         }).create();
             case DIALOG_PLACE:
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.title_place)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.title_place)
                         .setItems(game.mPlace, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 utils.getAllList().get(0).setSlyxPlace(which);
@@ -250,7 +232,7 @@ public class LogsActivity extends ListActivity {
                             }
                         }).create();
             case DIALOG_WEAPON:
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.title_weapon)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.title_weapon)
                         .setItems(game.mWeapon, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 utils.getAllList().get(0).setSlyxWeapon(which);
@@ -259,7 +241,7 @@ public class LogsActivity extends ListActivity {
                         }).create();
             case DIALOG_SORT_BY_XODIL:
                 mCurentDialogList = utils.getSortXodilList();
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.logs_alert_title_sort_xodil)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_alert_title_sort_xodil)
                         .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 mViewMode = ShowModeType.XODIT;
@@ -272,7 +254,7 @@ public class LogsActivity extends ListActivity {
                         }).create();
             case DIALOG_SORT_BY_PODTVERDIL:
                 mCurentDialogList = utils.getSortPodtverdilList();
-                return new AlertDialog.Builder(LogsActivity.this).setTitle(R.string.logs_alert_title_sort_podtverdil)
+                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_alert_title_sort_podtverdil)
                         .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 if (which == 0) {
@@ -324,75 +306,75 @@ public class LogsActivity extends ListActivity {
         }
     }
 
-    // ==============================================================================
-    // Option Menu
-    // ==============================================================================
-    /**
-     * On options menu creation.
-     */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        // ===
-
-        SubMenu sortMenu = menu.addSubMenu(group2Id, MENU_ITEM_SORT, sortBtnId, R.string.logsmenu_sort);
-        sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_ALL, 0, R.string.logsmenu_sort_all);
-        sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_XODIL, 1, R.string.logsmenu_sort_xodil);
-        sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_PODTVERDIL, 2, R.string.logsmenu_sort_podtverdil);
-        sortMenu.setIcon(android.R.drawable.ic_menu_sort_alphabetically);
-
-        // // ===
-        // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_LOGSTEXT,
-        // logstextBtnId, R.string.logsmenu_sort_all);
-        // item_2.setIcon(android.R.drawable.ic_menu_edit);
-
-        // // ===
-        // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_SORT_ALL,
-        // sortAllBtnId, R.string.logsmenu_sort_all);
-        // item_2.setIcon(android.R.drawable.ic_menu_edit);
-        //
-        // // ===
-        // MenuItem item_3 = menu.add(group2Id, MENU_ITEM_SORT_BY_PODTVERDIL,
-        // sortPodtverdilBtnId, R.string.logsmenu_sort_podtverdil);
-        // item_3.setIcon(android.R.drawable.ic_menu_sort_by_size);
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        menu.removeItem(TabCluedoLogsActivity.MENU_ITEM_HELP);
-        return super.onPrepareOptionsMenu(menu);
-    }
-
-    /**
-     * On options menu item selection.
-     */
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-
-            case MENU_ITEM_SORT_BY_XODIL: {
-                showDialog(DIALOG_SORT_BY_XODIL);
-                return true;
-            }
-
-            case MENU_ITEM_SORT_ALL: {
-                mViewMode = ShowModeType.ALL;
-                mAdapter.notifyDataSetChanged();
-                return true;
-            }
-
-            case MENU_ITEM_SORT_BY_PODTVERDIL: {
-                showDialog(DIALOG_SORT_BY_PODTVERDIL);
-                return true;
-            }
-            case MENU_ITEM_LOGSTEXT: {
-                startActivity(new Intent(LogsActivity.this, LogsTextActivity.class));
-            }
-        }
-        return super.onOptionsItemSelected(item);
-    }
+    // // ==============================================================================
+    // // Option Menu
+    // // ==============================================================================
+    // /**
+    // * On options menu creation.
+    // */
+    // @Override
+    // public boolean onCreateOptionsMenu(Menu menu) {
+    //
+    // // ===
+    //
+    // SubMenu sortMenu = menu.addSubMenu(group2Id, MENU_ITEM_SORT, sortBtnId, R.string.logsmenu_sort);
+    // sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_ALL, 0, R.string.logsmenu_sort_all);
+    // sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_XODIL, 1, R.string.logsmenu_sort_xodil);
+    // sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_PODTVERDIL, 2, R.string.logsmenu_sort_podtverdil);
+    // sortMenu.setIcon(android.R.drawable.ic_menu_sort_alphabetically);
+    //
+    // // // ===
+    // // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_LOGSTEXT,
+    // // logstextBtnId, R.string.logsmenu_sort_all);
+    // // item_2.setIcon(android.R.drawable.ic_menu_edit);
+    //
+    // // // ===
+    // // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_SORT_ALL,
+    // // sortAllBtnId, R.string.logsmenu_sort_all);
+    // // item_2.setIcon(android.R.drawable.ic_menu_edit);
+    // //
+    // // // ===
+    // // MenuItem item_3 = menu.add(group2Id, MENU_ITEM_SORT_BY_PODTVERDIL,
+    // // sortPodtverdilBtnId, R.string.logsmenu_sort_podtverdil);
+    // // item_3.setIcon(android.R.drawable.ic_menu_sort_by_size);
+    //
+    // return super.onCreateOptionsMenu(menu);
+    // }
+    //
+    // @Override
+    // public boolean onPrepareOptionsMenu(Menu menu) {
+    // menu.removeItem(TabCluedoLogsActivity.MENU_ITEM_HELP);
+    // return super.onPrepareOptionsMenu(menu);
+    // }
+    //
+    // /**
+    // * On options menu item selection.
+    // */
+    // @Override
+    // public boolean onOptionsItemSelected(MenuItem item) {
+    // switch (item.getItemId()) {
+    //
+    // case MENU_ITEM_SORT_BY_XODIL: {
+    // showDialog(DIALOG_SORT_BY_XODIL);
+    // return true;
+    // }
+    //
+    // case MENU_ITEM_SORT_ALL: {
+    // mViewMode = ShowModeType.ALL;
+    // mAdapter.notifyDataSetChanged();
+    // return true;
+    // }
+    //
+    // case MENU_ITEM_SORT_BY_PODTVERDIL: {
+    // showDialog(DIALOG_SORT_BY_PODTVERDIL);
+    // return true;
+    // }
+    // case MENU_ITEM_LOGSTEXT: {
+    // startActivity(new Intent(LogsFragment.this, LogsTextFragment.class));
+    // }
+    // }
+    // return super.onOptionsItemSelected(item);
+    // }
 
     /**
      * Item view cache holder.

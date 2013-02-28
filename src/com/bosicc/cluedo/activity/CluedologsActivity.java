@@ -57,13 +57,13 @@ public class CluedologsActivity extends Activity {
                 }
             });
 
-            mBtnDonate.setOnClickListener(new OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(CluedologsActivity.this, LogsActivity.class));
-                }
-            });
+//            mBtnDonate.setOnClickListener(new OnClickListener() {
+//
+//                @Override
+//                public void onClick(View v) {
+//                    startActivity(new Intent(CluedologsActivity.this, .class));
+//                }
+//            });
         }
     }
 
