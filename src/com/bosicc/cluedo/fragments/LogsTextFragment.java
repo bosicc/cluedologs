@@ -29,6 +29,7 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.app.SherlockListActivity;
 import com.actionbarsherlock.app.SherlockListFragment;
+import com.actionbarsherlock.view.MenuInflater;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.activity.TabCluedoLogsActivity;
@@ -43,7 +44,7 @@ import com.bosicc.cluedo.utils.Utils;
  */
 public class LogsTextFragment extends SherlockListFragment {
 
-    private static String TAG = "LogsText";
+    private static String TAG = "LogsTextFragment";
 
     private LinearLayout mHeaderBox;
     private TextView mTitle;
@@ -73,12 +74,7 @@ public class LogsTextFragment extends SherlockListFragment {
     // ======================================================
     // Menu items ID
     // ======================================================
-    private static final int MENU_ITEM_SORT_BY_XODIL = 11;
-    private static final int MENU_ITEM_SORT_ALL = 12;
-    private static final int MENU_ITEM_SORT_BY_PODTVERDIL = 13;
-    private static final int MENU_ITEM_SORT_BY_PEOPLE = 14;
-    private static final int MENU_ITEM_SORT_BY_PLACE = 15;
-    private static final int MENU_ITEM_SORT_BY_WEAPON = 16;
+
 
     private static final int group3Id = 3;
 
@@ -125,6 +121,14 @@ public class LogsTextFragment extends SherlockListFragment {
       this.setListAdapter(mAdapter);
     }
     
+    
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Override
     public void onResume() {
@@ -243,94 +247,70 @@ public class LogsTextFragment extends SherlockListFragment {
 //        }
 //    }
 
-//    // ==============================================================================
-//    // Option Menu
-//    // ==============================================================================
-//    /**
-//     * On options menu creation.
-//     */
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//
-//        Log.i(TAG,"onCreateOptionsMenu(): menu size=" + menu.size());
-//        // ===
-//        MenuItem item_1 = menu.add(group3Id, MENU_ITEM_SORT_BY_XODIL, sortXodilBtnId, R.string.logsmenu_sort_xodil);
-//        // item_1.setIcon(android.R.drawable.ic_menu_sort_alphabetically);
-//
-//        // ===
-//        MenuItem item_2 = menu.add(group3Id, MENU_ITEM_SORT_ALL, sortAllBtnId, R.string.logsmenu_sort_all);
-//        item_2.setIcon(android.R.drawable.ic_menu_edit);
-//
-//        // ===
-//        MenuItem item_3 = menu.add(group3Id, MENU_ITEM_SORT_BY_PODTVERDIL, sortPodtverdilBtnId,
-//                R.string.logsmenu_sort_podtverdil);
-//        // item_3.setIcon(android.R.drawable.ic_menu_sort_by_size);
-//
-//        // ===
-//        MenuItem item_4 = menu.add(group3Id, MENU_ITEM_SORT_BY_PEOPLE, sortPeopleBtnId, R.string.title_people);
-//        item_4.setIcon(R.drawable.ic_menu_people);
-//
-//        // ===
-//        MenuItem item_5 = menu.add(group3Id, MENU_ITEM_SORT_BY_PLACE, sortPlacelBtnId, R.string.title_place);
-//        item_5.setIcon(R.drawable.ic_menu_place);
-//
-//        // ===
-//        MenuItem item_6 = menu.add(group3Id, MENU_ITEM_SORT_BY_WEAPON, sortWeaponBtnId, R.string.title_weapon);
-//        item_6.setIcon(R.drawable.ic_menu_weapon);
-//
-//        return super.onCreateOptionsMenu(menu);
-//    }
-//
-//    @Override
-//    public boolean onPrepareOptionsMenu(Menu menu) {
-//
-//        menu.removeItem(TabCluedoLogsActivity.MENU_ITEM_PEOPLE);
-//        menu.removeItem(TabCluedoLogsActivity.MENU_ITEM_NEW);
-//        menu.removeItem(TabCluedoLogsActivity.MENU_ITEM_HELP);
-//        return super.onPrepareOptionsMenu(menu);
-//    }
-//
-//    /**
-//     * On options menu item selection.
-//     */
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Log.i(TAG,"onCreateOptionsMenu(): item group id=" + item.getGroupId());
-//        switch (item.getItemId()) {
-//
-//            case MENU_ITEM_SORT_BY_XODIL: {
-//                showDialog(DIALOG_SORT_BY_XODIL);
-//                return true;
-//            }
-//
-//            case MENU_ITEM_SORT_ALL: {
-//                mViewMode = ShowModeType.ALL;
-//                mAdapter.notifyDataSetChanged();
-//                return true;
-//            }
-//
-//            case MENU_ITEM_SORT_BY_PODTVERDIL: {
-//                showDialog(DIALOG_SORT_BY_PODTVERDIL);
-//                return true;
-//            }
-//
-//            case MENU_ITEM_SORT_BY_PEOPLE: {
-//                showDialog(DIALOG_SORT_BY_PEOPLE);
-//                return true;
-//            }
-//
-//            case MENU_ITEM_SORT_BY_PLACE: {
-//                showDialog(DIALOG_SORT_BY_PLACE);
-//                return true;
-//            }
-//
-//            case MENU_ITEM_SORT_BY_WEAPON: {
-//                showDialog(DIALOG_SORT_BY_WEAPON);
-//                return true;
-//            }
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+    // ==============================================================================
+    // Option Menu
+    // ==============================================================================
+  
+    /**
+     * On options menu creation.
+     */
+    @Override
+    public void onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu, MenuInflater inflater) {
+       
+        menu.removeItem(R.id.menu_about);
+        menu.removeItem(R.id.menu_players_names);
+        menu.removeItem(R.id.menu_new_game);
+        
+        inflater.inflate(R.menu.textlogs, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    /**
+     * On options menu item selection.
+     */
+    @Override
+    public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
+        // Log.i(TAG,"onCreateOptionsMenu(): item group id=" + item.getGroupId());
+        switch (item.getItemId()) {
+
+            case R.id.logsmenu_sort_xodil: {
+                showDialog(DIALOG_SORT_BY_XODIL);
+                return true;
+            }
+
+            case R.id.logsmenu_sort_all: {
+                mViewMode = ShowModeType.ALL;
+                mAdapter.notifyDataSetChanged();
+                return true;
+            }
+
+            case R.id.logsmenu_sort_podtverdil: {
+                showDialog(DIALOG_SORT_BY_PODTVERDIL);
+                return true;
+            }
+
+            case R.id.logsmenu_people: {
+                showDialog(DIALOG_SORT_BY_PEOPLE);
+                return true;
+            }
+
+            case R.id.logsmenu_place: {
+                showDialog(DIALOG_SORT_BY_PLACE);
+                return true;
+            }
+
+            case R.id.logsmenu_weapon: {
+                showDialog(DIALOG_SORT_BY_WEAPON);
+                return true;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void showDialog(int id) {
+        
+    }
+    
 
     /**
      * Item view cache holder.

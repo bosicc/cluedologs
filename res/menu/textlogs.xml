@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/logsmenu_sort_xodil"
+        android:showAsAction="never"
+        android:title="@string/logsmenu_sort_xodil"/>
+    <item
+        android:id="@+id/logsmenu_sort_all"
+        android:showAsAction="never"
+        android:title="@string/logsmenu_sort_all"/>
+    <item
+        android:id="@+id/logsmenu_sort_podtverdil"
+        android:showAsAction="never"
+        android:title="@string/logsmenu_sort_podtverdil"/>
+    <item
+        android:id="@+id/logsmenu_people"
+        android:icon="@drawable/ic_menu_people"
+        android:showAsAction="ifRoom"
+        android:title="@string/title_people"/>
+    <item
+        android:id="@+id/logsmenu_place"
+        android:icon="@drawable/ic_menu_place"
+        android:showAsAction="ifRoom"
+        android:title="@string/title_place"/>
+    <item
+        android:id="@+id/logsmenu_weapon"
+        android:icon="@drawable/ic_menu_weapon"
+        android:showAsAction="ifRoom"
+        android:title="@string/title_weapon"/>
+
+</menu>

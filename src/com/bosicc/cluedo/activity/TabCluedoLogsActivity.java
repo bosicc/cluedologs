@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.view.View.OnLongClickListener;
 import android.widget.TabHost;
 
 import com.actionbarsherlock.app.ActionBar;
@@ -27,7 +29,7 @@ import com.bosicc.cluedo.utils.CConstants;
 import com.bosicc.cluedo.utils.Utils;
 import com.flurry.android.FlurryAgent;
 
-public class TabCluedoLogsActivity extends SherlockFragmentActivity {
+public class TabCluedoLogsActivity extends SherlockFragmentActivity implements OnLongClickListener {
 
     // private static String TAG = "CluedoLogs";
 
@@ -161,10 +163,15 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
         return null;
     }
 
-    // // ==============================================================================
-    // // Option Menu
-    // // ==============================================================================
     
+    
+     // ==============================================================================
+     // Option Menu
+     // ==============================================================================
+    
+     /**
+     * On options menu creation.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //Used to put dark icons on light action bar
@@ -173,37 +180,16 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
         MenuInflater inflater = this.getSupportMenuInflater();
         inflater.inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
-
-//        menu.add(R.string.mainmenu_players)
-//            .setIcon(android.R.drawable.ic_menu_myplaces)
-//            .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-//
-//        menu.add(R.string.mainmenu_new)
-//            .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-//        //item_2.setIcon();
-//
-//        menu.add(R.string.mainmenu_about)
-//            .setIcon(android.R.drawable.ic_menu_info_details)
-//            .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
-//
-//        return super.onCreateOptionsMenu(menu);
     }
-    // /**
-    // * On options menu creation.
-    // */
 
-    
-     // // ===
-     // MenuItem item_4 = menu.add(group1Id, MENU_ITEM_LOGSTEXT,
-     // Menu.FIRST+3, R.string.maintab_menu_logstext);
-     // item_4.setIcon(R.drawable.tab_log2_icon);
-    
-     
-    // }
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        return super.onPrepareOptionsMenu(menu);
+    }
 
-    // /**
-    // * On options menu item selection.
-    // */
+     /**
+     * On options menu item selection.
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -226,6 +212,17 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        
+        if (getSupportActionBar().isShowing()) {
+            getSupportActionBar().hide();
+        } else {
+            getSupportActionBar().show();
+        }
+        return true;
     }
 
    

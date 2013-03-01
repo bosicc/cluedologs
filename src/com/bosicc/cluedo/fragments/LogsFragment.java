@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -25,6 +26,8 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.app.SherlockListFragment;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.pojo.GamePOJO;
@@ -39,7 +42,7 @@ import com.bosicc.cluedo.utils.Utils;
  */
 public class LogsFragment extends SherlockListFragment {
 
-    // private static String TAG = "Logs";
+     private static String TAG = "LogsFragment";
 
     private LinearLayout mHeaderBox;
     private Button mBtnXodit;
@@ -147,6 +150,12 @@ public class LogsFragment extends SherlockListFragment {
       
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Override
     public void onResume() {
@@ -317,75 +326,81 @@ public class LogsFragment extends SherlockListFragment {
 //        }
 //    }
 
-    // // ==============================================================================
-    // // Option Menu
-    // // ==============================================================================
-    // /**
-    // * On options menu creation.
-    // */
-    // @Override
-    // public boolean onCreateOptionsMenu(Menu menu) {
-    //
-    // // ===
-    //
-    // SubMenu sortMenu = menu.addSubMenu(group2Id, MENU_ITEM_SORT, sortBtnId, R.string.logsmenu_sort);
-    // sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_ALL, 0, R.string.logsmenu_sort_all);
-    // sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_XODIL, 1, R.string.logsmenu_sort_xodil);
-    // sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_PODTVERDIL, 2, R.string.logsmenu_sort_podtverdil);
-    // sortMenu.setIcon(android.R.drawable.ic_menu_sort_alphabetically);
-    //
-    // // // ===
-    // // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_LOGSTEXT,
-    // // logstextBtnId, R.string.logsmenu_sort_all);
-    // // item_2.setIcon(android.R.drawable.ic_menu_edit);
-    //
-    // // // ===
-    // // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_SORT_ALL,
-    // // sortAllBtnId, R.string.logsmenu_sort_all);
-    // // item_2.setIcon(android.R.drawable.ic_menu_edit);
-    // //
-    // // // ===
-    // // MenuItem item_3 = menu.add(group2Id, MENU_ITEM_SORT_BY_PODTVERDIL,
-    // // sortPodtverdilBtnId, R.string.logsmenu_sort_podtverdil);
-    // // item_3.setIcon(android.R.drawable.ic_menu_sort_by_size);
-    //
-    // return super.onCreateOptionsMenu(menu);
-    // }
-    //
-    // @Override
-    // public boolean onPrepareOptionsMenu(Menu menu) {
-    // menu.removeItem(TabCluedoLogsActivity.MENU_ITEM_HELP);
-    // return super.onPrepareOptionsMenu(menu);
-    // }
-    //
-    // /**
-    // * On options menu item selection.
-    // */
-    // @Override
-    // public boolean onOptionsItemSelected(MenuItem item) {
-    // switch (item.getItemId()) {
-    //
-    // case MENU_ITEM_SORT_BY_XODIL: {
-    // showDialog(DIALOG_SORT_BY_XODIL);
-    // return true;
-    // }
-    //
-    // case MENU_ITEM_SORT_ALL: {
-    // mViewMode = ShowModeType.ALL;
-    // mAdapter.notifyDataSetChanged();
-    // return true;
-    // }
-    //
-    // case MENU_ITEM_SORT_BY_PODTVERDIL: {
-    // showDialog(DIALOG_SORT_BY_PODTVERDIL);
-    // return true;
-    // }
-    // case MENU_ITEM_LOGSTEXT: {
-    // startActivity(new Intent(LogsFragment.this, LogsTextFragment.class));
-    // }
-    // }
-    // return super.onOptionsItemSelected(item);
-    // }
+    // ==============================================================================
+    // Option Menu
+    // ==============================================================================
+    /**
+     * On options menu creation.
+     */
+    @Override
+    public void onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu, MenuInflater inflater) {
+
+        Log.i(TAG, "onCreateOptionsMenu() size=" + menu.size());
+        // ===
+
+//        SubMenu sortMenu = menu.addSubMenu(group2Id, MENU_ITEM_SORT, sortBtnId, R.string.logsmenu_sort);
+//        sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_ALL, 0, R.string.logsmenu_sort_all);
+//        sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_XODIL, 1, R.string.logsmenu_sort_xodil);
+//        sortMenu.add(MENU_ITEM_SORT, MENU_ITEM_SORT_BY_PODTVERDIL, 2, R.string.logsmenu_sort_podtverdil);
+//        sortMenu.setIcon(android.R.drawable.ic_menu_sort_alphabetically);
+
+        // // ===
+        // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_LOGSTEXT,
+        // logstextBtnId, R.string.logsmenu_sort_all);
+        // item_2.setIcon(android.R.drawable.ic_menu_edit);
+
+        // // ===
+        // MenuItem item_2 = menu.add(group2Id, MENU_ITEM_SORT_ALL,
+        // sortAllBtnId, R.string.logsmenu_sort_all);
+        // item_2.setIcon(android.R.drawable.ic_menu_edit);
+        //
+        // // ===
+        // MenuItem item_3 = menu.add(group2Id, MENU_ITEM_SORT_BY_PODTVERDIL,
+        // sortPodtverdilBtnId, R.string.logsmenu_sort_podtverdil);
+        // item_3.setIcon(android.R.drawable.ic_menu_sort_by_size);
+
+        menu.clear();
+//        menu.removeItem(R.id.menu_about);
+//        menu.removeItem(R.id.menu_players_names);
+//        menu.removeItem(R.id.menu_new_game);
+//        
+        inflater.inflate(R.menu.textlogs, menu);
+       
+        menu.removeItem(R.id.logsmenu_people);
+        menu.removeItem(R.id.logsmenu_place);
+        menu.removeItem(R.id.logsmenu_weapon);
+
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    
+
+    /**
+     * On options menu item selection.
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.logsmenu_sort_xodil: {
+                showDialog(DIALOG_SORT_BY_XODIL);
+                return true;
+            }
+
+            case R.id.logsmenu_sort_all: {
+                mViewMode = ShowModeType.ALL;
+                mAdapter.notifyDataSetChanged();
+                return true;
+            }
+
+            case R.id.logsmenu_sort_podtverdil: {
+                showDialog(DIALOG_SORT_BY_PODTVERDIL);
+                return true;
+            }
+            
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     /**
      * Item view cache holder.

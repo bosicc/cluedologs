@@ -14,6 +14,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -40,7 +42,7 @@ import com.flurry.android.FlurryAgent;
  */
 public class TableFragment extends SherlockListFragment {
 
-    // private static String TAG = "Table";
+    private static String TAG = "TableFragment";
     private static final int DIALOG_MARK = 1;
 
     private ImageButton mNavBtn;
@@ -130,10 +132,17 @@ public class TableFragment extends SherlockListFragment {
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+    
+    @Override
     public void onResume() {
         super.onResume();
         SetHeaderText();
     }
+    
     
     
 
