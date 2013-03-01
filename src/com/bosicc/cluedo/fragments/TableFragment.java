@@ -69,26 +69,10 @@ public class TableFragment extends SherlockListFragment {
         }
         return inflater.inflate(R.layout.table, null);
     }
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        
-       
-    }
-
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    
-    }
     
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
       super.onActivityCreated(savedInstanceState);
-      
-      
 
       cApp = (CluedoApp) getActivity().getApplication();
       game = cApp.getGame();
@@ -150,6 +134,8 @@ public class TableFragment extends SherlockListFragment {
         super.onResume();
         SetHeaderText();
     }
+    
+    
 
 //    @Override
 //    protected Dialog onCreateDialog(int id) {

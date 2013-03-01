@@ -12,9 +12,15 @@ import android.widget.TabHost;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.adapters.TabsAdapter;
+import com.bosicc.cluedo.dialogs.PlayersNameDialog;
+import com.bosicc.cluedo.fragments.LogsFragment;
+import com.bosicc.cluedo.fragments.LogsTextFragment;
 import com.bosicc.cluedo.fragments.TableFragment;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.utils.CConstants;
@@ -25,19 +31,12 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
 
     // private static String TAG = "CluedoLogs";
 
-    private ViewPager mViewPager;
     private TabsAdapter mTabsAdapter;
-    private ViewPager mPager;
     public ActionBar mActionBar;
 
-    private TabHost tabHost;
     private CluedoApp cApp;
     private GamePOJO game;
     private Utils utils;
-
-    public static final String TAB_TABLE = "Table";
-    public static final String TAB_LOGS = "Logs";
-    public static final String TAB_LOGSTEXT = "LogsText";
 
     // ======================================================
     // Dialog items ID
@@ -52,8 +51,6 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
     public static final int MENU_ITEM_HELP = 3;
     public static final int MENU_ITEM_LOGSTEXT = 4;
 
-    private static final int group1Id = 1;
-
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,17 +63,19 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
 
         final ActionBar bar = getSupportActionBar();
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        bar.setDisplayOptions(0, ActionBar.DISPLAY_SHOW_TITLE);
+        bar.setDisplayOptions(0, ActionBar.DISPLAY_USE_LOGO);
+        bar.setDisplayShowTitleEnabled(false);
+        bar.setDisplayShowHomeEnabled(false);
         
         mTabsAdapter = new TabsAdapter(this, (ViewPager)findViewById(R.id.pager));
         
-        mTabsAdapter.addTab(bar.newTab().setText(TAB_TABLE),
+        mTabsAdapter.addTab(bar.newTab().setText(R.string.maintab_table),
                 TableFragment.class, null);
-//        mTabsAdapter.addTab(bar.newTab().setText(TAB_LOGS),
-//                LogsFragment.class, null);
-//        mTabsAdapter.addTab(bar.newTab().setText(TAB_LOGSTEXT),
-//                LogsTextFragment.class, null);
-//       
+        mTabsAdapter.addTab(bar.newTab().setText(R.string.maintab_logs),
+                LogsFragment.class, null);
+        mTabsAdapter.addTab(bar.newTab().setText(R.string.maintab_textlogs),
+                LogsTextFragment.class, null);
+       
     }
 
     @Override
@@ -123,6 +122,8 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
         // Log.i(TAG, "onDestroy()");
     }
 
+    
+    
 
     @Override
     protected Dialog onCreateDialog(int id) {
@@ -163,62 +164,69 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity {
     // // ==============================================================================
     // // Option Menu
     // // ==============================================================================
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //Used to put dark icons on light action bar
+        //boolean isLight = SampleList.THEME == R.style.Theme_Sherlock_Light;
+        
+        MenuInflater inflater = this.getSupportMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return super.onCreateOptionsMenu(menu);
+
+//        menu.add(R.string.mainmenu_players)
+//            .setIcon(android.R.drawable.ic_menu_myplaces)
+//            .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+//
+//        menu.add(R.string.mainmenu_new)
+//            .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+//        //item_2.setIcon();
+//
+//        menu.add(R.string.mainmenu_about)
+//            .setIcon(android.R.drawable.ic_menu_info_details)
+//            .setShowAsAction(MenuItem.SHOW_AS_ACTION_NEVER);
+//
+//        return super.onCreateOptionsMenu(menu);
+    }
     // /**
     // * On options menu creation.
     // */
-    // @Override
-    // public boolean onCreateOptionsMenu(Menu menu) {
-    // // ===
-    // MenuItem item_new_contact = menu.add(group1Id, MENU_ITEM_PEOPLE, Menu.FIRST + 1, R.string.mainmenu_players);
-    // item_new_contact.setIcon(android.R.drawable.ic_menu_myplaces);
-    //
-    // // ===
-    // MenuItem item_2 = menu.add(group1Id, MENU_ITEM_NEW, Menu.FIRST + 1, R.string.mainmenu_new);
-    // item_2.setIcon(android.R.drawable.ic_menu_agenda);
-    //
-    // // ===
-    // MenuItem item_3 = menu.add(group1Id, MENU_ITEM_HELP, Menu.FIRST + 2, R.string.mainmenu_about);
-    // item_3.setIcon(android.R.drawable.ic_menu_info_details);
-    //
-    // // // ===
-    // // MenuItem item_4 = menu.add(group1Id, MENU_ITEM_LOGSTEXT,
-    // // Menu.FIRST+3, R.string.maintab_menu_logstext);
-    // // item_4.setIcon(R.drawable.tab_log2_icon);
-    //
-    // return super.onCreateOptionsMenu(menu);
+
+    
+     // // ===
+     // MenuItem item_4 = menu.add(group1Id, MENU_ITEM_LOGSTEXT,
+     // Menu.FIRST+3, R.string.maintab_menu_logstext);
+     // item_4.setIcon(R.drawable.tab_log2_icon);
+    
+     
     // }
 
     // /**
     // * On options menu item selection.
     // */
-    // @Override
-    // public boolean onOptionsItemSelected(MenuItem item) {
-    // switch (item.getItemId()) {
-    //
-    // case MENU_ITEM_PEOPLE: {
-    // PlayersNameDialog customizeDialog = new PlayersNameDialog(this, game);
-    // customizeDialog.show();
-    // return true;
-    // }
-    //
-    // case MENU_ITEM_NEW: {
-    // showDialog(DIALOG_NEWGAME);
-    // return true;
-    // }
-    //
-    // case MENU_ITEM_HELP: {
-    // startActivity(new Intent(TabCluedoLogsActivity.this, AboutActivity.class));
-    // return true;
-    // }
-    //
-    // case MENU_ITEM_LOGSTEXT: {
-    // startActivity(new Intent(TabCluedoLogsActivity.this, LogsTextActivity.class));
-    // return true;
-    // }
-    // }
-    //
-    // return super.onOptionsItemSelected(item);
-    // }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.menu_players_names: {
+                PlayersNameDialog customizeDialog = new PlayersNameDialog(this, game);
+                customizeDialog.show();
+                return true;
+            }
+
+            case R.id.menu_new_game: {
+                showDialog(DIALOG_NEWGAME);
+                return true;
+            }
+
+            case R.id.menu_about: {
+                startActivity(new Intent(TabCluedoLogsActivity.this, AboutActivity.class));
+                return true;
+            }
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
    
 }

@@ -8,16 +8,17 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.view.MenuItem;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.pojo.GamePOJO;
 
-public class AboutActivity extends Activity {
+public class AboutActivity extends SherlockActivity {
 
     // private static String TAG = "About";
-
-    private CluedoApp cApp;
-    private GamePOJO game;
 
     private Button mBtnWebsite;
     private Button mBtnEmail;
@@ -30,6 +31,11 @@ public class AboutActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.about);
+        
+        ActionBar bar = this.getSupportActionBar();
+        bar.setDisplayShowHomeEnabled(true);
+        bar.setDisplayHomeAsUpEnabled(true);
+        
         mBtnWebsite = (Button) findViewById(R.id.btnWebsite);
         mBtnWebsite.setOnClickListener(new OnClickListener() {
 
@@ -60,7 +66,15 @@ public class AboutActivity extends Activity {
                 finish();
             }
         });
-
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

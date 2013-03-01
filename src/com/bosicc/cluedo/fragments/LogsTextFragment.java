@@ -28,6 +28,7 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.app.SherlockListFragment;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.activity.TabCluedoLogsActivity;
@@ -40,7 +41,7 @@ import com.bosicc.cluedo.utils.Utils;
 /**
  * A list view example where the data comes from a custom ListAdapter
  */
-public class LogsTextFragment extends SherlockFragmentActivity {
+public class LogsTextFragment extends SherlockListFragment {
 
     private static String TAG = "LogsText";
 
@@ -87,37 +88,46 @@ public class LogsTextFragment extends SherlockFragmentActivity {
     private static final int sortPeopleBtnId = sortPodtverdilBtnId + 1;
     private static final int sortPlacelBtnId = sortPeopleBtnId + 1;
     private static final int sortWeaponBtnId = sortPlacelBtnId + 1;
-
+    
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.logs);
-        mList = (ListView) findViewById(android.R.id.list);
-        mSlyx = (TextView) findViewById(R.id.txtSlyx);
-        mHeaderBox = (LinearLayout) findViewById(R.id.LLheader);
-
-        cApp = (CluedoApp) getApplication();
-        gameLocal = cApp.getGame();
-        utils = new Utils(this, gameLocal);
-
-        mHeaderBox.setVisibility(View.GONE);
-        mSlyx.setVisibility(View.GONE);
-
-        mCurentDialogList = new ArrayList<PlayerPOJO>();
-
-        // Register Data change receiver
-        mLogsTextDataChangeReceiver = new LogsTextDataChangeReceiver();
-        IntentFilter intentFilter = new IntentFilter(CConstants.ACTION_UPDATE_DATA);
-        registerReceiver(mLogsTextDataChangeReceiver, intentFilter);
-
-        // Set up our adapter
-        mAdapter = new MyLogsTextListAdapter(this);
-        mList.setAdapter(mAdapter);
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        if (container == null){
+            return null;
+        }
+        return inflater.inflate(R.layout.logs, null);
     }
+    
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+      super.onActivityCreated(savedInstanceState);
+      
+
+      mList = (ListView) getView().findViewById(android.R.id.list);
+      mSlyx = (TextView) getView().findViewById(R.id.txtSlyx);
+      mHeaderBox = (LinearLayout) getView().findViewById(R.id.LLheader);
+
+      cApp = (CluedoApp) getActivity().getApplication();
+      gameLocal = cApp.getGame();
+      utils = new Utils(getActivity(), gameLocal);
+
+      mHeaderBox.setVisibility(View.GONE);
+      mSlyx.setVisibility(View.GONE);
+
+      mCurentDialogList = new ArrayList<PlayerPOJO>();
+
+      // Register Data change receiver
+      mLogsTextDataChangeReceiver = new LogsTextDataChangeReceiver();
+      IntentFilter intentFilter = new IntentFilter(CConstants.ACTION_UPDATE_DATA);
+      getActivity().registerReceiver(mLogsTextDataChangeReceiver, intentFilter);
+
+      // Set up our adapter
+      mAdapter = new MyLogsTextListAdapter(getActivity());
+      this.setListAdapter(mAdapter);
+    }
+    
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         // Log.i(TAG,"onResume");
         // gameLocal = game;
         // mAdapter.notifyDataSetChanged();
@@ -127,7 +137,7 @@ public class LogsTextFragment extends SherlockFragmentActivity {
     }
 
     @Override
-    protected void onPause() {
+    public void onPause() {
         // /Log.i(TAG,"onPause");
         // mList.setAdapter(null);
         isActive = false;
@@ -135,103 +145,103 @@ public class LogsTextFragment extends SherlockFragmentActivity {
     }
 
     @Override
-    protected void onDestroy() {
+    public void onDestroy() {
         super.onDestroy();
         if (mLogsTextDataChangeReceiver != null) {
-            unregisterReceiver(mLogsTextDataChangeReceiver);
+            getActivity().unregisterReceiver(mLogsTextDataChangeReceiver);
             mLogsTextDataChangeReceiver = null;
         }
     }
 
-    @Override
-    protected Dialog onCreateDialog(int id) {
-        switch (id) {
-            case DIALOG_SORT_BY_XODIL:
-                mCurentDialogList = utils.getSortXodilList();
-                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.logs_alert_title_sort_xodil)
-                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                mViewMode = ShowModeType.XODIT;
-                                mPerson = mCurentDialogList.get(which).getNumber();
-                                ;
-                                mAdapter.notifyDataSetChanged();
-                                mCurentDialogList.removeAll(mCurentDialogList);
-                            }
-                        }).create();
-            case DIALOG_SORT_BY_PODTVERDIL:
-                mCurentDialogList = utils.getSortPodtverdilList();
-                return new AlertDialog.Builder(LogsTextFragment.this)
-                        .setTitle(R.string.logs_alert_title_sort_podtverdil)
-                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                if (which == 0) {
-                                    which = nc;
-                                } else {
-                                    which = mCurentDialogList.get(which).getNumber();
-                                }
-                                mPerson = which;
-                                mViewMode = ShowModeType.PODTVERDIL;
-                                mAdapter.notifyDataSetChanged();
-                                mCurentDialogList.removeAll(mCurentDialogList);
-                            }
-                        }).create();
-
-            case DIALOG_SORT_BY_PEOPLE:
-                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.title_people)
-                        .setItems(gameLocal.mPeople, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                mViewMode = ShowModeType.PEOPLE;
-                                mPerson = which;
-                                mAdapter.notifyDataSetChanged();
-                            }
-                        }).create();
-            case DIALOG_SORT_BY_PLACE:
-                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.title_place)
-                        .setItems(gameLocal.mPlace, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                mViewMode = ShowModeType.PLACE;
-                                mPerson = which;
-                                mAdapter.notifyDataSetChanged();
-                            }
-                        }).create();
-            case DIALOG_SORT_BY_WEAPON:
-                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.title_weapon)
-                        .setItems(gameLocal.mWeapon, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                mViewMode = ShowModeType.WEAPON;
-                                mPerson = which;
-                                mAdapter.notifyDataSetChanged();
-                            }
-                        }).create();
-
-        }
-        return null;
-    }
-
-    @Override
-    protected void onPrepareDialog(int id, Dialog dialog) {
-
-        AlertDialog alertDialog = (AlertDialog) dialog;
-        ArrayAdapter<CharSequence> adapter;
-        switch (id) {
-
-            case DIALOG_SORT_BY_XODIL:
-                mCurentDialogList = utils.getSortXodilList();
-                adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_item, android.R.id.text1,
-                        utils.getString(mCurentDialogList));
-                alertDialog.getListView().setAdapter(adapter);
-                break;
-
-            case DIALOG_SORT_BY_PODTVERDIL:
-                mCurentDialogList = utils.getSortPodtverdilList();
-                adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_item, android.R.id.text1,
-                        utils.getString(mCurentDialogList));
-                alertDialog.getListView().setAdapter(adapter);
-                break;
-            default:
-                super.onPrepareDialog(id, dialog);
-        }
-    }
+//    @Override
+//    protected Dialog onCreateDialog(int id) {
+//        switch (id) {
+//            case DIALOG_SORT_BY_XODIL:
+//                mCurentDialogList = utils.getSortXodilList();
+//                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.logs_alert_title_sort_xodil)
+//                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                mViewMode = ShowModeType.XODIT;
+//                                mPerson = mCurentDialogList.get(which).getNumber();
+//                                ;
+//                                mAdapter.notifyDataSetChanged();
+//                                mCurentDialogList.removeAll(mCurentDialogList);
+//                            }
+//                        }).create();
+//            case DIALOG_SORT_BY_PODTVERDIL:
+//                mCurentDialogList = utils.getSortPodtverdilList();
+//                return new AlertDialog.Builder(LogsTextFragment.this)
+//                        .setTitle(R.string.logs_alert_title_sort_podtverdil)
+//                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                if (which == 0) {
+//                                    which = nc;
+//                                } else {
+//                                    which = mCurentDialogList.get(which).getNumber();
+//                                }
+//                                mPerson = which;
+//                                mViewMode = ShowModeType.PODTVERDIL;
+//                                mAdapter.notifyDataSetChanged();
+//                                mCurentDialogList.removeAll(mCurentDialogList);
+//                            }
+//                        }).create();
+//
+//            case DIALOG_SORT_BY_PEOPLE:
+//                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.title_people)
+//                        .setItems(gameLocal.mPeople, new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                mViewMode = ShowModeType.PEOPLE;
+//                                mPerson = which;
+//                                mAdapter.notifyDataSetChanged();
+//                            }
+//                        }).create();
+//            case DIALOG_SORT_BY_PLACE:
+//                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.title_place)
+//                        .setItems(gameLocal.mPlace, new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                mViewMode = ShowModeType.PLACE;
+//                                mPerson = which;
+//                                mAdapter.notifyDataSetChanged();
+//                            }
+//                        }).create();
+//            case DIALOG_SORT_BY_WEAPON:
+//                return new AlertDialog.Builder(LogsTextFragment.this).setTitle(R.string.title_weapon)
+//                        .setItems(gameLocal.mWeapon, new DialogInterface.OnClickListener() {
+//                            public void onClick(DialogInterface dialog, int which) {
+//                                mViewMode = ShowModeType.WEAPON;
+//                                mPerson = which;
+//                                mAdapter.notifyDataSetChanged();
+//                            }
+//                        }).create();
+//
+//        }
+//        return null;
+//    }
+//
+//    @Override
+//    protected void onPrepareDialog(int id, Dialog dialog) {
+//
+//        AlertDialog alertDialog = (AlertDialog) dialog;
+//        ArrayAdapter<CharSequence> adapter;
+//        switch (id) {
+//
+//            case DIALOG_SORT_BY_XODIL:
+//                mCurentDialogList = utils.getSortXodilList();
+//                adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_item, android.R.id.text1,
+//                        utils.getString(mCurentDialogList));
+//                alertDialog.getListView().setAdapter(adapter);
+//                break;
+//
+//            case DIALOG_SORT_BY_PODTVERDIL:
+//                mCurentDialogList = utils.getSortPodtverdilList();
+//                adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_item, android.R.id.text1,
+//                        utils.getString(mCurentDialogList));
+//                alertDialog.getListView().setAdapter(adapter);
+//                break;
+//            default:
+//                super.onPrepareDialog(id, dialog);
+//        }
+//    }
 
 //    // ==============================================================================
 //    // Option Menu
