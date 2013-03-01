@@ -16,4 +16,9 @@ public final class CConstants {
     public static final String FLURRY_GAME_PLAY = "GAMEPLAY";
     public static final String FLURRY_TABLEACTIVITY_RESUME = "TABLEACTIVITY_RESUME";
     public static final String FLURRY_LOADGAME = "LOADGAME";
+    
+    public class Coord {
+        public int pos = 0;
+        public int num = 0;
+    }
 }

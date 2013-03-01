@@ -14,6 +14,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -31,6 +32,7 @@ import com.actionbarsherlock.app.SherlockListActivity;
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
+import com.bosicc.cluedo.dialogs.TableDialogFragment;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.pojo.GamePOJO.CardType;
 import com.bosicc.cluedo.utils.CConstants;
@@ -57,12 +59,7 @@ public class TableFragment extends SherlockListFragment {
     static int kolnaekrane = 6;
     int offset = 0;
 
-    private class Coord {
-        public int pos = 0;
-        public int num = 0;
-    }
-
-    private Coord mCurentItem = new Coord();
+//    private Coord mCurentItem = new Coord();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -142,43 +139,7 @@ public class TableFragment extends SherlockListFragment {
         super.onResume();
         SetHeaderText();
     }
-    
-    
-    
 
-//    @Override
-//    protected Dialog onCreateDialog(int id) {
-//        switch (id) {
-//            case DIALOG_MARK:
-//                return new AlertDialog.Builder(TableFragment.this).setTitle(" ")
-//                        .setItems(R.array.mark, new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//
-//                                switch (which) {
-//                                    case 0:
-//                                        // Set YES in position all other = NO
-//                                        utils.setTypeinRowNoData(mCurentItem.pos, mCurentItem.num, CardType.YES);
-//                                        break;
-//                                    case 1:
-//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.QUESTION);
-//                                        break;
-//                                    case 2:
-//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.NO);
-//                                        break;
-//                                    case 4:
-//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.DEFAULT);
-//                                        break;
-//                                    case 3:
-//                                        utils.setCardsData(mCurentItem.pos, mCurentItem.num, CardType.ASK);
-//                                        break;
-//                                }
-//                                mAdapter.notifyDataSetChanged();
-//                            }
-//                        }).create();
-//
-//        }
-//        return null;
-//    }
 
 //    @Override
 //    protected void onPrepareDialog(int id, Dialog dialog) {
@@ -364,12 +325,21 @@ public class TableFragment extends SherlockListFragment {
                 }
                 // Log.i(TAG, "onItemClick at pos=" + mPosition + " num=" +
                 // num);
-                mCurentItem.pos = mPosition;
-                mCurentItem.num = offset + num;
-                //showDialog(DIALOG_MARK); TODO: FIX here
+                
+                
+                //TODO: FIX here
+                
+                //mCurentItem.pos = mPosition;
+                //mCurentItem.num = offset + num;
+                showDialog();
             }
         }
 
+    }
+    
+    private void showDialog() {
+        DialogFragment newFragment = TableDialogFragment.newInstance(1,1,1);
+        newFragment.show(getFragmentManager(), "dialog");
     }
 
     public void SetHeaderText() {
