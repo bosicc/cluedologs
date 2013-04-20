@@ -25,8 +25,8 @@ import android.widget.TextView;
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
-import com.bosicc.cluedo.dialogs.PlayersNameDialog;
 import com.bosicc.cluedo.dialogs.TableDialogFragment;
+import com.bosicc.cluedo.dialogs.TableDialogFragment.TableDialogFragmentListener;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.pojo.GamePOJO.CardType;
 import com.bosicc.cluedo.utils.CConstants;
@@ -344,7 +344,13 @@ public class TableFragment extends SherlockListFragment {
         String title = text + " " + getText(R.string.table_title_mark) + " " + mCards[mCurentItem.pos] + "?";
         
         // Create and show the dialog.
-        DialogFragment newFragment = TableDialogFragment.newInstance(R.id.table_dialog_mark, title, mCurentItem);
+        TableDialogFragment newFragment = TableDialogFragment.newInstance(R.id.table_dialog_mark, title, mCurentItem);
+        newFragment.setConfirmationDialogFragmentListener(new TableDialogFragmentListener(){
+            @Override
+            public void onPositiveClick() {
+                mAdapter.notifyDataSetChanged();
+            }
+        });
         newFragment.show(ft, "TableDialog");
     }
 

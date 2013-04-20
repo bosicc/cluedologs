@@ -15,7 +15,7 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.util.Log;
 
-public class TableDialogFragment extends DialogFragment implements DialogInterface.OnClickListener {
+public class TableDialogFragment extends DialogFragment {
     private static final String TAG = "TableDialogFragment";
     
     private TableDialogFragmentListener listener;
@@ -41,10 +41,8 @@ public class TableDialogFragment extends DialogFragment implements DialogInterfa
         super.onActivityCreated(arg0);
     }
 
-
     public interface TableDialogFragmentListener {
         public void onPositiveClick();
-        public void onNegativeClick();
     }
 
     public void setConfirmationDialogFragmentListener(TableDialogFragmentListener listener) {
@@ -86,24 +84,13 @@ public class TableDialogFragment extends DialogFragment implements DialogInterfa
                                       utils.setCardsData(curCoord.pos, curCoord.num, CardType.ASK);
                                       break;
                               }
-                              //mAdapter.notifyDataSetChanged();
+                              
+                              listener.onPositiveClick();
                           }
                       }).create();
 
       }
       return null;
         
-    }
-
-    @Override
-    public void onClick(DialogInterface dialog, int which) {
-        if (listener != null) {
-            switch (which) {
-                case DialogInterface.BUTTON_POSITIVE:
-                    listener.onPositiveClick();
-                default:
-                    listener.onNegativeClick();
-            }
-        }
     }
 }
