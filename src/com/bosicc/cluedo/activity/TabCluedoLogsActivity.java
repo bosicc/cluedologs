@@ -195,8 +195,9 @@ public class TabCluedoLogsActivity extends SherlockFragmentActivity implements O
         switch (item.getItemId()) {
 
             case R.id.menu_players_names: {
-                PlayersNameDialog customizeDialog = new PlayersNameDialog(this, game);
-                customizeDialog.show();
+                PlayersNameDialog customizeDialog = new PlayersNameDialog();
+                customizeDialog.setGameData(this, game);
+                customizeDialog.show(getSupportFragmentManager(),"playersname");
                 return true;
             }
 

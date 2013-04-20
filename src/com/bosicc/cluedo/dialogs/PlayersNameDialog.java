@@ -1,9 +1,12 @@
 package com.bosicc.cluedo.dialogs;
 
-import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -18,60 +21,53 @@ import com.bosicc.cluedo.R;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.utils.Utils;
 
-public class PlayersNameDialog extends Dialog {
+public class PlayersNameDialog extends DialogFragment {
 
-    // private static String TAG = "PlayersName";
-
-    private ImageButton okButton;
+    private static String TAG = "PlayersNameDialog";
 
     private GamePOJO game;
     private Utils utils;
-    private Context context;
     private ListView mList;
     private BaseAdapter mAdapter;
 
-    public PlayersNameDialog(Context context, GamePOJO Game) {
-        super(context);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-
-        setContentView(R.layout.playernames);
-        okButton = (ImageButton) findViewById(R.id.OkButton);
-        okButton.setOnClickListener(new View.OnClickListener() {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.playernames, null);
+        v.findViewById(R.id.OkButton).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                // for (int i=0; i<game.mPlayers.size();i++){
-                // Log.i(TAG," player="+game.mPlayers.get(i).inGame());
-                // }
                 dismiss();
             }
         });
 
+        mList = (ListView) v.findViewById(R.id.listView);
+        mAdapter = new MyNameAdapter();
+        mList.setAdapter(mAdapter);
+
+        getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        return v;
+    }
+
+    public void onClick(View v) {
+        dismiss();
+    }
+
+    public void setGameData(Context context, GamePOJO Game) {
         this.game = Game;
-        this.context = context;
         utils = new Utils(context, game);
 
         // Set you name
-        game.mPlayers.get(utils.getYourPlayer()).setName(context.getText(R.string.table_you_text).toString());
+        String name = context.getText(R.string.table_you_text).toString();
+        game.mPlayers.get(utils.getYourPlayer()).setName(name);
 
-        // for (int i=0; i<game.mPlayers.size();i++){
-        // Log.i(TAG,"start player="+game.mPlayers.get(i).inGame());
-        // }
-
-        mList = (ListView) findViewById(R.id.listView);
-        mAdapter = new MyNameAdapter();
-        mList.setAdapter(mAdapter);
     }
 
     /**
      * Item view cache holder.
      */
     private static final class ListItemCache {
-
         public TextView text;
         public EditText editText;
         public CheckBox check;
-
     }
 
     public class MyNameAdapter extends BaseAdapter {
@@ -95,7 +91,7 @@ public class PlayersNameDialog extends Dialog {
         public View getView(int position, View view, ViewGroup parent) {
             ListItemCache cache = new ListItemCache();
             if (view == null) {
-                view = (View) LayoutInflater.from(context).inflate(R.layout.playername_row, parent, false);
+                view = (View) LayoutInflater.from(getActivity()).inflate(R.layout.playername_row, parent, false);
 
                 cache.text = (TextView) view.findViewById(R.id.text);
                 cache.editText = (EditText) view.findViewById(R.id.editText);

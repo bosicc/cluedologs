@@ -7,16 +7,12 @@ package com.bosicc.cluedo.fragments;
 import java.util.HashMap;
 import java.util.Map;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
-import android.util.Log;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,16 +22,15 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.app.SherlockListActivity;
 import com.actionbarsherlock.app.SherlockListFragment;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
+import com.bosicc.cluedo.dialogs.PlayersNameDialog;
 import com.bosicc.cluedo.dialogs.TableDialogFragment;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.pojo.GamePOJO.CardType;
 import com.bosicc.cluedo.utils.CConstants;
+import com.bosicc.cluedo.utils.CConstants.Coord;
 import com.bosicc.cluedo.utils.Utils;
 import com.flurry.android.FlurryAgent;
 
@@ -45,7 +40,6 @@ import com.flurry.android.FlurryAgent;
 public class TableFragment extends SherlockListFragment {
 
     private static String TAG = "TableFragment";
-    private static final int DIALOG_MARK = 1;
 
     private ImageButton mNavBtn;
     private ListView mList;
@@ -59,7 +53,7 @@ public class TableFragment extends SherlockListFragment {
     static int kolnaekrane = 6;
     int offset = 0;
 
-//    private Coord mCurentItem = new Coord();
+    private Coord mCurentItem = new Coord();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -323,14 +317,10 @@ public class TableFragment extends SherlockListFragment {
                         num = 5;
                         break;
                 }
-                // Log.i(TAG, "onItemClick at pos=" + mPosition + " num=" +
-                // num);
-                
-                
                 //TODO: FIX here
                 
-                //mCurentItem.pos = mPosition;
-                //mCurentItem.num = offset + num;
+                mCurentItem.pos = mPosition;
+                mCurentItem.num = offset + num;
                 showDialog();
             }
         }
@@ -338,8 +328,24 @@ public class TableFragment extends SherlockListFragment {
     }
     
     private void showDialog() {
-        DialogFragment newFragment = TableDialogFragment.newInstance(1,1,1);
-        newFragment.show(getFragmentManager(), "dialog");
+        
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getActivity().getSupportFragmentManager().findFragmentByTag("TableDialog");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        
+        
+        String text = game.mPlayers.get(mCurentItem.num).getName();
+        if (text.equals("")) {
+            text = game.mPeople[mCurentItem.num];
+        }
+        String title = text + " " + getText(R.string.table_title_mark) + " " + mCards[mCurentItem.pos] + "?";
+        
+        // Create and show the dialog.
+        DialogFragment newFragment = TableDialogFragment.newInstance(R.id.table_dialog_mark, title, mCurentItem);
+        newFragment.show(ft, "TableDialog");
     }
 
     public void SetHeaderText() {

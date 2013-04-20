@@ -101,14 +101,16 @@ public class SetupActivity extends ExpandableListActivity {
 
         mText4 = (TextView) findViewById(R.id.text4);
 
-        mPlayername.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                PlayersNameDialog customizeDialog = new PlayersNameDialog(SetupActivity.this, game);
-                customizeDialog.show();
-            }
-        });
+        //FIXME: Call Fragment Dialog
+//        mPlayername.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                PlayersNameDialog customizeDialog = new PlayersNameDialog();
+//                customizeDialog.setGameData(game);
+//                customizeDialog.show(, tag)
+//            }
+//        });
 
         // Set list of game types
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.gameTypes,

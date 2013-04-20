@@ -1,5 +1,7 @@
 package com.bosicc.cluedo.utils;
 
+import java.io.Serializable;
+
 /**
  * Global Cluedo constants and definitions.
  */
@@ -17,7 +19,8 @@ public final class CConstants {
     public static final String FLURRY_TABLEACTIVITY_RESUME = "TABLEACTIVITY_RESUME";
     public static final String FLURRY_LOADGAME = "LOADGAME";
     
-    public class Coord {
+    public static class Coord implements Serializable{
+        private static final long serialVersionUID = 5690404645597703832L;
         public int pos = 0;
         public int num = 0;
     }

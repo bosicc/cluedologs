@@ -18,7 +18,7 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:process="com.bosicc.cluedo"
-        android:theme="@style/Theme.Sherlock"> >
+        android:theme="@style/AppTheme"> >
         <activity
             android:name=".activity.CluedologsActivity"
             android:label="@string/app_name" >
