@@ -169,10 +169,8 @@ public class SetupActivity extends ExpandableListActivity {
 
             @Override
             public void onClick(View v) {
-
                 DrawStage0();
                 stage--;
-
             }
         });
 
@@ -242,7 +240,6 @@ public class SetupActivity extends ExpandableListActivity {
                             startActivity(new Intent(SetupActivity.this, TabCluedoLogsActivity.class));
                             finish();
                         }
-
                     }
                 }
             }

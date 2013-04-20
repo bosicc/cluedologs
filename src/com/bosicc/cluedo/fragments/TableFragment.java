@@ -134,26 +134,6 @@ public class TableFragment extends SherlockListFragment {
         SetHeaderText();
     }
 
-
-//    @Override
-//    protected void onPrepareDialog(int id, Dialog dialog) {
-//        super.onPrepareDialog(id, dialog);
-//        switch (id) {
-//            case DIALOG_MARK:
-//                String text = game.mPlayers.get(mCurentItem.num).getName();
-//                if (text.equals("")) {
-//                    text = game.mPeople[mCurentItem.num];
-//                }
-//                String title = text + " " + getText(R.string.table_title_mark) + " " + mCards[mCurentItem.pos] + "?";
-//                // Log.i(TAG, "onCreateDialog at mCurentItem.pos=" +
-//                // mCurentItem.pos + " mCurentItem.num=" + mCurentItem.num);
-//                // Log.i(TAG, "onCreateDialog at mPeople - " +
-//                // mPeople[mCurentItem.num] + " Item=" +
-//                // mCards[mCurentItem.pos]);
-//                dialog.setTitle(title);
-//        }
-//    }
-
     /**
      * Item view cache holder.
      */
@@ -243,13 +223,6 @@ public class TableFragment extends SherlockListFragment {
 
             cache.Text.setText(mCards[position]);
 
-            // cache.btn1.setImageResource(getResourceByType(utils.getCardsData()[position][offset+0]));
-            // cache.btn2.setImageResource(getResourceByType(utils.getCardsData()[position][offset+1]));
-            // cache.btn3.setImageResource(getResourceByType(utils.getCardsData()[position][offset+2]));
-            // cache.btn4.setImageResource(getResourceByType(utils.getCardsData()[position][offset+3]));
-            // cache.btn5.setImageResource(getResourceByType(utils.getCardsData()[position][offset+4]));
-            // cache.btn6.setImageResource(getResourceByType(utils.getCardsData()[position][offset+5]));
-
             return view;
         }
 
@@ -316,9 +289,7 @@ public class TableFragment extends SherlockListFragment {
                     case R.id.btn6:
                         num = 5;
                         break;
-                }
-                //TODO: FIX here
-                
+                }   
                 mCurentItem.pos = mPosition;
                 mCurentItem.num = offset + num;
                 showDialog();
