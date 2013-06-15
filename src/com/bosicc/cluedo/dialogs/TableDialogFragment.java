@@ -17,9 +17,9 @@ import android.util.Log;
 
 public class TableDialogFragment extends DialogFragment {
     private static final String TAG = "TableDialogFragment";
-    
+
     private TableDialogFragmentListener listener;
-    
+
     public static final String ID = "id";
     public static final String TITLE = "title";
     public static final String CURITEM = "curitem";
@@ -34,10 +34,9 @@ public class TableDialogFragment extends DialogFragment {
         return frag;
     }
 
-    
     @Override
     public void onActivityCreated(Bundle arg0) {
-        Log.d(TAG, "onActivityCreated() arg0="+arg0);
+        Log.d(TAG, "onActivityCreated() arg0=" + arg0);
         super.onActivityCreated(arg0);
     }
 
@@ -51,46 +50,46 @@ public class TableDialogFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        
+
         int id = getArguments().getInt(ID);
-        final Coord curCoord = (Coord)getArguments().getSerializable(CURITEM);
-        final String title = getArguments().getString(TITLE); 
-     
+        final Coord curCoord = (Coord) getArguments().getSerializable(CURITEM);
+        final String title = getArguments().getString(TITLE);
+
         switch (id) {
-          case R.id.table_dialog_mark:
-              return new AlertDialog.Builder(getActivity()).setTitle(title)
-                      .setItems(R.array.mark, new DialogInterface.OnClickListener() {
-                          public void onClick(DialogInterface dialog, int which) {
-                              
-                              CluedoApp cApp = (CluedoApp) getActivity().getApplication();
-                              GamePOJO game = cApp.getGame();
-                              Utils utils = new Utils(getActivity(), game);
+            case R.id.table_dialog_mark:
+                return new AlertDialog.Builder(getActivity()).setTitle(title)
+                        .setItems(R.array.mark, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
 
-                              switch (which) {
-                                  case 0:
-                                      // Set YES in position all other = NO
-                                      utils.setTypeinRowNoData(curCoord.pos, curCoord.num, CardType.YES);
-                                      break;
-                                  case 1:
-                                      utils.setCardsData(curCoord.pos, curCoord.num, CardType.QUESTION);
-                                      break;
-                                  case 2:
-                                      utils.setCardsData(curCoord.pos, curCoord.num, CardType.NO);
-                                      break;
-                                  case 4:
-                                      utils.setCardsData(curCoord.pos, curCoord.num, CardType.DEFAULT);
-                                      break;
-                                  case 3:
-                                      utils.setCardsData(curCoord.pos, curCoord.num, CardType.ASK);
-                                      break;
-                              }
-                              
-                              listener.onPositiveClick();
-                          }
-                      }).create();
+                                CluedoApp cApp = (CluedoApp) getActivity().getApplication();
+                                GamePOJO game = cApp.getGame();
+                                Utils utils = new Utils(getActivity(), game);
 
-      }
-      return null;
-        
+                                switch (which) {
+                                    case 0:
+                                        // Set YES in position all other = NO
+                                        utils.setTypeinRowNoData(curCoord.pos, curCoord.num, CardType.YES);
+                                        break;
+                                    case 1:
+                                        utils.setCardsData(curCoord.pos, curCoord.num, CardType.QUESTION);
+                                        break;
+                                    case 2:
+                                        utils.setCardsData(curCoord.pos, curCoord.num, CardType.NO);
+                                        break;
+                                    case 4:
+                                        utils.setCardsData(curCoord.pos, curCoord.num, CardType.DEFAULT);
+                                        break;
+                                    case 3:
+                                        utils.setCardsData(curCoord.pos, curCoord.num, CardType.ASK);
+                                        break;
+                                }
+
+                                listener.onPositiveClick();
+                            }
+                        }).create();
+
+        }
+        return null;
+
     }
 }

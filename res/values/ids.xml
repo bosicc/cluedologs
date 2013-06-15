@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <item type="id" name="table_dialog_mark" />
+    
+    <item name="table_dialog_mark" type="id"/>
+    
+    <item name="logs_dialog_xodil" type="id"/>
+    <item name="logs_dialog_podtverdil" type="id"/>
+    <item name="logs_dialog_people" type="id"/>
+    <item name="logs_dialog_place" type="id"/>
+    <item name="logs_dialog_weapon" type="id"/>
+    <item name="logs_dialog_sort_by_xodil" type="id"/>
+    <item name="logs_dialog_sort_by_podtverdil" type="id"/>
+    <item name="logs_dialog_xodil_edit" type="id"/>
 </resources>

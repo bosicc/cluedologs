@@ -10,6 +10,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -30,6 +32,9 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.bosicc.cluedo.CluedoApp;
 import com.bosicc.cluedo.R;
+import com.bosicc.cluedo.dialogs.LogsDialogFragment;
+import com.bosicc.cluedo.dialogs.TableDialogFragment;
+import com.bosicc.cluedo.dialogs.TableDialogFragment.TableDialogFragmentListener;
 import com.bosicc.cluedo.pojo.GamePOJO;
 import com.bosicc.cluedo.pojo.GamePOJO.ShowModeType;
 import com.bosicc.cluedo.pojo.PMovePOJO;
@@ -63,14 +68,15 @@ public class LogsFragment extends SherlockListFragment {
     private ShowModeType mViewMode = ShowModeType.ALL;
     private int mPerson = 0;
 
-    private static final int DIALOG_XODIT = 1;
-    private static final int DIALOG_PODTVERDIL = 2;
-    private static final int DIALOG_PEOPLE = 3;
-    private static final int DIALOG_PLACE = 4;
-    private static final int DIALOG_WEAPON = 5;
-    private static final int DIALOG_SORT_BY_XODIL = 6;
-    private static final int DIALOG_SORT_BY_PODTVERDIL = 7;
-    private static final int DIALOG_XODIT_EDIT = 8;
+//    private static final int DIALOG_XODIT = 1;
+//    private static final int DIALOG_PODTVERDIL = 2;
+//    private static final int DIALOG_PEOPLE = 3;
+//    private static final int DIALOG_PLACE = 4;
+//    private static final int DIALOG_WEAPON = 5;
+//    private static final int DIALOG_SORT_BY_XODIL = 6;
+//    private static final int DIALOG_SORT_BY_PODTVERDIL = 7;
+//    private static final int DIALOG_XODIT_EDIT = 8;
+    
 
     // ======================================================
     // Menu items ID
@@ -171,160 +177,7 @@ public class LogsFragment extends SherlockListFragment {
         super.onResume();
     }
 
-//    @Override
-//    protected Dialog onCreateDialog(int id) {
-//        switch (id) {
-//            case DIALOG_XODIT:
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_btnxodit)
-//                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, final int which) {
-//                                sendBroadcast(new Intent(CConstants.ACTION_UPDATE_DATA));
-//                                // http://code.google.com/p/k9mail/source/detail?r=3132
-//                                // https://github.com/k9mail/k-9/blob/master/src/com/fsck/k9/activity/ChooseFolder.java
-//                                // https://github.com/sunlightlabs/congress
-//                                int num = mCurentDialogList.get(which).getNumber();
-//                                PMovePOJO item = new PMovePOJO(num);
-//                                utils.getAllList().add(0, item);
-//                                mBtnPodtverdil.setEnabled(false);
-//                                mBtnXodit.setEnabled(false);
-//
-//                                mSlyx.setText("");
-//                                mTitle.setText(mCurentDialogList.get(which).getLabel());
-//                                mTitle.setOnClickListener(new OnClickListener() {
-//                                    public void onClick(View view) {
-//                                        showDialog(DIALOG_XODIT_EDIT);
-//                                    }
-//                                });
-//
-//                                mAdapter.notifyDataSetChanged();
-//                                mCurentDialogList.removeAll(mCurentDialogList);
-//                            }
-//                        }).create();
-//            case DIALOG_XODIT_EDIT:
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_btnxodit)
-//                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, final int which) {
-//
-//                                // No need to remove current row, only update
-//                                int num = mCurentDialogList.get(which).getNumber();
-//                                utils.getAllList().get(0).setPlayerXodit(num);
-//                                sendBroadcast(new Intent(CConstants.ACTION_UPDATE_DATA));
-//
-//                                mSlyx.setText("");
-//                                mTitle.setText(mCurentDialogList.get(which).getLabel());
-//                                mAdapter.notifyDataSetChanged();
-//                                mCurentDialogList.removeAll(mCurentDialogList);
-//                            }
-//                        }).create();
-//            case DIALOG_PODTVERDIL:
-//                int xodit = utils.getAllList().get(0).getPlayerXodit();
-//                mCurentDialogList = utils.getPodtverdilList(xodit);
-//
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_btnpodtverdil)
-//                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                mBtnXodit.setEnabled(true);
-//                                if (which == 0) {
-//                                    which = nc;
-//                                } else {
-//                                    which = mCurentDialogList.get(which).getNumber();
-//                                }
-//                                utils.getAllList().get(0).setPlayerPodtverdil(which);
-//                                mAdapter.notifyDataSetChanged();
-//                                mCurentDialogList.removeAll(mCurentDialogList);
-//                                // removeDialog(DIALOG_PODTVERDIL);
-//                            }
-//                        }).create();
-//            case DIALOG_PEOPLE:
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.title_people)
-//                        .setItems(game.mPeople, new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                utils.getAllList().get(0).setSlyxPerson(which);
-//                                mAdapter.notifyDataSetChanged();
-//                            }
-//                        }).create();
-//            case DIALOG_PLACE:
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.title_place)
-//                        .setItems(game.mPlace, new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                utils.getAllList().get(0).setSlyxPlace(which);
-//                                mAdapter.notifyDataSetChanged();
-//                            }
-//                        }).create();
-//            case DIALOG_WEAPON:
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.title_weapon)
-//                        .setItems(game.mWeapon, new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                utils.getAllList().get(0).setSlyxWeapon(which);
-//                                mAdapter.notifyDataSetChanged();
-//                            }
-//                        }).create();
-//            case DIALOG_SORT_BY_XODIL:
-//                mCurentDialogList = utils.getSortXodilList();
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_alert_title_sort_xodil)
-//                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                mViewMode = ShowModeType.XODIT;
-//                                mPerson = mCurentDialogList.get(which).getNumber();
-//                                ;
-//                                mAdapter.notifyDataSetChanged();
-//                                mCurentDialogList.removeAll(mCurentDialogList);
-//                                // removeDialog(DIALOG_SORT_BY_XODIL);
-//                            }
-//                        }).create();
-//            case DIALOG_SORT_BY_PODTVERDIL:
-//                mCurentDialogList = utils.getSortPodtverdilList();
-//                return new AlertDialog.Builder(LogsFragment.this).setTitle(R.string.logs_alert_title_sort_podtverdil)
-//                        .setItems(utils.getString(mCurentDialogList), new DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                if (which == 0) {
-//                                    which = nc;
-//                                } else {
-//                                    which = mCurentDialogList.get(which).getNumber();
-//                                }
-//                                mViewMode = ShowModeType.PODTVERDIL;
-//                                mAdapter.notifyDataSetChanged();
-//                                mCurentDialogList.removeAll(mCurentDialogList);
-//                                // removeDialog(DIALOG_SORT_BY_PODTVERDIL);
-//                            }
-//                        }).create();
-//        }
-//        return null;
-//    }
-//
-//    @Override
-//    protected void onPrepareDialog(int id, Dialog dialog) {
-//
-//        AlertDialog alertDialog = (AlertDialog) dialog;
-//        ArrayAdapter<CharSequence> adapter;
-//        switch (id) {
-//            case DIALOG_XODIT:
-//            case DIALOG_XODIT_EDIT:
-//            case DIALOG_SORT_BY_XODIL:
-//                mCurentDialogList = utils.getSortXodilList();
-//                adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_item, android.R.id.text1,
-//                        utils.getString(mCurentDialogList));
-//                alertDialog.getListView().setAdapter(adapter);
-//                break;
-//
-//            case DIALOG_PODTVERDIL:
-//                int xodit = utils.getAllList().get(0).getPlayerXodit();
-//                mCurentDialogList = utils.getPodtverdilList(xodit);
-//                adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_item, android.R.id.text1,
-//                        utils.getString(mCurentDialogList));
-//                alertDialog.getListView().setAdapter(adapter);
-//                break;
-//
-//            case DIALOG_SORT_BY_PODTVERDIL:
-//                mCurentDialogList = utils.getSortPodtverdilList();
-//                adapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_item, android.R.id.text1,
-//                        utils.getString(mCurentDialogList));
-//                alertDialog.getListView().setAdapter(adapter);
-//                break;
-//            default:
-//                super.onPrepareDialog(id, dialog);
-//        }
-//    }
+
 
     // ==============================================================================
     // Option Menu
@@ -383,7 +236,7 @@ public class LogsFragment extends SherlockListFragment {
         switch (item.getItemId()) {
 
             case R.id.logsmenu_sort_xodil: {
-                showDialog(DIALOG_SORT_BY_XODIL);
+                showDialog(R.id.logs_dialog_sort_by_xodil);
                 return true;
             }
 
@@ -394,7 +247,7 @@ public class LogsFragment extends SherlockListFragment {
             }
 
             case R.id.logsmenu_sort_podtverdil: {
-                showDialog(DIALOG_SORT_BY_PODTVERDIL);
+                showDialog(R.id.logs_dialog_sort_by_podtverdil);
                 return true;
             }
             
@@ -569,13 +422,13 @@ public class LogsFragment extends SherlockListFragment {
 
                 switch (view.getId()) {
                     case R.id.btn1:
-                        showDialog(DIALOG_PEOPLE);
+                        showDialog(R.id.logs_dialog_people);
                         break;
                     case R.id.btn2:
-                        showDialog(DIALOG_PLACE);
+                        showDialog(R.id.logs_dialog_place);
                         break;
                     case R.id.btn3:
-                        showDialog(DIALOG_WEAPON);
+                        showDialog(R.id.logs_dialog_weapon);
                         break;
                 }
             }
@@ -585,8 +438,30 @@ public class LogsFragment extends SherlockListFragment {
     
     private void showDialog (int id){
         
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getActivity().getSupportFragmentManager().findFragmentByTag("LogsDialog");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        
+        // Create and show the dialog.
+        TableDialogFragment newFragment = LogsDialogFragment.newInstance(id);
+        newFragment.setConfirmationDialogFragmentListener(new TableDialogFragmentListener(){
+            @Override
+            public void onPositiveClick() {
+                mAdapter.notifyDataSetChanged();
+            }
+        });
+        newFragment.show(ft, "LogsDialog");
     }
-
+    
+    public void doOnClickDialogItemAction() {
+        // Do stuff here.
+        
+    }
+    
+    
     // /**
     // * @param messages Never {@code null}.
     // */
