@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" 
+    android:background="@color/bgMain" 
+    android:weightSum="1">
+    <LinearLayout android:id="@+id/header" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_height="32dp">
+        <ImageButton android:layout_width="60dp" style="?android:attr/buttonStyleSmall" android:layout_height="fill_parent" android:id="@+id/IbtnNav" android:src="@drawable/nav_right" android:background="#00000000"></ImageButton>
+        <TextView android:text="P1" android:id="@+id/txtPeople1" android:layout_height="fill_parent" android:layout_weight="1" style="@style/headerPeopleText" android:layout_width="0dp"></TextView>
+        <TextView android:text="P2" android:id="@+id/txtPeople2" android:layout_height="fill_parent" android:layout_weight="1" style="@style/headerPeopleText" android:layout_width="0dp"></TextView>
+        <TextView android:text="P3" android:id="@+id/txtPeople3" android:layout_height="fill_parent" android:layout_weight="1" style="@style/headerPeopleText" android:layout_width="0dp"></TextView>
+        <TextView android:text="P4" android:id="@+id/txtPeople4" android:layout_height="fill_parent" android:layout_weight="1" style="@style/headerPeopleText" android:layout_width="0dp"></TextView>
+        <TextView android:text="P5" android:id="@+id/txtPeople5" android:layout_height="fill_parent" android:layout_weight="1" style="@style/headerPeopleText" android:layout_width="0dp"></TextView>
+        <TextView android:text="P6" android:id="@+id/txtPeople6" android:layout_height="fill_parent" android:layout_weight="1" style="@style/headerPeopleText" android:layout_width="0dp"></TextView>
+    </LinearLayout>
+    
+     <ListView android:id="@+id/android:list" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" android:cacheColorHint="@color/bgMain"/>
+</LinearLayout>
+<!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/layout/table.xml -->

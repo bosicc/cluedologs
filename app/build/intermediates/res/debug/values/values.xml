@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="category">
+        <item>@string/title_people</item>
+        <item>@string/title_place</item>
+        <item>@string/title_weapon</item>
+    </string-array>
+    <string-array name="colors_cvr">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeopleRose</item>
+        <item>@color/bgPeopleSgtGrey</item>
+        <item>@color/bgPeoplePeach</item>
+    </string-array>
+    <string-array name="colors_default">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+    </string-array>
+    <string-array name="colors_fx">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeoplePeach</item>
+        <item>@color/bgPeopleRose</item>
+    </string-array>
+    <string-array name="colors_master">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeopleRose</item>
+        <item>@color/bgPeopleSgtGrey</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeoplePeach</item>
+    </string-array>
+    <string-array name="colors_pasport"> <!-- same as challenge -->
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePeach</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeopleSgtGrey</item>
+    </string-array>
+    <string-array name="colors_sea_card">
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeopleBrunette</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+    </string-array>
+    <string-array name="colors_super_de"> <!-- super de -->
+        <item>@color/bgPeopleMustard</item>
+        <item>@color/bgPeoplePlum</item>
+        <item>@color/bgPeopleGreen</item>
+        <item>@color/bgPeoplePeacock</item>
+        <item>@color/bgPeopleScarlet</item>
+        <item>@color/bgPeopleWhite</item>
+        <item>@color/bgPeoplePeach</item>
+        <item>@color/bgPeopleRose</item>
+        <item>@color/bgPeopleSgtGrey</item>
+        <item>@color/bgPeopleBrunette</item>
+    </string-array>
+    <string-array name="gameTypes">
+        <item>Clue: Discover the Secrets</item>
+        <item>Cluedo: Entdecken sie die Geheimnisse</item>
+        <item>Cluedo: Afslør hemmelighederne</item>
+        <item>Cluedo: Odkryj najciemniejsze tajemnice</item>
+        <item>Cluedo: Раскрой все тайны</item>
+        <item>Cluedo: Дорожная игра</item>
+        <item>Cluedo: Классическая детективная игра</item>
+        <item>Clue: Secrets in Paris</item>
+        <item>Clue: The 24 Edition</item>
+        <item>Clue: The Office</item>
+        <item>Clue: English original</item>
+        <item>Clue: English original (Русская версия)</item>
+        <item>Clue: Spanish edition</item>
+        <item>Clue: Limited Gift (50th Anniversary) Edition</item> <!-- lim_gif -->
+        <item>Clue: The Simpsons</item>
+        <item>Clue: The Simpsons 3rd edition</item>
+        <item>Clue: The Harry Potter</item>
+        <item>Clue: The Scooby Doo</item>
+        <item>Clue: Leeds Centenary</item>
+        <item>Cluedo: Super Sleuth</item> <!-- Place: = lim_gif = 50th -->
+        <item>Clue: Master Detective</item>
+        <item>Clue: Original VCR Game</item>
+        <item>Clue II: Murder in Disguise</item>
+        <item>Cluedo: Passport to Murder</item>
+        <item>Clue: Dungeons and Dragons Edition</item>
+        <item>Clue: The Seinfeld Edition</item>
+        <item>Clue: Mystery at Sea</item>
+        <item>Cluedo: Super Challenge</item>
+        <item>Clue: SFX/FX</item>
+        <item>Cluedo: Das klassische Detektiv-Spiel</item>
+        <item>Cluedo: Svensk version</item>
+        <item>Cluedo: Harry Potter (De)</item>
+        <item>Cluedo: Mystery beyond the mansion</item>
+        <item>Cluedo: Avslør hemmelighetene</item>
+        <item>Cluedo: Super (De)</item>
+        <item>Cluedo: Games To Go</item>
+        <item>Cluedo: Le Jeu Des Grands Détectives (Fr)</item>
+        <item>Cluedo: Die nächste Generation (De)</item>
+        <item>Cluedo: Sherlock Edition</item>
+        <item>Clue: Juegos de Viaje</item>
+        <item>Cluedo: Prima versione italiana</item>
+        <item>Cluedo: Seconda versione italiana</item>
+        <!-- <item>Cluedo: World of Harry Potter</item> -->
+        <item>Cluedo: el gran juego de detectives (Sp)</item>
+        <item>Cluedo: Super</item>
+        <!-- <item>Cluedo: The Harry Potter Italian edition (It)</item> -->
+    </string-array>
+    <string-array name="mark">
+        <item>@string/mark_yes</item>
+        <item>@string/mark_question</item>
+        <item>@string/mark_no</item>
+        <item>@string/mark_ask</item>
+        <item>@string/mark_remove</item>
+    </string-array>
+    <string-array name="people_24"> <!-- 24 -->
+        <item>Bill Buchanan</item>
+        <item>Chioe O\'Brain</item>
+        <item>Tony Almeida</item>
+        <item>Rudrey Raines</item>
+        <item>Nadia Yassir</item>
+        <item>Mike Doyle</item>
+    </string-array>
+    <string-array name="people_AfslorHemmelighederne"> <!-- AfslorHemmelighederne -->
+        <item>Søren Sennepsgul</item>
+        <item>Birger Blomme</item>
+        <item>Georg Grøn</item>
+        <item>Pia Påfugleblå</item>
+        <item>Pernille Purpurrød</item>
+        <item>Vivan Hvid</item>
+    </string-array>
+    <string-array name="people_Entdecken"> <!-- Entdecken -->
+        <item>Dennis Gatow</item>
+        <item>Felix Bloom</item>
+        <item>Tom Grün</item>
+        <item>Klara Porz</item>
+        <item>Gloria Roth</item>
+        <item>Diana Weiss</item>
+    </string-array>
+    <string-array name="people_OdkryjNT"> <!-- OdkryjNT - PL -->
+        <item>Gorczyński</item>
+        <item>Purpulewski</item>
+        <item>Zielnicki</item>
+        <item>Kostkiewicz</item>
+        <item>Gwiazdowicz</item>
+        <item>Siwecka</item>
+    </string-array>
+    <string-array name="people_avslor_norw"> <!-- avslor_norw -->
+        <item>Mons Multe</item>
+        <item>Lars Lavendel</item>
+        <item>Birger Bregne</item>
+        <item>Barbro Blåklokke</item>
+        <item>Ragnhild Rose</item>
+        <item>Vigdis Hvitveis</item>
+    </string-array>
+    <string-array name="people_challenge"> <!-- challenge -->
+        <item>Col. Mustard</item>
+        <item>Miss Peach</item>
+        <item>Prof. Plum</item>
+        <item>Rev. Green</item>
+        <item>Capt. Brown</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlett</item>
+        <item>Mrs.White</item>
+        <item>Mr. Slate-Grey</item>
+    </string-array>
+    <string-array name="people_classic_rus"> <!-- classic rus -->
+        <item>Мистер Мустард</item>
+        <item>Мистер Плам</item>
+        <item>Мистер Грин</item>
+        <item>Леди Пикок</item>
+        <item>Леди Скарлетт</item>
+        <item>Леди Уайт</item>
+    </string-array>
+    <string-array name="people_dd"> <!-- d&d -->
+        <item>Tordek</item>
+        <item>Nebin</item>
+        <item>Mialee</item>
+        <item>Lidda</item>
+        <item>Regdar</item>
+        <item>Ember</item>
+    </string-array>
+    <string-array name="people_discover"> <!-- discover -->
+        <item>Jack Mustard</item>
+        <item>Victor Plum</item>
+        <item>Jacob Green</item>
+        <item>Eleanor Peacock</item>
+        <item>Kasandra Scarlet</item>
+        <item>Diane White</item>
+    </string-array>
+    <string-array name="people_fx"> <!-- fx -->
+        <item>Col. Mustard</item>
+        <item>Prof. Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+        <item>Rusty</item>
+        <item>Mrs. Meadow-Brook</item>
+    </string-array>
+    <string-array name="people_gametogo"> <!-- gametogo -->
+        <item>Mustard</item>
+        <item>Plum</item>
+        <item>Green</item>
+        <item>Peacock</item>
+        <item>Scarlet</item>
+        <item>White</item>
+    </string-array>
+    <string-array name="people_greate_detective_fr"> <!-- greate_detective -->
+        <item>M. Moutarde</item>
+        <item>Professeur Violet</item>
+        <item>M. Olive</item>
+        <item>Mme Pervenche</item>
+        <item>Mlle Rose</item>
+        <item>Mme Leblanc</item>
+    </string-array>
+    <string-array name="people_it_potter"> <!-- it_potter -->
+        <item>Draco Malfoy</item>
+        <item>Crabbe and Goyle</item>
+        <item>Lucius Malfoy</item>
+        <item>Dolores Umbridge</item>
+        <item>Peter Pettigrew</item>
+        <item>Bellatrix Lestrange</item>
+    </string-array>
+    <string-array name="people_italian1"> <!-- italian1 -->
+        <item>Jack Mustard</item>
+        <item>Victor Plum</item>
+        <item>Jacob Green</item>
+        <item>Eleanor Peacock</item>
+        <item>Kassandra Scarlet</item>
+        <item>Diane White</item>
+    </string-array>
+    <string-array name="people_italian2"> <!-- italian2 -->
+        <item>Jack Mustard</item>
+        <item>Victor Plum</item>
+        <item>Jacob Green</item>
+        <item>Eleanor Peacock</item>
+        <item>Kassandra Scarlet</item>
+        <item>Diane White</item>
+    </string-array>
+    <string-array name="people_juegos_sp"> <!-- juegos_sp -->
+        <item>Entr. Mostaza</item>
+        <item>Prof. Moradillo</item>
+        <item>Sr. Verdi</item>
+        <item>Sra. Azulino</item>
+        <item>Srta. Escarlata</item>
+        <item>Sra Blanco</item>
+    </string-array>
+    <string-array name="people_leeds"> <!-- leeds -->
+        <item>Jack Higgins</item>
+        <item>Denis Healey</item>
+        <item>Jimmy Savile</item>
+        <item>Elizabeth Peacock</item>
+        <item>Jilly Cooper</item>
+        <item>Barbara Taylor-Bradford</item>
+    </string-array>
+    <string-array name="people_lim_gif"> <!-- lim_gif -->
+        <item>Colonel Mustard</item>
+        <item>Professor Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+    <string-array name="people_master"> <!-- master -->
+        <item>Col. Mustard</item>
+        <item>Prof. Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+        <item>Mme Rose</item>
+        <item>Sgt. Grey</item>
+        <item>M. Brunette</item>
+        <item>Miss Peach</item>
+    </string-array>
+    <string-array name="people_mystery_mansion"> <!-- mystery_mansion -->
+        <item>Colonel Mustard</item>
+        <item>Professor Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+    <string-array name="people_next_generation_de"> <!-- Die nächste Generation (DE) -->
+        <item>Gastow</item>
+        <item>Bloom</item>
+        <item>Grün</item>
+        <item>Porz</item>
+        <item>Gloria</item>
+        <item>Weiß</item>
+    </string-array>
+    <string-array name="people_office"> <!-- office -->
+        <item>Dwight</item>
+        <item>Stanley</item>
+        <item>Jim</item>
+        <item>Angela</item>
+        <item>Pam</item>
+        <item>Andy</item>
+    </string-array>
+    <string-array name="people_orig_vcr_murder"> <!-- orig_vcr + murder in del -->
+        <item>Col. Mustard</item>
+        <item>Miss Scarlet</item>
+        <item>Prof. Plum</item>
+        <item>Mrs.Peacock</item>
+        <item>Mr. Green</item>
+        <item>Mrs.White</item>
+        <item>M. Brunette</item>
+        <item>Madam Rose</item>
+        <item>Sgt. Grey</item>
+        <item>Miss Peach</item>
+    </string-array>
+    <string-array name="people_original"> <!-- original -->
+        <item>Col.Mustard</item>
+        <item>Prof.Plum</item>
+        <item>Mr.Green</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+    <string-array name="people_originalSpanish"> <!-- Spanish version -->
+        <item>Coronel Mustard</item>
+        <item>Profesor Plum </item>
+        <item>Reverendo Green</item>
+        <item>Señora Celeste</item>
+        <item>Señorita Amapola </item>
+        <item>Señora Blanco</item>
+    </string-array>
+    <string-array name="people_original_de"> <!-- original_de - Das klassische Detektiv-Spiel -->
+        <item>Oberst von Gatow</item>
+        <item>Professor Bloom</item>
+        <item>Reverend Grün</item>
+        <item>Baronin von Porz</item>
+        <item>Fräulein Gloria</item>
+        <item>Frau Weiß</item>
+    </string-array>
+    <string-array name="people_original_rus"> <!-- original rus -->
+        <item>Полк.Мустард</item>
+        <item>Проф.Плам</item>
+        <item>О.Грин</item>
+        <item>Миссис Пикук</item>
+        <item>Мисс Скарлетт</item>
+        <item>Миссис Уайт</item>
+    </string-array>
+    <string-array name="people_paris"> <!-- secret in Paris -->
+        <item>Zach Mustard</item>
+        <item>Justin Plum</item>
+        <item>Ryan Green</item>
+        <item>Ashley Peacock</item>
+        <item>Samantha Scarlet</item>
+        <item>Emma White</item>
+    </string-array>
+    <string-array name="people_passport"> <!-- passport -->
+        <item>Col. Mustard</item>
+        <item>Miss Peach</item>
+        <item>Prof. Plum</item>
+        <item>Rev. Green</item>
+        <item>Mr. Brown</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlett</item>
+        <item>Mrs.White</item>
+        <item>Earl Grey</item>
+    </string-array>
+    <string-array name="people_potter"> <!-- potter -->
+        <item>Draco Malfoy</item>
+        <item>Crabbe and Goyle</item>
+        <item>Lucius Malfoy</item>
+        <item>Dolores Umbridge</item>
+        <item>Peter Pettigrew</item>
+        <item>Bellatrix Lestrange</item>
+    </string-array>
+    <string-array name="people_potter_de"> <!-- potter de -->
+        <item>Fenrir Greyback</item>
+        <item>Lucius Malfoy</item>
+        <item>Peter Pettigrew</item>
+        <item>Draco Malfoy</item>
+        <item>Greifer</item>
+        <item>Bellatrix Lestrange</item>
+    </string-array>
+    <string-array name="people_ru"> <!-- ru version -->
+        <item>Горчичников</item>
+        <item>Черниченко</item>
+        <item>Зеленович</item>
+        <item>Голубева</item>
+        <item>Краснова</item>
+        <item>Белых</item>
+    </string-array>
+    <string-array name="people_scooby"> <!-- scooby -->
+        <item>Scooby-Doo</item>
+        <item>Shaggy</item>
+        <item>Daphne</item>
+        <item>Velma</item>
+        <item>Fred</item>
+        <item>Mrs.White</item>
+    </string-array>
+    <string-array name="people_sea_card"> <!-- sea_card -->
+        <item>Colonel Mustard</item>
+        <item>Professor Plum</item>
+        <item>Mr. Green</item>
+        <item>Mr. Boddy</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss Scarlet</item>
+        <item>Mrs.White</item>
+    </string-array>
+    <string-array name="people_seinfeld"> <!-- seinfeld -->
+        <item>Jerry</item>
+        <item>Elaine</item>
+        <item>George</item>
+        <item>Kramer</item>
+        <item>Peterman</item>
+        <item>Puddy</item>
+    </string-array>
+    <string-array name="people_sherlock_en"> <!-- Sherlock Edition -->
+        <item>Inspector Lestrade</item>
+        <item>Mrs Hudson</item>
+        <item>Irene Adler</item>
+        <item>John Watson</item>
+        <item>Sherlock Holmes </item>
+        <item>Mycroft Holmes</item>
+    </string-array>
+    <string-array name="people_simpsons"> <!-- simpsons -->
+        <item>Krusty the Clown</item>
+        <item>Bart Simpson</item>
+        <item>Homer Simpson</item>
+        <item>Marge Simpson</item>
+        <item>Lisa Simpson</item>
+        <item>Waylon Smithers</item>
+    </string-array>
+    <string-array name="people_simpsons_3rd"> <!-- simpsons_3rd -->
+        <item>Bart Simpson</item>
+        <item>Homer Simpson</item>
+        <item>Fat Tony</item>
+        <item>Lisa Simpson</item>
+        <item>Edna Krabappel</item>
+        <item>Marge Simpson</item>
+    </string-array>
+    <string-array name="people_sp_elgran"> <!-- sp_elgran -->
+        <item>Rubio</item>
+        <item>Mora</item>
+        <item>Prado</item>
+        <item>Celestek</item>
+        <item>Amapola</item>
+        <item>Blanco</item>
+    </string-array>
+    <string-array name="people_super"> <!-- super -->
+        <item>Colonel Mustard</item>
+        <item>Professor Plum</item>
+        <item>Reverend Green</item>
+        <item>Mrs.Peacock</item>
+        <item>Miss.Scarlet</item>
+        <item>Mrs.White</item>
+        <item>Miss Peach</item>
+        <item>Mme Mystique</item>
+        <item>Inspector Grey</item>
+        <item>Mr. De\'ath</item>
+    </string-array>
+    <string-array name="people_super_de"> <!-- super_de -->
+        <item>Oberst von Gatow</item>
+        <item>Professor Bloom </item>
+        <item>Herr Grün</item>
+        <item>Baronin von Porz</item>
+        <item>Fraulein Gloria</item>
+        <item>Frau Weiß </item>
+        <item>Madame Mystique</item>
+        <item>Lady Sahra</item>
+        <item>Inspektor Klein</item>
+        <item>Herr Braun</item>
+    </string-array>
+    <string-array name="people_swedish"> <!-- Swedish names -->
+        <item>Jack Senap</item>
+        <item>Viktor Plommon</item>
+        <item>Greger Grön</item>
+        <item>Patricia Påfågel</item>
+        <item>Kassandra Schar- lakan</item>
+        <item>Vivi Vit</item>
+    </string-array>
+    <string-array name="place_24"> <!-- 24 -->
+        <item>Panic Room</item>
+        <item>Holding Cell</item>
+        <item>Situation Room</item>
+        <item>Medical Clinic</item>
+        <item>Jack\'s Car</item>
+        <item>The Builipen</item>
+        <item>Field Ops Office</item>
+        <item>Tech Center</item>
+        <item>Director\'s Office</item>
+    </string-array>
+    <string-array name="place_AfslorHemmelighederne"> <!-- AfslorHemmelighederne -->
+        <item>Forhal</item>
+        <item>Spisestue</item>
+        <item>Køkken</item>
+        <item>Gårdhave</item>
+        <item>Observatorium</item>
+        <item>Biograf</item>
+        <item>Opholdsstue</item>
+        <item>Spa</item>
+        <item>Gæstehus</item>
+    </string-array>
+    <string-array name="place_Entdecken"> <!-- Entdecken -->
+        <item>Halle</item>
+        <item>Speisezimmer</item>
+        <item>Küche</item>
+        <item>Terrasse</item>
+        <item>Observatorium</item>
+        <item>Heimkino</item>
+        <item>Wohnzimmer</item>
+        <item>Wellnessraum</item>
+        <item>Gästehaus</item>
+    </string-array>
+    <string-array name="place_OdkryjNT"> <!-- place_OdkryjNT - PL -->
+        <item>Hol</item>
+        <item>Jadalnia</item>
+        <item>Kuchnia</item>
+        <item>Patio</item>
+        <item>Gabinet</item>
+        <item>Kino</item>
+        <item>Salon</item>
+        <item>Spa</item>
+        <item>Sypialnia</item>
+    </string-array>
+    <string-array name="place_avslor_norw"> <!-- avslor_norw -->
+        <item>Hallen</item>
+        <item>Spisestuen</item>
+        <item>Kjøkkenet</item>
+        <item>Patioen</item>
+        <item>Observatoriet</item>
+        <item>Kinoen</item>
+        <item>Dagligstuen</item>
+        <item>Spaet</item>
+        <item>Gjestehuset</item>
+    </string-array>
+    <string-array name="place_challenge"> <!-- challenge -->
+        <item>Hall</item>
+        <item>Lounge</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>BallRoom</item>
+        <item>Conservatory</item>
+        <item>Billiard Room</item>
+        <item>Library</item>
+        <item>Study</item>
+    </string-array>
+    <string-array name="place_classic_rus"> <!-- classic rus -->
+        <item>Внутренний двор</item>
+        <item>Бильярдная</item>
+        <item>Кабинет</item>
+        <item>Столовая</item>
+        <item>Гараж</item>
+        <item>Гостиная</item>
+        <item>Кухня</item>
+        <item>Спальня</item>
+        <item>Ванная комната</item>
+    </string-array>
+    <string-array name="place_dd"> <!-- d&d -->
+        <item>Chamber of Tricks and Traps</item>
+        <item>Dungeon</item>
+        <item>Dragon\'s Lair</item>
+        <item>Lost Crypt</item>
+        <item>Magical Armory</item>
+        <item>Wizard\'s Tower</item>
+        <item>Grand Hall</item>
+        <item>Treasure Chamber</item>
+        <item>Library of Arcane Tomes</item>
+    </string-array>
+    <string-array name="place_discover"> <!-- discover -->
+        <item>Hall</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>Patio</item>
+        <item>Observatory</item>
+        <item>Theater</item>
+        <item>Living Room</item>
+        <item>Spa</item>
+        <item>Guest House</item>
+    </string-array>
+    <string-array name="place_fx"> <!-- fx -->
+        <item>Tudor Mansion</item>
+        <item>Boat House</item>
+        <item>Gazebo</item>
+        <item>Swimming Pool</item>
+        <item>Stable</item>
+        <item>Gate House</item>
+        <item>Garden</item>
+        <item>Tennis Courts</item>
+        <item>Garage</item>
+    </string-array>
+    <string-array name="place_gametogo"> <!-- gametogo -->
+        <item>Hall</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>Patio</item>
+        <item>Observatory</item>
+        <item>Theatre</item>
+        <item>Living Room</item>
+        <item>Spa</item>
+        <item>Guest House</item>
+    </string-array>
+    <string-array name="place_greate_detective_fr"> <!-- greate_detective (FR) -->
+        <item>Hall</item>
+        <item>Salle à manger</item>
+        <item>Cuisine</item>
+        <item>Patio</item>
+        <item>Observatoire</item>
+        <item>Salle de projection</item>
+        <item>Salon</item>
+        <item>Spa</item>
+        <item>Chambre d\'amis</item>
+    </string-array>
+    <string-array name="place_italian1"> <!-- italian1 -->
+        <item>Cucina</item>
+        <item>Sala da pranzo</item>
+        <item>Veranda</item>
+        <item>Sala da ballo</item>
+        <item>Serra</item>
+        <item>Sala da biliardo</item>
+        <item>Biblioteca</item>
+        <item>Studio</item>
+        <item>Anticamera</item>
+    </string-array>
+    <string-array name="place_italian2"> <!-- italian2 -->
+        <item>Cucina</item>
+        <item>Sala da pranzo</item>
+        <item>Dépandance</item>
+        <item>Terrazza</item>
+        <item>Spa</item>
+        <item>Sala home-theatre</item>
+        <item>Soggiorno</item>
+        <item>Osservatorio</item>
+        <item>Ingresso</item>
+    </string-array>
+    <string-array name="place_juegos_sp"> <!-- juegos_sp -->
+        <item>Vestibulo</item>
+        <item>Comedor</item>
+        <item>Cocina</item>
+        <item>Patio</item>
+        <item>Observatorio</item>
+        <item>Teatro</item>
+        <item>Sala</item>
+        <item>Spa</item>
+        <item>Hab. Huespedes</item>
+    </string-array>
+    <string-array name="place_leeds"> <!-- leeds -->
+        <item>Yorkshire Bank PLC</item>
+        <item>Leeds Permanent Building Society</item>
+        <item>John Weddington PLC</item>
+        <item>Yorkshire Wter</item>
+        <item>Yorkshire Post and Yorkshire Evening Post</item>
+        <item>Leeds and Holbeck Building Society</item>
+        <item>Yorkshire Television Limited</item>
+        <item>The Merrion Centere</item>
+        <item>Joshua Tetley and Son Limited</item>
+    </string-array>
+    <string-array name="place_lim_gif"> <!-- lim_gif -->
+        <item>Hall</item>
+        <item>Lounge</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>Ball Room</item>
+        <item>Conservatory</item>
+        <item>Billiard Room</item>
+        <item>Library</item>
+        <item>Study</item>
+    </string-array>
+    <string-array name="place_master"> <!-- master -->
+        <item>Courtyard</item>
+        <item>Gazebo</item>
+        <item>Drawing Room</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>Carriage House</item>
+        <item>Trophy Room</item>
+        <item>Conservatory</item>
+        <item>Studio</item>
+        <item>Billiard Room</item>
+        <item>Library</item>
+        <item>Fountain</item>
+    </string-array>
+    <string-array name="place_murder"> <!-- murder -->
+        <item>Hall</item>
+        <item>Dining Room</item>
+        <item>Billiard Rom</item>
+        <item>Lounge</item>
+        <item>Hotel Room</item>
+    </string-array>
+    <string-array name="place_mystery_mansion"> <!-- mystery_mansion -->
+        <item>Coney Island</item>
+        <item>Niagara Falls</item>
+        <item>Lincoln Memorial</item>
+        <item>Miami Beach</item>
+        <item>Mt Rushmore</item>
+        <item>Old Faithful</item>
+        <item>Golden Gate Bridge</item>
+        <item>The Alamo</item>
+        <item>Hoover Dam</item>
+    </string-array>
+    <string-array name="place_next_generation_de"> <!-- next_generation_de -->
+        <item>Hof</item>
+        <item>Spieleraum</item>
+        <item>Arbeitszimmer</item>
+        <item>Speisezimmer</item>
+        <item>Garage</item>
+        <item>Wohnzimmer</item>
+        <item>Küche</item>
+        <item>Schlafzimmer</item>
+        <item>Badezimmer</item>
+    </string-array>
+    <string-array name="place_office"> <!-- office -->
+        <item>Break Room</item>
+        <item>Kitchen</item>
+        <item>Accounting</item>
+        <item>Michael\'s Office</item>
+        <item>Annex</item>
+        <item>Reception</item>
+        <item>Parking lot</item>
+        <item>Conference Room</item>
+        <item>Warehouse</item>
+    </string-array>
+    <string-array name="place_orig_vcr"> <!-- orig_vcr -->
+        <item>Hall</item>
+        <item>Dining Room</item>
+        <item>Conservatory</item>
+        <item>Kitchen</item>
+        <item>Library</item>
+    </string-array>
+    <string-array name="place_original"> <!-- original -->
+        <item>Hall</item>
+        <item>Lounge</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>Ball Room</item>
+        <item>Conservatory</item>
+        <item>Billiard Room</item>
+        <item>Library</item>
+        <item>Study</item>
+    </string-array>
+    <string-array name="place_originalSpanish"> <!-- Spanish original -->
+        <item>Vestíbulo</item>
+        <item>Salón</item>
+        <item>Comedor</item>
+        <item>Cocina</item>
+        <item>Sala de baile</item>
+        <item>Invernadero</item>
+        <item>Sala de billar</item>
+        <item>Biblioteca</item>
+        <item>Estudio</item>
+    </string-array>
+    <string-array name="place_original_de"> <!-- original_de - Das klassische Detektiv-Spiel -->
+        <item>Halle</item>
+        <item>Salon</item>
+        <item>Speisezimmer</item>
+        <item>Küche</item>
+        <item>Wintergarten</item>
+        <item>Musikzimmer</item>
+        <item>Billardzimmer</item>
+        <item>Bibliothek</item>
+        <item>Arbeitszimmer</item>
+    </string-array>
+    <string-array name="place_original_rus"> <!-- original rus -->
+        <item>Холл</item>
+        <item>Гостиная</item>
+        <item>Столовая</item>
+        <item>Кухня</item>
+        <item>Зал для балов</item>
+        <item>Зимний сад</item>
+        <item>Бильярдная</item>
+        <item>Библиотека</item>
+        <item>Кабинет</item>
+    </string-array>
+    <string-array name="place_paris"> <!-- Paris -->
+        <item>Louvre</item>
+        <item>Bastille</item>
+        <item>Arc de Triomphe</item>
+        <item>Place des Vosges</item>
+        <item>Notre Dame</item>
+        <item>Orsay Museum</item>
+        <item>Paris Opera</item>
+        <item>Eiffel Tower</item>
+        <item>Sacred Heart Bastilica</item>
+    </string-array>
+    <string-array name="place_passport"> <!-- passport -->
+        <item>Cocktail Lounge</item>
+        <item>Waiting Room</item>
+        <item>Barber\'s Shop</item>
+        <item>Engine Room</item>
+        <item>Left Luggage</item>
+        <item>Dinning Car</item>
+        <item>Kiosk</item>
+        <item>Ticket Office</item>
+        <item>Lost Property</item>
+    </string-array>
+    <string-array name="place_potter"> <!-- potter -->
+        <item>Great Hall</item>
+        <item>Hospital Wing</item>
+        <item>Room of Requirement</item>
+        <item>Potions Classroom</item>
+        <item>Trophy Room</item>
+        <item>Divination Classroom</item>
+        <item>Owlery</item>
+        <item>Library</item>
+        <item>Defense Against Dark Arts</item>
+    </string-array>
+    <string-array name="place_potter_de"> <!-- potter DE -->
+        <item>Herrenhaus der Malfoys</item>
+        <item>Eberkopf</item>
+        <item>Heulende Hütte</item>
+        <item>Hogwarts</item>
+        <item>Verbotener Wald</item>
+        <item>Gringotts</item>
+        <item>Weasleys Zauberhafte Zauberscherze</item>
+        <item>Zaubereiministerium</item>
+        <item>Grimmauldplatz Nr. 12</item>
+    </string-array>
+    <string-array name="place_ru"> <!-- ru -->
+        <item>Прихожая</item>
+        <item>Столовая</item>
+        <item>Кухня</item>
+        <item>Терраса</item>
+        <item>Обсерватория</item>
+        <item>Демонстрационный зал</item>
+        <item>Гостиная</item>
+        <item>Ванная комната</item>
+        <item>Дом для гостей</item>
+    </string-array>
+    <string-array name="place_ru_road"> <!-- ru road -->
+        <item>Хол</item>
+        <item>Столовая</item>
+        <item>Кухня</item>
+        <item>Терраса</item>
+        <item>Обсерватория</item>
+        <item>Кинотеатр</item>
+        <item>Гостиная</item>
+        <item>Ванная комната</item>
+        <item>Дом для гостей</item>
+    </string-array>
+    <string-array name="place_scooby"> <!-- scooby -->
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>BallRoom</item>
+        <item>Billiard Room</item>
+        <item>Library</item>
+        <item>Graveyard</item>
+        <item>Courtyard</item>
+        <item>Conservatory</item>
+        <item>Lounge</item>
+    </string-array>
+    <string-array name="place_sea_card"> <!-- sea_card -->
+        <item>Stateroom (Port)</item>
+        <item>Master Suite (Star board)</item>
+        <item>Galley (Port)</item>
+        <item>Salon (Star board)</item>
+        <item>Sun Deck (Port)</item>
+        <item>Dinning Room (Star board)</item>
+    </string-array>
+    <string-array name="place_seinfeld"> <!-- seinfeld -->
+        <item>Jerry\'s Apt.</item>
+        <item>Elaine\'s Apt.</item>
+        <item>George\'s Ofc.</item>
+        <item>Kramer\'s Apt.</item>
+        <item>Soup Kitchen</item>
+        <item>Car Dealership</item>
+        <item>Chinese Restaurant</item>
+        <item>Monk\'s Restaurant</item>
+        <item>Peterman\'s Ofc.</item>
+    </string-array>
+    <string-array name="place_sherlock_en"> <!-- Sherlock Edition -->
+        <item>Baskerville</item>
+        <item>221B Baker Street</item>
+        <item>The Tower of London</item>
+        <item>Irene\'s Flat</item>
+        <item>The Lab</item>
+        <item>Battersea Power Station</item>
+        <item>Dartmoor</item>
+        <item>Mrs Hudson\'s Kitchen</item>
+        <item>The Swimming Pool</item>
+    </string-array>
+    <string-array name="place_simpsons"> <!-- simpsons -->
+        <item>Barney\'s Bowl-A-Rama</item>
+        <item>Krustylu Studios</item>
+        <item>Nuclear Power Plant</item>
+        <item>The Simpsons House</item>
+        <item>The Flying Dutchman</item>
+        <item>Kwik-E-Mart</item>
+        <item>Burns Manor</item>
+        <item>Springfield Retirement Castle</item>
+        <item>The Android\'s Dungeon</item>
+    </string-array>
+    <string-array name="place_simpsons_3rd"> <!-- simpsons_3rd -->
+        <item>Egyptian Room</item>
+        <item>Dimosaur Room</item>
+        <item>Medieval Room</item>
+        <item>Greek Room</item>
+        <item>Early Man Room</item>
+        <item>Animal Diorama Room</item>
+        <item>Springfield History Room</item>
+        <item>Jewel Room</item>
+        <item>Great Inventions Room</item>
+    </string-array>
+    <string-array name="place_sp_elgran"> <!-- sp_elgran -->
+        <item>Garaje</item>
+        <item>Sala de juegos</item>
+        <item>Dormitorio</item>
+        <item>Baño</item>
+        <item>Estudio</item>
+        <item>Cocina</item>
+        <item>Comedor</item>
+        <item>Salón</item>
+        <item>Patio</item>
+    </string-array>
+    <string-array name="place_super"> <!-- super -->
+        <item>Garden</item>
+        <item>Gazebo</item>
+        <item>Drawing Room</item>
+        <item>Dining Room</item>
+        <item>Kitchen</item>
+        <item>Stables</item>
+        <item>Lounge</item>
+        <item>Conservatory</item>
+        <item>Billiard Room</item>
+        <item>Library</item>
+        <item>Fountain</item>
+        <item>Study</item>
+    </string-array>
+    <string-array name="place_super_de"> <!-- super_de -->
+        <item>Garten</item>
+        <item>Pavillon</item>
+        <item>Lounge</item>
+        <item>Speisezimmer</item>
+        <item>Küche</item>
+        <item>Stallungen</item>
+        <item>Salon</item>
+        <item>Wintergarten</item>
+        <item>Billiardzimmer</item>
+        <item>Bibliothek</item>
+        <item>Springbrunnen</item>
+        <item>Arbeitszimmer</item>
+    </string-array>
+    <string-array name="place_swedish"> <!-- swedish -->
+        <item>Hallen</item>
+        <item>Matsalen</item>
+        <item>Köket</item>
+        <item>Uteplatsen</item>
+        <item>Observa- toriet</item>
+        <item>Bio- salongen</item>
+        <item>Vardags- rummet</item>
+        <item>Spaav- delningen</item>
+        <item>Gästhuset</item>
+    </string-array>
+    <string-array name="sortlist">
+        <item>@string/logsmenu_sort_all</item>
+        <item>@string/logsmenu_sort_podtverdil</item>
+        <item>@string/logsmenu_sort_all</item>
+    </string-array>
+    <string-array name="weapon_24"> <!-- 24 -->
+        <item>Bus</item>
+        <item>Computer</item>
+        <item>Money</item>
+        <item>Power Plant</item>
+        <item>CTU Badge</item>
+        <item>ID Card</item>
+        <item>Sattelite</item>
+        <item>Airport Tower</item>
+        <item>Wall Street Sign</item>
+    </string-array>
+    <string-array name="weapon_AfslorHemmelighederne"> <!-- AfslorHemmelighederne -->
+        <item>Kniv</item>
+        <item>Lysestage</item>
+        <item>Pistol</item>
+        <item>Gift</item>
+        <item>Trofæ</item>
+        <item>Reb</item>
+        <item>Bat</item>
+        <item>Økse</item>
+        <item>Håndvægt</item>
+    </string-array>
+    <string-array name="weapon_Entdecken"> <!-- Entdecken -->
+        <item>Messer</item>
+        <item>Leuchter</item>
+        <item>Pistol</item>
+        <item>Gift</item>
+        <item>Trophäe</item>
+        <item>Seil</item>
+        <item>Keule</item>
+        <item>Axt</item>
+        <item>Hantel</item>
+    </string-array>
+    <string-array name="weapon_OdkryjNT"> <!-- weapon_OdkryjNT - PL -->
+        <item>Nóż</item>
+        <item>Świecznik</item>
+        <item>Rewolwer</item>
+        <item>Trucizna</item>
+        <item>Puchar</item>
+        <item>Lina</item>
+        <item>Kij baseballowy</item>
+        <item>Młotek</item>
+        <item>Ciężarek</item>
+    </string-array>
+    <string-array name="weapon_avslor_norw"> <!-- avslor_norw -->
+        <item>Kniv</item>
+        <item>Lysestake</item>
+        <item>Pistol</item>
+        <item>Gift</item>
+        <item>Trofé</item>
+        <item>Tau</item>
+        <item>Balltre</item>
+        <item>Øks</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="weapon_challenge"> <!-- challenge -->
+        <item>Dagger</item>
+        <item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+        <item>Lead Piping</item>
+        <item>Spanner</item>
+        <item>Blunderbuss</item>
+        <item>Axe</item>
+        <item>Poison</item>
+    </string-array>
+    <string-array name="weapon_classic_rus"> <!-- classic rus -->
+        <item>Веревка</item>
+        <item>Кинжал</item>
+        <item>Гаечный ключь</item>
+        <item>Револьвер</item>
+        <item>Подсвечник</item>
+        <item>Свинцовая труба</item>
+    </string-array>
+    <string-array name="weapon_dd"> <!-- d&d -->
+        <item>Vorpal Sword</item>
+        <item>Mace of Disruption</item>
+        <item>Ring of Magic Missiles</item>
+        <item>Staff of Power</item>
+        <item>Flaming Battle Axe</item>
+        <item>Dagger of Venom</item>
+    </string-array>
+    <string-array name="weapon_discover"> <!-- discover -->
+        <item>Knife</item>
+        <item>Candlestick</item>
+        <item>Pistol</item>
+        <item>Poison</item>
+        <item>Trophy</item>
+        <item>Rope</item>
+        <item>Bat</item>
+        <item>Axe</item>
+        <item>Dumbbell</item>
+    </string-array>
+    <string-array name="weapon_fx"> <!-- fx -->
+        <item>Horseshoe</item>
+        <item>Hammer</item>
+        <item>Garden Shears</item>
+        <item>Water Bucket</item>
+        <item>Tennis Racquet</item>
+        <item>Lawn Gnome</item>
+    </string-array>
+    <string-array name="weapon_gametogo"> <!-- gametogo -->
+        <item>Knife</item>
+        <item>Candlestick</item>
+        <item>Pistol</item>
+        <item>Poison</item>
+        <item>Rope</item>
+        <item>Dumbbell</item>
+    </string-array>
+    <string-array name="weapon_greate_detective_fr"> <!-- greate_detective -->
+        <item>Poignard</item>
+        <item>Chandelier</item>
+        <item>Revolver</item>
+        <item>Poison</item>
+        <item>Trophée</item>
+        <item>Corde</item>
+        <item>Batte</item>
+        <item>Hache</item>
+        <item>Haltère</item>
+    </string-array>
+    <string-array name="weapon_italian1"> <!-- italian1 -->
+        <item>Corda</item>
+        <item>Tubo di piombo</item>
+        <item>Pugnale</item>
+        <item>Chiave inglese</item>
+        <item>Candeliere</item>
+        <item>Rivoltella</item>
+    </string-array>
+    <string-array name="weapon_italian2"> <!-- italian2 -->
+        <item>Coltello</item>
+        <item>Pistola</item>
+        <item>Veleno</item>
+        <item>Trofeo</item>
+        <item>Candeliere</item>
+        <item>Corda</item>
+        <item>Mazza da baseball</item>
+        <item>Ascia</item>
+        <item>Manubrio</item>
+    </string-array>
+    <string-array name="weapon_juegos_sp"> <!-- juegos_sp -->
+        <item>Cuchillo</item>
+        <item>Candelabro</item>
+        <item>Pistola</item>
+        <item>Veneno</item>
+        <item>Cuerda</item>
+        <item>Pesas</item>
+    </string-array>
+    <string-array name="weapon_leeds"> <!-- leeds (Probable Implements) | = sleuth -->
+        <item>Dagger</item>
+        <item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+        <item>Lead Piping</item>
+        <item>Spanner</item>
+    </string-array>
+    <string-array name="weapon_lim_gif"> <!-- lim_gif -->
+        <item>Knife</item>
+        <item>Candlestick</item>
+        <item>Pistol</item>
+        <item>Rope</item>
+        <item>Lead Pipe</item>
+        <item>Wrench</item>
+        <item>Chalice</item>
+    </string-array>
+    <string-array name="weapon_master"> <!-- master -->
+        <item>Knife</item>
+        <item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+        <item>Lead Pipe</item>
+        <item>Wrench</item>
+        <item>Poison</item>
+        <item>Horseshoe</item>
+    </string-array>
+    <string-array name="weapon_mystery_mansion"> <!-- mystery_mansion -->
+        <item>Airliner</item>
+        <item>Automobile</item>
+        <item>Train</item>
+        <item>Hot Air Balloon</item>
+        <item>Seaplane</item>
+        <item>Limousine</item>
+    </string-array>
+    <string-array name="weapon_next_generation_de"> <!-- next_generation_de -->
+        <item>Seil</item>
+        <item>Dolch</item>
+        <item>Rohrzange</item>
+        <item>Pistole</item>
+        <item>Leuchter</item>
+        <item>Heizungsrohr</item>
+    </string-array>
+    <string-array name="weapon_office"> <!-- the oficce -->
+        <item>Dundee Trophy</item>
+        <item>Poisoned Pretzel</item>
+        <item>Bacon Grill</item>
+        <item>Rabit Bat</item>
+        <item>Nunchucks</item>
+        <item>Mr.A.Knife</item>
+        <item>Ream of Paper</item>
+        <item>Bicycle Chaine</item>
+        <item>Wolrld\s Best Boss Coffe Mug</item>
+    </string-array>
+    <string-array name="weapon_orig_vcr_murder"> <!-- orig_vcr + murder -->
+        <item>Knife</item>
+        <item>Candlestick</item>
+        <item>Gun</item>
+        <item>Poison</item>
+        <item>Rope</item>
+    </string-array>
+    <string-array name="weapon_original"> <!-- original -->
+        <item>Knife</item>
+        <item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+        <item>Lead Pipe</item>
+        <item>Wrench</item>
+    </string-array>
+    <string-array name="weapon_originalSpanish"> <!-- Spanish original -->
+        <item>Puñal</item>
+        <item>Candelabro</item>
+        <item>Pistola</item>
+        <item>Cuerda</item>
+        <item>Tubo de plomo</item>
+        <item>Llave inglesa</item>
+    </string-array>
+    <string-array name="weapon_original_de"> <!-- original_de - Das klassische Detektiv-Spiel -->
+        <item>Dolch</item>
+        <item>Leuchter</item>
+        <item>Pistole</item>
+        <item>Seil</item>
+        <item>Heizungsrohr</item>
+        <item>Rohrzange</item>
+    </string-array>
+    <string-array name="weapon_original_rus"> <!-- original rus -->
+        <item>Кинжал</item>
+        <item>Подсвечник</item>
+        <item>Револьвер</item>
+        <item>Верёвка</item>
+        <item>Свинцовая труба</item>
+        <item>Гаечный ключ</item>
+    </string-array>
+    <string-array name="weapon_paris"> <!-- in Paris -->
+        <item>Knife</item>
+        <item>Candlestick</item>
+        <item>Pistol</item>
+        <item>Poison</item>
+        <item>Trophy</item>
+        <item>Rope</item>
+        <item>Bat</item>
+        <item>Ax</item>
+        <item>Dumbbell</item>
+    </string-array>
+    <string-array name="weapon_passport"> <!-- passport = challenge -->
+        <item>Dagger</item>
+        <item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+        <item>Lead Piping</item>
+        <item>Spanner</item>
+        <item>Blunderbuss</item>
+        <item>Axe</item>
+        <item>Poison</item>
+    </string-array>
+    <string-array name="weapon_potter"> <!-- potter (Item) -->
+        <item>Sleeping Draught</item>
+        <item>Vanishing Cabinet</item>
+        <item>Portkey</item>
+        <item>Impedimenta</item>
+        <item>Petrificus Totalus</item>
+        <item>Mandrake</item>
+    </string-array>
+    <string-array name="weapon_potter_de"> <!-- potter DE -->
+        <item>Verhexter Besen</item>
+        <item>Verfluchte Halskette</item>
+        <item>Liebestrank</item>
+        <item>Vergifteter Met</item>
+        <item>Incendio</item>
+        <item>Stupor</item>
+    </string-array>
+    <string-array name="weapon_ru"> <!-- russian -->
+        <item>Нож</item>
+        <item>Канделябр</item>
+        <item>Пистолет</item>
+        <item>Яд</item>
+        <item>Трофей</item>
+        <item>Веревка</item>
+        <item>Бита</item>
+        <item>Топор</item>
+        <item>Гантеля</item>
+    </string-array>
+    <string-array name="weapon_ru_road"> <!-- russian road -->
+        <item>Нож</item>
+        <item>Канделябр</item>
+        <item>Пистолет</item>
+        <item>Яд</item>
+        <item>Веревка</item>
+        <item>Гантеля</item>
+    </string-array>
+    <string-array name="weapon_scooby"> <!-- scooby (Evidence) -->
+        <item>Funland Robot\'s Ray Gun</item>
+        <item>Carlotta\'s Spell Book</item>
+        <item>FranKenstein\'s Chain</item>
+        <item>Witch Doctor\'s Staff</item>
+        <item>Ghost Clown\'s Bomb</item>
+        <item>Redbeard\'s Sword</item>
+    </string-array>
+    <string-array name="weapon_sea_card"> <!-- sea_card -->
+        <item>Rope</item>
+        <item>Scarf</item>
+        <item>Chain</item>
+        <item>Oar</item>
+        <item>Telescope</item>
+        <item>Gaff</item>
+    </string-array>
+    <string-array name="weapon_seinfeld"> <!-- seinfeld -->
+        <item>Cigar Store Indian</item>
+        <item>Jerry\'s Microphone</item>
+        <item>J.F.K. Golf Clubs</item>
+        <item>Beef-a-reeno</item>
+        <item>Shower Head</item>
+        <item>Label Maker</item>
+        <item>Statue</item>
+        <item>Big Salad</item>
+        <item>Festivus Pole</item>
+    </string-array>
+    <string-array name="weapon_sherlock_en"> <!-- Sherlock Edition -->
+        <item>Dagger</item>
+        <item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+        <item>Lead Piping</item>
+        <item>Wrench</item>
+    </string-array>
+    <string-array name="weapon_simpsons"> <!-- simpsons -->
+        <item>Poisoned Donut</item>
+        <item>Extend-O-Glove</item>
+        <item>Necklace</item>
+        <item>Slingshot</item>
+        <item>Plutonium Rod</item>
+        <item>Saxophone</item>
+    </string-array>
+    <string-array name="weapon_simpsons_3rd"> <!-- simpsons_3rd -->
+        <item>Cobra</item>
+        <item>Bone</item>
+        <item>Mace</item>
+        <item>Greek Bust</item>
+        <item>Spear</item>
+        <item>Tarantula</item>
+    </string-array>
+    <string-array name="weapon_sp_elgran"> <!-- sp_elgran -->
+        <item>Candelabro</item>
+        <item>Puñal</item>
+        <item>Cuerda</item>
+        <item>Herramienta</item>
+        <item>Tubería de plomo</item>
+        <item>Pistola</item>
+    </string-array>
+    <string-array name="weapon_super"> <!-- super -->
+        <item>Dagger</item>
+        <item>Candlestick</item>
+        <item>Revolver</item>
+        <item>Rope</item>
+        <item>Lead Pipe</item>
+        <item>Spanner</item>
+        <item>Poison</item>
+        <item>Horseshoe</item>
+    </string-array>
+    <string-array name="weapon_super_de"> <!-- super_de -->
+        <item>Dolch</item>
+        <item>Leuchter</item>
+        <item>Pistole</item>
+        <item>Seil</item>
+        <item>Heizungsrohr</item>
+        <item>Rohrzange</item>
+        <item>Giftflasche</item>
+        <item>Hufeisen</item>
+    </string-array>
+    <string-array name="weapon_swedish"> <!-- swedish -->
+        <item>Kniv</item>
+        <item>Ljusstake</item>
+        <item>Pistol</item>
+        <item>Gift</item>
+        <item>Trofè</item>
+        <item>Rep</item>
+        <item>Slagträ</item>
+        <item>Yxa</item>
+        <item>Hantel</item>
+    </string-array>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="reference|color" name="background"/>
+    <attr format="reference|color" name="backgroundSplit"/>
+    <attr format="reference" name="divider"/>
+    <attr format="dimension" name="height"/>
+    <attr format="reference" name="subtitleTextStyle"/>
+    <attr format="reference" name="titleTextStyle"/>
+    <bool name="abs__action_bar_embed_tabs">false</bool>
+    <bool name="abs__action_bar_expanded_action_views_exclusive">true</bool>
+    <bool name="abs__config_actionMenuItemAllCaps">true</bool>
+    <bool name="abs__config_allowActionMenuItemTextWithIcon">false</bool>
+    <bool name="abs__config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="abs__split_action_bar_is_narrow">true</bool>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
+    <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="bgBlack">#FF000000</color>
+    <color name="bgMain">#FFefefef</color>
+    <color name="bgPeople10_master">#FFc57849</color>
+    <color name="bgPeople1list">#33ffff00</color>
+    <color name="bgPeople2list">#33674ea7</color>
+    <color name="bgPeople3list">#446aa84f</color>
+    <color name="bgPeople4list">#333d85c6</color>
+    <color name="bgPeople5list">#33ff0000</color>
+    <color name="bgPeople6list">#33ffffff</color>
+    <color name="bgPeople7_master">#FFc79b9c</color>
+    <color name="bgPeople8_master">#FF303a46</color>
+    <color name="bgPeople9_master">#FF482014</color>
+    <color name="bgPeopleBrunette">#FF482014</color>
+    <color name="bgPeopleGreen">#FF6aa84f</color>
+    <color name="bgPeopleMustard">#FFffff00</color>
+    <color name="bgPeoplePeach">#FFc57849</color>
+    <color name="bgPeoplePeacock">#FF3d85c6</color>
+    <color name="bgPeoplePlum">#FF674ea7</color>
+    <color name="bgPeopleRose">#FFc79b9c</color>
+    <color name="bgPeopleScarlet">#FFff0000</color>
+    <color name="bgPeopleSgtGrey">#FF303a46</color>
+    <color name="bgPeopleWhite">#FFffffff</color>
+    <color name="bgPeoplelistSelect">#FFff0000</color>
+    <color name="bgSetupHeader">#33333333</color>
+    <color name="bgTransperent">#00000000</color>
+    <color name="textTitle">#FF000000</color>
+    <color name="textTitleAbout">#FF3366CC</color>
+    <color name="textTitleLogs">#FFffffff</color>
+    <declare-styleable name="SherlockActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr format="string" name="title"/><attr format="string" name="subtitle"/><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr name="divider"/><attr name="background"/><attr format="reference|color" name="backgroundStacked"/><attr name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr format="dimension" name="itemPadding"/></declare-styleable>
+    <declare-styleable name="SherlockActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
+    <declare-styleable name="SherlockActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/></declare-styleable>
+    <declare-styleable name="SherlockActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="SherlockMenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
+    <declare-styleable name="SherlockMenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="android:showAsAction"/><attr name="android:actionLayout"/><attr name="android:actionViewClass"/><attr name="android:actionProviderClass"/></declare-styleable>
+    <declare-styleable name="SherlockMenuView"><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="horizontalDivider"/><attr format="reference" name="verticalDivider"/><attr format="color|reference" name="headerBackground"/><attr format="color|reference" name="itemBackground"/><attr format="reference" name="windowAnimationStyle"/><attr format="float" name="itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
+    <declare-styleable name="SherlockSearchView"><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/></declare-styleable>
+    <declare-styleable name="SherlockSpinner"><attr name="android:prompt"/><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr name="android:popupPromptView"/><attr name="android:gravity"/></declare-styleable>
+    <declare-styleable name="SherlockTheme"><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="windowContentOverlay"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="textAppearanceSmall"/><attr format="color" name="textColorPrimary"/><attr format="color" name="textColorPrimaryDisableOnly"/><attr format="color" name="textColorPrimaryInverse"/><attr format="reference" name="spinnerItemStyle"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="searchAutoCompleteTextView"/><attr format="reference" name="searchDropdownBackground"/><attr format="reference" name="searchViewCloseIcon"/><attr format="reference" name="searchViewGoIcon"/><attr format="reference" name="searchViewSearchIcon"/><attr format="reference" name="searchViewVoiceIcon"/><attr format="reference" name="searchViewEditQuery"/><attr format="reference" name="searchViewEditQueryBackground"/><attr format="reference" name="searchViewTextField"/><attr format="reference" name="searchViewTextFieldRight"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="dimension" name="searchResultListItemHeight"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="dimension" name="windowMinWidthMajor"/><attr format="dimension" name="windowMinWidthMinor"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="actionDropDownStyle"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="actionSpinnerItemStyle"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="boolean" name="windowSplitActionBar"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="activatedBackgroundIndicator"/><attr format="reference" name="dropDownHintAppearance"/></declare-styleable>
+    <declare-styleable name="SherlockView"><attr name="android:focusable"/></declare-styleable>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="abs__action_bar_default_height">48dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">8dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">5dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14dp</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3dp</dimen>
+    <dimen name="abs__action_bar_title_text_size">18dp</dimen>
+    <dimen name="abs__action_button_min_width">56dip</dimen>
+    <dimen name="abs__config_prefDialogWidth">320dp</dimen>
+    <dimen name="abs__dropdownitem_icon_width">32dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_left">8dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_right">8dip</dimen>
+    <dimen name="abs__search_view_preferred_width">320dip</dimen>
+    <dimen name="abs__search_view_text_min_width">160dip</dimen>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="abs__action_menu_divider" type="id"/>
+    <item name="abs__action_menu_presenter" type="id"/>
+    <item name="abs__home" type="id"/>
+    <item name="abs__progress_circular" type="id"/>
+    <item name="abs__progress_horizontal" type="id"/>
+    <item name="abs__up" type="id"/>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="table_dialog_mark" type="id"/>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="abs__max_action_buttons">2</integer>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="about_dev_email">Send Email</string>
+    <string name="about_dev_website">Visit Website</string>
+    <string name="about_faq_text">FAQ: \n 1. Q:It\'s not in my language what to do? -> A: First - check localization settings in your phone, Second chose right game type from thee list while start game \n 2. Q: It\'s crash whats wrong -> A: We cannot gues what hepened and if you send error report or more detail by Email we try to fix it for you. </string>
+    <string name="about_howto_text">HOW TO START: \n 1. If game interface not in your language go to phone settings and change localization. \n 2. Select your game type from the list. There are a lot of games in different languages. If you dont see your game type in the list send us an email and we add it. \n 3. Enter custom name for players. \n 4. Chose cards what you have on your hands. \n 5. Start Play and have fun!</string>
+    <string name="about_main_text">This game is designed to facilitate record keeping in the game Cluedo. It allows you to mark the card and checked to make notes on maps where you are not sure. Also, the program allows logging of the game, namely, record all the moves of players.</string>
+    <string name="about_title_ver">Cluedo logs v.1.3.1.</string>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <string name="abs__searchview_description_clear">Clear query</string>
+    <string name="abs__searchview_description_query">Search query</string>
+    <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_submit">Submit query</string>
+    <string name="abs__searchview_description_voice">Voice search</string>
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <string name="abs__shareactionprovider_share_with_application">Share with <ns1:g example="Bluetooth" id="application_name">%s</ns1:g></string>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="app_name">Cluedo logs</string>
+    <string name="logs_alert_title">Attention!</string>
+    <string name="logs_alert_title_sort_podtverdil">Show all confirms:</string>
+    <string name="logs_alert_title_sort_xodil">Show all moves:</string>
+    <string name="logs_btnpodtverdil">Confirm</string>
+    <string name="logs_btnxodit">Move</string>
+    <string name="logs_notconfirm">NOT Confirm!</string>
+    <string name="logs_sort_nothing_to_show">You have no items to sort!</string>
+    <string name="logs_toast_podtverdil">Who confirm: </string>
+    <string name="logs_toast_xoda">All moves: </string>
+    <string name="logs_txt1">Choose one: person, hearing, and who confirmed.</string>
+    <string name="logs_txt2">Select who confirmed the current rumor!</string>
+    <string name="logs_txt3">"Create a new hearing, choosing a new player who goes.</string>
+    <string name="logs_txt4">Select all three cards of a rumor! </string>
+    <string name="logsmenu_sort">Sort</string>
+    <string name="logsmenu_sort_all">All</string>
+    <string name="logsmenu_sort_podtverdil">Confirm</string>
+    <string name="logsmenu_sort_xodil">Move</string>
+    <string name="mainmenu_about">About</string>
+    <string name="mainmenu_donate">Donate</string>
+    <string name="mainmenu_new">New game</string>
+    <string name="mainmenu_players">Player Names</string>
+    <string name="maintab_logs">Logs</string>
+    <string name="maintab_menu_logstext">Text Logs</string>
+    <string name="maintab_menu_people">Player Names</string>
+    <string name="maintab_table">Table</string>
+    <string name="maintab_textlogs">Text Logs</string>
+    <string name="mark_ask">Asked</string>
+    <string name="mark_no">No</string>
+    <string name="mark_question">Not sure</string>
+    <string name="mark_remove">Delete mark</string>
+    <string name="mark_yes">Yes</string>
+    <string name="setup_dialog_info_msg">Choose your character and number of players. Check the maps cluhov that you have on hand.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">You marked less than 3 cards. Mark clue cards that you have on hand: </string>
+    <string name="setup_edittext_hint">player name - </string>
+    <string name="setup_txt1">Select the type of game:</string>
+    <string name="setup_txt2">Choose your player:</string>
+    <string name="setup_txt3">Enter players name and check who is on game</string>
+    <string name="setup_txt4">Choose which cards you have on hand:</string>
+    <string name="setup_txtbtnBack">Back</string>
+    <string name="setup_txtbtnNext">Next</string>
+    <string name="setup_txtbtnStart">Start Game</string>
+    <string name="tab_dialog_newgame_msg">Current game will be deleted. Create new game?</string>
+    <string name="tab_dialog_newgame_titile">New game</string>
+    <string name="tab_dialog_no">No</string>
+    <string name="tab_dialog_yes">Yes</string>
+    <string name="tab_title_logs">Moves</string>
+    <string name="tab_title_table">Players clue</string>
+    <string name="table_notplay_text">X</string>
+    <string name="table_title_mark">has a card</string>
+    <string name="table_you_text">You</string>
+    <string name="title_people">People</string>
+    <string name="title_place">Places</string>
+    <string name="title_weapon">Weapon</string>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AboutText">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/textTitleAbout</item>
+    </style>
+    <style name="AboutTitleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:textColor">@color/textTitleAbout</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Sherlock.__TextAppearance.Small" parent="Widget">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="Sherlock.__Theme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Sherlock.__Theme.DarkActionBar" parent="Theme.Sherlock.Light"/>
+    <style name="Sherlock.__Theme.Light" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Sherlock.__Widget.ActionBar" parent="Widget">
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="homeLayout">@layout/abs__action_bar_home</item>
+    </style>
+    <style name="Sherlock.__Widget.ActionMode" parent="Widget">
+        <item name="background">?attr/actionModeBackground</item>
+        <item name="backgroundSplit">?attr/actionModeSplitBackground</item>
+        <item name="height">?attr/actionBarSize</item>
+    </style>
+    <style name="Sherlock.__Widget.ActivityChooserView" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/abs__ab_share_pack_holo_dark</item>
+        <item name="android:divider">?attr/dividerVertical</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">6dip</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.DropDownItem" parent="Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.DropDownItem</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.ListView" parent="android:Widget.ListView">
+        <item name="android:divider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="android:listSelector">@drawable/abs__list_selector_holo_dark</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.Spinner" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Sherlock.__Widget.SearchAutoCompleteTextView" parent="Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:completionHintView">@layout/abs__simple_dropdown_hint</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="TextAppearance.Sherlock" parent="@android:style/TextAppearance"/>
+    <style name="TextAppearance.Sherlock.Light.SearchResult" parent="TextAppearance.Sherlock.SearchResult"/>
+    <style name="TextAppearance.Sherlock.Light.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Light.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Light.Small" parent="TextAppearance.Sherlock.Small"/>
+    <style name="TextAppearance.Sherlock.Light.Widget.PopupMenu.Large" parent="TextAppearance.Sherlock.Widget.PopupMenu.Large"/>
+    <style name="TextAppearance.Sherlock.Light.Widget.PopupMenu.Small" parent="TextAppearance.Sherlock.Widget.PopupMenu.Small"/>
+    <style name="TextAppearance.Sherlock.SearchResult">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColorHint">?android:attr/textColorHint</item>
+    </style>
+    <style name="TextAppearance.Sherlock.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Small" parent="Sherlock.__TextAppearance.Small"/>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Menu" parent="Widget">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/actionMenuTextColor</item>
+        <item name="android:textAllCaps">@bool/abs__config_actionMenuItemAllCaps</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Subtitle" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Subtitle.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Title" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Subtitle" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Subtitle.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Title" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Title.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.DropDownHint" parent="Widget">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.DropDownItem" parent="Widget">
+        <item name="android:textColor">?textColorPrimaryDisableOnly</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu" parent="Widget">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.TextView.SpinnerItem" parent="Widget">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.Sherlock" parent="Sherlock.__Theme">
+
+        <!-- Action bar styles (from Theme.Holo) -->
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_dark</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_dark</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.ActionBar.TabView</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.ActionBar.TabBar</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.ActionBar.TabText</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.ActionButton.CloseMode</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.ActionBar</item>
+        <item name="actionBarSize">@dimen/abs__action_bar_default_height</item>
+        <!-- Internal -->
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.PopupWindow.ActionMode</item>
+        <item name="actionBarWidgetTheme">@null</item>
+
+        <!-- Action bar styles (defaults from Theme) -->
+        <item name="actionBarSplitStyle">?attr/actionBarStyle</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Sherlock.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimary</item>
+        <item name="actionBarDivider">?attr/dividerVertical</item>
+        <item name="actionBarItemBackground">?attr/selectableItemBackground</item>
+        <item name="buttonStyleSmall">@style/Widget.Sherlock.Button.Small</item>
+        <item name="selectableItemBackground">@drawable/abs__item_background_holo_dark</item>
+        <item name="activatedBackgroundIndicator">@drawable/abs__activated_background_holo_dark</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_dark</item>
+        <item name="activityChooserViewStyle">@style/Widget.Sherlock.ActivityChooserView</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="dividerVertical">@drawable/abs__list_divider_holo_dark</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.Sherlock.DropDownItem.Spinner</item>
+        <item name="spinnerItemStyle">@style/Widget.Sherlock.TextView.SpinnerItem</item>
+        <item name="textColorPrimary">@color/abs__primary_text_holo_dark</item>
+        <item name="textColorPrimaryDisableOnly">@color/abs__primary_text_disable_only_holo_dark</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_light</item>
+
+        <!-- Internal -->
+        <item name="dropdownListPreferredItemHeight">48dip</item>
+        <item name="dropDownListViewStyle">@style/Widget.Sherlock.ListView.DropDown</item>
+        <item name="textAppearanceSmall">@style/TextAppearance.Sherlock.Small</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Sherlock.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.Sherlock.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.Sherlock.SearchResult.Title</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.Sherlock.SearchResult.Subtitle</item>
+        <item name="popupMenuStyle">@style/Widget.Sherlock.PopupMenu</item>
+        <!-- Internal -->
+        <item name="listPopupWindowStyle">@style/Widget.Sherlock.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_dark</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_dark</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_dark</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchResultListItemHeight">58dp</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Sherlock.Light" parent="Sherlock.__Theme.Light">
+
+        <!-- Action bar styles (from Theme.Holo) -->
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.Light.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.Light.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_light</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_light</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_light</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.Light.ActionBar.TabView</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.Light.ActionBar.TabBar</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.Light.ActionBar.TabText</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.Light.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.Light.ActionButton.CloseMode</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.Light.ActionBar.Solid</item>
+        <item name="actionBarSize">@dimen/abs__action_bar_default_height</item>
+        <!-- Internal -->
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.Light.PopupWindow.ActionMode</item>
+        <item name="actionBarWidgetTheme">@null</item>
+
+        <!-- Action bar styles (defaults from Theme) -->
+        <item name="actionBarSplitStyle">?attr/actionBarStyle</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Sherlock.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimary</item>
+        <item name="actionBarDivider">?attr/dividerVertical</item>
+        <item name="actionBarItemBackground">?attr/selectableItemBackground</item>
+        <item name="buttonStyleSmall">@style/Widget.Sherlock.Light.Button.Small</item>
+        <item name="selectableItemBackground">@drawable/abs__item_background_holo_light</item>
+        <item name="activatedBackgroundIndicator">@drawable/abs__activated_background_holo_light</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_light</item>
+        <item name="activityChooserViewStyle">@style/Widget.Sherlock.Light.ActivityChooserView</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
+        <item name="dividerVertical">@drawable/abs__list_divider_holo_light</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.Sherlock.Light.DropDownItem.Spinner</item>
+        <item name="spinnerItemStyle">@style/Widget.Sherlock.TextView.SpinnerItem</item>
+        <item name="textColorPrimary">@color/abs__primary_text_holo_light</item>
+        <item name="textColorPrimaryDisableOnly">@color/abs__primary_text_disable_only_holo_light</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_dark</item>
+
+        <!-- Internal -->
+        <item name="dropdownListPreferredItemHeight">48dip</item>
+        <item name="dropDownListViewStyle">@style/Widget.Sherlock.Light.ListView.DropDown</item>
+        <item name="textAppearanceSmall">@style/TextAppearance.Sherlock.Light.Small</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.Sherlock.Light.SearchResult.Title</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.Sherlock.Light.SearchResult.Subtitle</item>
+        <item name="popupMenuStyle">@style/Widget.Sherlock.Light.PopupMenu</item>
+        <!-- Internal -->
+        <item name="listPopupWindowStyle">@style/Widget.Sherlock.Light.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_light</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_light</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear_holo_light</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search_api_holo_light</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go_search_api_holo_light</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search_api_holo_light</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.Light.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_light</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchResultListItemHeight">58dp</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Sherlock.Light.DarkActionBar" parent="Sherlock.__Theme.DarkActionBar">
+        <item name="windowContentOverlay">@drawable/abs__ab_solid_shadow_holo</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse</item>
+        <item name="actionBarWidgetTheme">@style/Theme.Sherlock</item>
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_dark</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_dark</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.Light.ActionBar.TabView.Inverse</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.Light.ActionBar.TabBar.Inverse</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.Light.ActionBar.TabText.Inverse</item>
+        <item name="actionBarDivider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="actionBarItemBackground">@drawable/abs__item_background_holo_dark</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimaryInverse</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.Light.ActionMode.Inverse</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.ActionButton.CloseMode</item>
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.PopupWindow.ActionMode</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_dark</item>
+
+        <!-- We want the dark action bar SearchView stuff -->
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_dark</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_dark</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_dark</item>
+    </style>
+    <style name="Theme.Sherlock.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Sherlock.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="TitleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/textTitle</item>
+    </style>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Widget"/>
+    <style name="Widget.Sherlock.ActionBar" parent="Sherlock.__Widget.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_transparent_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_transparent_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_transparent_dark_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.Solid" parent="Sherlock.__Widget.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_dark_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabBar" parent="Widget">
+        <item name="android:divider">?attr/actionBarDivider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">12dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabText" parent="Widget">
+        <item name="android:textAppearance">@null</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabView" parent="Widget">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/abs__tab_indicator_ab_holo</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton" parent="Widget">
+        <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:minWidth">@dimen/abs__action_button_min_width</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton.CloseMode">
+        <item name="android:background">@drawable/abs__btn_cab_done_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton.Overflow">
+        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_holo_dark</item>
+        <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">@string/abs__action_menu_overflow_description</item>
+    </style>
+    <style name="Widget.Sherlock.ActionMode" parent="Sherlock.__Widget.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle</item>
+    </style>
+    <style name="Widget.Sherlock.ActivityChooserView" parent="Sherlock.__Widget.ActivityChooserView"/>
+    <style name="Widget.Sherlock.Button.Small" parent="Widget">
+        <item name="android:textAppearance">?attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/abs__primary_text_holo_dark</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">48dip</item>
+    </style>
+    <style name="Widget.Sherlock.DropDownItem.Spinner" parent="Sherlock.__Widget.Holo.DropDownItem"/>
+    <style name="Widget.Sherlock.Light.ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_transparent_light_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_transparent_light_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_transparent_light_holo</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.Light.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.Light.ProgressBar</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_solid_light_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_light_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_light_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.Light.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.Light.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle.Inverse</item>
+        <item name="background">@drawable/abs__ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_inverse_holo</item>
+        <item name="divider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.TabBar" parent="Widget.Sherlock.ActionBar.TabBar"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabBar.Inverse"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabText" parent="Widget.Sherlock.ActionBar.TabText"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabText.Inverse">
+        <item name="android:textColor">?attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.TabView" parent="Widget.Sherlock.ActionBar.TabView"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabView.Inverse"/>
+    <style name="Widget.Sherlock.Light.ActionButton" parent="Widget.Sherlock.ActionButton"/>
+    <style name="Widget.Sherlock.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/abs__btn_cab_done_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionMode" parent="Widget.Sherlock.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionMode.Inverse" parent="Sherlock.__Widget.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle.Inverse</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActivityChooserView" parent="Widget.Sherlock.ActivityChooserView">
+        <item name="android:background">@drawable/abs__ab_share_pack_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.Button.Small" parent="Widget">
+        <item name="android:textAppearance">?attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/abs__primary_text_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">48dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.DropDownItem.Spinner" parent="Sherlock.__Widget.Holo.DropDownItem"/>
+    <style name="Widget.Sherlock.Light.ListPopupWindow" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ListView.DropDown" parent="Sherlock.__Widget.Holo.ListView">
+        <item name="android:divider">@drawable/abs__list_divider_holo_light</item>
+        <item name="android:listSelector">@drawable/abs__list_selector_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.PopupMenu" parent="Widget.Sherlock.Light.ListPopupWindow"/>
+    <style name="Widget.Sherlock.Light.PopupWindow.ActionMode" parent="Widget">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ProgressBar" parent="Widget.Sherlock.ProgressBar"/>
+    <style name="Widget.Sherlock.Light.ProgressBar.Horizontal" parent="Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/abs__progress_horizontal_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.SearchAutoCompleteTextView" parent="Sherlock.__Widget.SearchAutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.Spinner.DropDown.ActionBar" parent="Sherlock.__Widget.Holo.Spinner">
+        <item name="android:background">@drawable/abs__spinner_ab_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.ListPopupWindow" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="Widget.Sherlock.ListView.DropDown" parent="Sherlock.__Widget.Holo.ListView"/>
+    <style name="Widget.Sherlock.PopupMenu" parent="Widget.Sherlock.ListPopupWindow"/>
+    <style name="Widget.Sherlock.PopupWindow.ActionMode" parent="Widget"/>
+    <style name="Widget.Sherlock.ProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/abs__progress_medium_holo</item>
+        <item name="android:animationResolution">33</item>
+    </style>
+    <style name="Widget.Sherlock.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/abs__progress_horizontal_holo_dark</item>
+        <!-- item name="android:indeterminateDrawable">@drawable/abs__progress_indeterminate_horizontal_holo</item -->
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+    <style name="Widget.Sherlock.SearchAutoCompleteTextView" parent="Sherlock.__Widget.SearchAutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.Spinner.DropDown.ActionBar" parent="Sherlock.__Widget.Holo.Spinner">
+        <item name="android:background">@drawable/abs__spinner_ab_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.TextView.SpinnerItem" parent="Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.TextView.SpinnerItem</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="headerPeopleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/textTitle</item>
+    </style>
+</resources>

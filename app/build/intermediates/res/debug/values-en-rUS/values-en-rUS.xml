@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values-en-rUS/strings.xml -->
+    <eat-comment/>
+    <string name="about_dev_email">Send Email</string>
+    <string name="about_dev_website">Visit Website</string>
+    <string name="about_main_text">This game is designed to facilitate record keeping in the game Cluedo. It allows you to mark the card and checked to make notes on maps where you are not sure. Also, the program allows logging of the game, namely, record all the moves of players.</string>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="logs_alert_title">Attention!</string>
+    <string name="logs_alert_title_sort_podtverdil">Show all confirms:</string>
+    <string name="logs_alert_title_sort_xodil">Show all moves:</string>
+    <string name="logs_btnpodtverdil">Confirm</string>
+    <string name="logs_btnxodit">Move</string>
+    <string name="logs_notconfirm">NOT Confirm!</string>
+    <string name="logs_toast_podtverdil">Who confirm: </string>
+    <string name="logs_toast_xoda">All moves: </string>
+    <string name="logs_txt1">Choose one: person, hearing, and who confirmed.</string>
+    <string name="logs_txt2">Select who confirmed the current rumor!</string>
+    <string name="logs_txt3">"Create a new hearing, choosing a new player who goes.</string>
+    <string name="logs_txt4">Select all three cards of a rumor! </string>
+    <string name="logsmenu_sort">Sort</string>
+    <string name="logsmenu_sort_all">All</string>
+    <string name="logsmenu_sort_podtverdil">Confirm</string>
+    <string name="logsmenu_sort_xodil">Move</string>
+    <string name="mainmenu_about">About</string>
+    <string name="mainmenu_donate">Donate</string>
+    <string name="mainmenu_new">New game</string>
+    <string name="mainmenu_players">Player Names</string>
+    <string name="maintab_menu_people">Player Names</string>
+    <string name="mark_ask">Asked</string>
+    <string name="mark_no">No</string>
+    <string name="mark_question">Not sure</string>
+    <string name="mark_remove">Delete mark</string>
+    <string name="mark_yes">Yes</string>
+    <string name="setup_dialog_info_msg">Choose your character and number of players. Check the maps cluhov that you have on hand.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">You marked less than 3 cards. Mark clue cards that you have on hand: </string>
+    <string name="setup_edittext_hint">player name - </string>
+    <string name="setup_txt1">Select the type of game:</string>
+    <string name="setup_txt2">Choose your character and enter players names:</string>
+    <string name="setup_txt3">Enter players name and check who is on game</string>
+    <string name="setup_txt4">Choose which cards you have on hand:</string>
+    <string name="setup_txtbtnBack">Back</string>
+    <string name="setup_txtbtnNext">Next</string>
+    <string name="setup_txtbtnStart">Start Game</string>
+    <string name="tab_dialog_newgame_msg">Current game will be deleted. Create new game?</string>
+    <string name="tab_dialog_newgame_titile">New game</string>
+    <string name="tab_dialog_no">No</string>
+    <string name="tab_dialog_yes">Yes</string>
+    <string name="tab_title_logs">Moves</string>
+    <string name="tab_title_table">Players clue</string>
+    <string name="table_title_mark">has a card</string>
+    <string name="table_you_text">You</string>
+    <string name="title_people">Suspects</string>
+    <string name="title_place">Rooms</string>
+    <string name="title_weapon">Weapon</string>
+</resources>

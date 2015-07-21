@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values-de/strings.xml -->
+    <eat-comment/>
+    <string name="about_dev_email"> Ein E-Mail schreiben</string>
+    <string name="about_dev_website">Die Webseite besuchen</string>
+    <string name="about_main_text">Dieses Programm wurde entwickelt, um die Aufzeichnungen in dem Spiel Cluedo zu erleichtern. Es ermöglicht Ihnen geprüfte und verdächtige Karten zu markieren. Das Programm ermöglicht zudem die Protokollierung des Spiels, in dem es alle Bewegungen der Spieler erfasst.</string>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="logs_alert_title">Achtung!</string>
+    <string name="logs_alert_title_sort_podtverdil">Alle Bestätigen anzeigen:</string>
+    <string name="logs_alert_title_sort_xodil">Alle Abwicklungen anzeigen:</string>
+    <string name="logs_btnpodtverdil">Bestätigt</string>
+    <string name="logs_btnxodit">Geht</string>
+    <string name="logs_toast_podtverdil">Wer bestätigt: </string>
+    <string name="logs_toast_xoda">Alle Bestätigen: </string>
+    <string name="logs_txt1">Wählen Sie: wer zieht, seinen Verdacht und welcher Spieler bestätigt.</string>
+    <string name="logs_txt2">Wählen Sie den Spieler, der den aktuellen Verdacht bestätigt!</string>
+    <string name="logs_txt3">Erstellen Sie einen neuen Verdacht - wählen Sie einen neuen Spieler, der zieht.</string>
+    <string name="logs_txt4">Wählen Sie alle drei Karten mit Verdacht!</string>
+    <string name="logsmenu_sort">Art</string>
+    <string name="logsmenu_sort_all">Alle</string>
+    <string name="logsmenu_sort_podtverdil">Bestätigt</string>
+    <string name="logsmenu_sort_xodil">Geht</string>
+    <string name="mainmenu_about">Über Spiel</string>
+    <string name="mainmenu_donate">Unterstützen Sie uns!</string>
+    <string name="mainmenu_new">Neues Spiel</string>
+    <string name="mainmenu_players">Namen der Spieler</string>
+    <string name="maintab_menu_people">Namen der Spieler</string>
+    <string name="mark_ask">Gefragt</string>
+    <string name="mark_no">Nein</string>
+    <string name="mark_question">Vielleicht</string>
+    <string name="mark_remove">Makierung entfernen</string>
+    <string name="mark_yes">Ja</string>
+    <string name="setup_dialog_info_msg">Wählen Sie Ihren Charakter und die Anzahl der Spieler. Überprüfen Sie die Indiezkarten, die sie auf der Hand haben.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">Sie haben weniger als 3 Karten makiert. Makieren Sie alle Karten, die Sie zur Hand haben.</string>
+    <string name="setup_edittext_hint">Spielername - </string>
+    <string name="setup_txt1">Wählen Sie den Spieltyp:</string>
+    <string name="setup_txt2">Wählen Sie Ihren Charakter:</string>
+    <string name="setup_txt3">Makieren sie vergebene Charaktere und ergänzen ggf. die echten Namen der Spieler.</string>
+    <string name="setup_txt4">Makieren Sie die Karten, die Sie zur Hand haben:</string>
+    <string name="setup_txtbtnBack">Zurück</string>
+    <string name="setup_txtbtnNext">Weiter</string>
+    <string name="setup_txtbtnStart">Spiel starten</string>
+    <string name="tab_dialog_newgame_msg">Aktuelles Spiel wird gelöscht. Neues Spiel erstellen?</string>
+    <string name="tab_dialog_newgame_titile">Neues Spiel</string>
+    <string name="tab_dialog_no">Nein</string>
+    <string name="tab_dialog_yes">Ja</string>
+    <string name="tab_title_logs">Abwicklung</string>
+    <string name="tab_title_table">Karten der Spieler</string>
+    <string name="table_title_mark">hat der Spieler hat die Indiezkarte</string>
+    <string name="title_people">Gäste</string>
+    <string name="title_place">Zimmer</string>
+    <string name="title_weapon">Tatwaffe</string>
+</resources>

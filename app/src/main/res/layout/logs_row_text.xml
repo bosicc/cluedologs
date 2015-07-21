@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+
+	<LinearLayout android:layout_width="fill_parent" android:orientation="horizontal" android:gravity="center_vertical" android:layout_height="24dp">
+		
+		<TextView android:layout_height="fill_parent" android:id="@+id/txtLeft" style="@style/headerPeopleText" android:gravity="center_vertical|center_horizontal" android:layout_width="16dp"></TextView>
+		<LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_weight="1" android:layout_width="wrap_content">
+			<TextView android:id="@+id/txt1" android:layout_height="fill_parent" android:layout_weight="1" android:textColor="@color/textTitle" android:paddingLeft="3dp" android:singleLine="true" android:ellipsize="marquee" android:layout_width="0dp"></TextView>
+			<TextView android:text="+"  android:layout_width="wrap_content" android:layout_height="fill_parent" ></TextView>
+	    	<TextView android:id="@+id/txt2" android:layout_height="fill_parent" android:layout_weight="1" android:clickable="false" android:textColor="@color/textTitle" android:singleLine="true" android:ellipsize="marquee" android:layout_width="0dp"></TextView>
+	    	<TextView android:text="+"  android:layout_width="wrap_content" android:layout_height="fill_parent" ></TextView>
+	    	<TextView android:id="@+id/txt3" android:layout_height="fill_parent" android:layout_weight="1" android:textColor="@color/textTitle" android:paddingRight="3dp" android:singleLine="true" android:ellipsize="marquee" android:layout_width="0dp"></TextView>
+		</LinearLayout>
+		<ImageView android:layout_height="wrap_content" android:src="@drawable/arrow_left" android:id="@+id/imageView1" android:layout_width="18dp"></ImageView>
+		<TextView android:layout_height="fill_parent" android:id="@+id/txtRight" style="@style/headerPeopleText" android:gravity="center_vertical|center_horizontal" android:layout_width="16dp"></TextView>
+</LinearLayout>
+
+    
+    <View android:id="@+id/list_divider" 
+    	android:background="@android:drawable/divider_horizontal_bright" 
+    	android:layout_width="fill_parent" 
+    	android:layout_alignParentBottom="true"
+     	android:layout_height="wrap_content"/>
+</LinearLayout>
+
+<!-- 
+
+    <ImageView android:id="@+id/btn1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:src="@drawable/btn_none" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:background="#33333333"></ImageView>
+    <ImageView android:id="@+id/btn2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:background="#00000000" android:src="@drawable/btn_none"></ImageView>
+    <ImageView android:id="@+id/btn3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:background="#00000000" android:src="@drawable/btn_none"></ImageView>
+    <ImageView android:id="@+id/btn4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:background="#00000000" android:src="@drawable/btn_none"></ImageView>
+    <ImageView android:id="@+id/btn5" android:layout_width="wrap_content" android:layout_weight="1" android:background="#00000000" android:layout_height="fill_parent" android:src="@drawable/btn_none"></ImageView>
+    <ImageView android:id="@+id/btn6" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1" android:background="#00000000" android:src="@drawable/btn_none"></ImageView>
+   
+
+  -->

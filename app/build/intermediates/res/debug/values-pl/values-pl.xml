@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values-pl/strings.xml -->
+    <eat-comment/>
+    <string name="about_dev_email">Wyślij Email</string>
+    <string name="about_dev_website">Odwiedź stronę</string>
+    <string name="about_main_text">Ten program ma na celu ułatwienie prowadzenia dokumentacji w grze Cluedo. Pozwala on na oznaczanie kart oraz ich zaznaczanie do robienia notatek w sytuacji gdy nie jesteś pewien. Ponadto program pozwala na rejestrowanie gry, a mianowicie, można zapisywać wszystkie ruchy graczy.</string>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="logs_alert_title">Uwaga!</string>
+    <string name="logs_alert_title_sort_podtverdil">Pokaż wszystkie potwierdzone:</string>
+    <string name="logs_alert_title_sort_xodil">Pokaż wszystkie ruchy:</string>
+    <string name="logs_btnpodtverdil">Potwierdził</string>
+    <string name="logs_btnxodit">Ruch</string>
+    <string name="logs_notconfirm">Niepotwierdzone!</string>
+    <string name="logs_toast_podtverdil">Kto potwierdził: </string>
+    <string name="logs_toast_xoda">Wszystkie ruchy: </string>
+    <string name="logs_txt1">Wybierz: gość, wskazówka, i kto potwierdził.</string>
+    <string name="logs_txt2">Zaznacz kto potwierdził obecną sugestię!</string>
+    <string name="logs_txt3">"Stwórz nową wskazuwkę, wybierając nowego gracza.</string>
+    <string name="logs_txt4">Zaznacz wszystkie 3 karty sugestii! </string>
+    <string name="logsmenu_sort">Sortuj</string>
+    <string name="logsmenu_sort_all">Wszystko</string>
+    <string name="logsmenu_sort_podtverdil">Potwierdził</string>
+    <string name="logsmenu_sort_xodil">Ruchy</string>
+    <string name="mainmenu_about">Info</string>
+    <string name="mainmenu_donate">Dotuj</string>
+    <string name="mainmenu_new">Nowa gra</string>
+    <string name="mainmenu_players">Imiona graczy</string>
+    <string name="maintab_logs">Logi</string>
+    <string name="maintab_menu_logstext">Logi tekstowe</string>
+    <string name="maintab_menu_people">Imiona graczy</string>
+    <string name="maintab_table">Tablica</string>
+    <string name="maintab_textlogs">Logi tekstowe</string>
+    <string name="mark_ask">Zapytane</string>
+    <string name="mark_no">Nie</string>
+    <string name="mark_question">Niepewne</string>
+    <string name="mark_remove">Skasuj zaznaczenie</string>
+    <string name="mark_yes">Tak</string>
+    <string name="setup_dialog_info_msg">Wybierz swoją postać oraz liczbę graczy.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">Zaznaczono mniej niż 3 karty. Zaznacz karty sugestii które masz w ręce: </string>
+    <string name="setup_edittext_hint">Imię gracza - </string>
+    <string name="setup_txt1">Wybierz rodzaj gry:</string>
+    <string name="setup_txt2">Wybierz swojego gracza:</string>
+    <string name="setup_txt3">Wpisz imiona graczy i sprawdź kto jest w grze</string>
+    <string name="setup_txt4">Wybierz które karty masz w ręce:</string>
+    <string name="setup_txtbtnBack">Wstecz</string>
+    <string name="setup_txtbtnNext">Dalej</string>
+    <string name="setup_txtbtnStart">Start Gry</string>
+    <string name="tab_dialog_newgame_msg">Obecna gra będzie skasowana. Stwórz nową grę?</string>
+    <string name="tab_dialog_newgame_titile">Nowa gra</string>
+    <string name="tab_dialog_no">Nie</string>
+    <string name="tab_dialog_yes">Tak</string>
+    <string name="tab_title_logs">Ruchy</string>
+    <string name="tab_title_table">Graczy sugestie</string>
+    <string name="table_notplay_text">X</string>
+    <string name="table_title_mark">Ma kartę</string>
+    <string name="table_you_text">Ty</string>
+    <string name="title_people">Goście</string>
+    <string name="title_place">Pokoje</string>
+    <string name="title_weapon">Narzędzia zbrodni</string>
+</resources>

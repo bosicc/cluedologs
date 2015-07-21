@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/bgMain">
+    <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:gravity="center_horizontal">
+    		<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/main_logo" android:id="@+id/mainlogo" android:paddingTop="5dp" android:paddingBottom="15dp"></ImageView>
+    		<Button android:text="@string/mainmenu_new" android:layout_height="wrap_content" android:layout_width="200dp" android:id="@+id/btnNew"></Button>
+    		<Button android:text="@string/mainmenu_about" android:layout_height="wrap_content" android:layout_width="200dp" android:id="@+id/btnAbout"></Button>
+    		<Button android:text="@string/mainmenu_donate" android:id="@+id/btnDonate" android:layout_height="wrap_content" android:layout_width="200dp" android:visibility="gone"></Button>
+        </LinearLayout>       
+    </ScrollView>
+</LinearLayout> 
+<!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/layout/main.xml -->
