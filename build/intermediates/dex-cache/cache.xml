@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/yurii/proj/cluedologs/app/libs/FlurryAgent.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a54cf1f3b268a8efab24a11afdb00be69c642459">
+        <dex dex="/home/yurii/proj/cluedologs/app/build/intermediates/pre-dexed/debug/FlurryAgent-478f45a0ffd82dcaf9a6ef4cdb5a5bf79623ba1e.jar" />
+    </item>
+
+</items>

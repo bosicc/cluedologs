@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Style for tabs people text -->
+    <style name="headerPeopleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/textTitle</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/textTitle</item>
+    </style>
+
+    <style name="AboutTitleText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:textColor">@color/textTitleAbout</item>
+    </style>
+
+    <style name="AboutText">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/textTitleAbout</item>
+    </style>
+
+</resources>

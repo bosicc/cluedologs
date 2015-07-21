@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values-sk/strings.xml -->
+    <eat-comment/>
+    <string name="about_dev_email">Poslat Email</string>
+    <string name="about_dev_website">Visit Website</string>
+    <string name="about_main_text">Táto hra je určená pre uľahčenie vedenia záznamov v hre Cluedo. To vám umožní označiť kartu a skontrolovať si robiť poznámky na mapách, kde si nie sú istí. Tiež program umožňuje záznam z hry, a to, zaznamenať všetky pohyby hráčov.</string>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="app_name">Cluedo zapisnik</string>
+    <string name="logs_alert_title">Pozor!</string>
+    <string name="logs_alert_title_sort_podtverdil">Zobrazit vsetko potvrdene:</string>
+    <string name="logs_alert_title_sort_xodil">Zobrazit vsetky pohyby:</string>
+    <string name="logs_btnpodtverdil">Potvrdit</string>
+    <string name="logs_btnxodit">Krok</string>
+    <string name="logs_notconfirm">Nepotvrdene!</string>
+    <string name="logs_toast_podtverdil">Ktore su potvrdene </string>
+    <string name="logs_toast_xoda">Vsetky pohyby: </string>
+    <string name="logs_txt1">Vyberte si jeden: osoba, sluch, a ktory potvrdil.</string>
+    <string name="logs_txt2">Vyberte, ktory potvrdil sucasnu povest!</string>
+    <string name="logs_txt3">"Vytvorit novy rokovania, vybere noveho hraca, ktory ide.</string>
+    <string name="logs_txt4">Vybrat vsetky tri karty povest! </string>
+    <string name="logsmenu_sort">Typ</string>
+    <string name="logsmenu_sort_all">All</string>
+    <string name="logsmenu_sort_podtverdil">Potvrdit</string>
+    <string name="logsmenu_sort_xodil">Krok</string>
+    <string name="mainmenu_about">Kontakt</string>
+    <string name="mainmenu_donate">Donate</string>
+    <string name="mainmenu_new">Nová hra</string>
+    <string name="mainmenu_players">Mena hracov</string>
+    <string name="maintab_logs">Poznamka</string>
+    <string name="maintab_menu_logstext">Poznamky</string>
+    <string name="maintab_menu_people">Mena hracov</string>
+    <string name="maintab_table">Zoznam</string>
+    <string name="maintab_textlogs">Zoznam poznamok</string>
+    <string name="mark_ask">Pytat sa</string>
+    <string name="mark_no">Nie</string>
+    <string name="mark_question">Nie som si isty</string>
+    <string name="mark_remove">Zmaz oznacenie</string>
+    <string name="mark_yes">Ano</string>
+    <string name="setup_dialog_info_msg">Vyberte si svoju postavu a pocet hracov. Skontrolujte mapy cluhov, ze mate po ruke.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">Oznacil si menej ako 3 karty. Oznac Cluedo karty, ktoré mas na dosah ruky: </string>
+    <string name="setup_edittext_hint">Meno hraca - </string>
+    <string name="setup_txt1">Vyberte typ hry:</string>
+    <string name="setup_txt2">Vyberte si hraca:</string>
+    <string name="setup_txt3">Zadajte meno a hraca, ktory je v hre</string>
+    <string name="setup_txt4">Vyber ktore karty mas na ruke:</string>
+    <string name="setup_txtbtnBack">Dozadu</string>
+    <string name="setup_txtbtnNext">Dalej</string>
+    <string name="setup_txtbtnStart">Zacat hru</string>
+    <string name="tab_dialog_newgame_msg">Tato hra bude zmazana. Chces zacat novu hru??</string>
+    <string name="tab_dialog_newgame_titile">Nova hra</string>
+    <string name="tab_dialog_no">Nie</string>
+    <string name="tab_dialog_yes">Ano</string>
+    <string name="tab_title_logs">Moves</string>
+    <string name="tab_title_table">Players clue</string>
+    <string name="table_notplay_text">X</string>
+    <string name="table_title_mark">ma kartu</string>
+    <string name="table_you_text">Ty</string>
+    <string name="title_people">Ludia</string>
+    <string name="title_place">Miestnosti</string>
+    <string name="title_weapon">Zbrane</string>
+</resources>

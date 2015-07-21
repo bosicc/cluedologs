@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main menu Activity -->
+    <string name="mainmenu_players">Spelarnas namn</string>
+    <string name="mainmenu_new">Nytt spel</string>
+    <string name="mainmenu_about">Om</string>
+    <string name="mainmenu_donate">Donera</string>
+    
+    <!-- Main Tab -->
+    <string name="maintab_menu_people">Spelarnas namn</string>
+    
+    <string name="title_people">Gäster</string>
+    <string name="title_place">Rum</string>
+    <string name="title_weapon">Vapen</string>
+    
+    <string name="tab_title_table">Bordet</string>
+    <string name="tab_title_logs">Log</string>
+    
+    <string name="tab_dialog_newgame_titile">Nytt spel</string>
+    <string name="tab_dialog_newgame_msg">Nuvarande spel kommer tas bort. Vill du starta nytt spel?</string>
+    <string name="tab_dialog_yes">Ja</string>
+    <string name="tab_dialog_no">Nej</string>
+    
+        <!-- Table page -->
+    <string name="table_title_mark">har ett kort</string>
+    <string name="table_you_text">Du</string>
+    
+     <!-- Setup page -->
+    <string name="setup_txt1">Välj spel typ:</string>
+    <string name="setup_txt2">Välj din spelkaraktär och fyll i spelares namn:</string>
+    <string name="setup_txt3">Fyll i spelares namn och kolla vilka som är i spelet</string>
+    <string name="setup_txt4">Välj vilka kort du har på handen:</string>
+    <string name="setup_dialog_notenoughtpcards_msg">Du valde mindre än 3 kort. Markera Ledtrådar du har på handen: </string>
+    <string name="setup_dialog_info_msg">Välj din karaktär och antal spelare. Kryssa i vilka ledtrådar du har på handen.</string>
+    <string name="setup_edittext_hint">spelarens namn - </string>
+    <string name="setup_txtbtnBack">Bakåt</string>
+    <string name="setup_txtbtnNext">Framåt</string>
+    <string name="setup_txtbtnStart">Starta spelet</string>
+     
+    <!-- Logs page -->
+    <string name="logs_txt1">Välj en: gäst, rum och vapen.</string>
+    <string name="logs_txt2">Välj vem som bekräftade ryktet!</string>
+    <string name="logs_txt3">Skapa ett nytt rykte, välj spelare som får gå.</string>
+    <string name="logs_txt4">Välj alla tre korten för ett rykte!</string>
+    <string name="logs_btnxodit">Flytta</string>
+    <string name="logs_btnpodtverdil">Bekräfta</string>
+    <string name="logs_alert_title">Attention!</string>
+    <string name="logsmenu_sort_xodil">Flytta</string>
+    <string name="logsmenu_sort_podtverdil">Bekräfta</string>
+    <string name="logsmenu_sort_all">Alla</string>
+    <string name="logsmenu_sort">Sortera</string>
+    <string name="logs_alert_title_sort_xodil">Visa alla flyttningar:</string>
+    <string name="logs_alert_title_sort_podtverdil">Visa alla bekrfätade:</string>
+    <string name="logs_toast_xoda">Alla flyttningar:</string>
+    <string name="logs_toast_podtverdil">Vem bekräftade:</string>
+     <string name="logs_notconfirm">Inte bekräftat!</string>
+    
+    <string name="mark_yes">Ja</string>
+    <string name="mark_question">Inte säker</string>
+    <string name="mark_no">Nej</string>
+    <string name="mark_remove">Ta bort markering</string>
+    <string name="mark_ask">Frågade</string>
+    
+    
+     <!-- About page -->
+    <string name="about_main_text">This game is designed to facilitate record keeping in the game Cluedo. It allows you to mark the card and checked to make notes on maps where you are not sure. Also, the program allows logging of the game, namely, record all the moves of players.</string>
+    <string name="about_dev_website">Besök hemsida</string>
+    <string name="about_dev_email">Skicka e-mail</string>
+    
+    
+    <string name="alert_dialog_ok">ОК</string>
+   
+   
+</resources>

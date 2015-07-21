@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values-nb/strings.xml -->
+    <eat-comment/>
+    <string name="about_dev_email">Send e-post</string>
+    <string name="about_dev_website">Besøk hjemmeside</string>
+    <string name="about_main_text">
+This game is designed to facilitate record keeping in the game Cluedo. It allows you to mark the card and checked to make notes on maps where you are not sure. Also, the program allows logging of the game, namely, record all the moves of players.
+</string>
+    <string name="alert_dialog_ok">ОK</string>
+    <string name="app_name">Cluedo logs</string>
+    <string name="logs_alert_title">Advarsel!</string>
+    <string name="logs_alert_title_sort_podtverdil">Vis alle bekreftelser:</string>
+    <string name="logs_alert_title_sort_xodil">Vis alle flyttinger:</string>
+    <string name="logs_btnpodtverdil">Bekreftet</string>
+    <string name="logs_btnxodit">Rykte</string>
+    <string name="logs_notconfirm">Ikke bekreftet!</string>
+    <string name="logs_toast_podtverdil">Hvem bekreftet:</string>
+    <string name="logs_toast_xoda">Alle flyttinger:</string>
+    <string name="logs_txt1">Velg en: gjest, høring, og hvem som bekreftet.</string>
+    <string name="logs_txt2">Velg hvem som bekreftet det nåværende ryktet!</string>
+    <string name="logs_txt3">
+Opprett en ny høring, velg en ny spillers tur.
+</string>
+    <string name="logs_txt4">Velg alle de 3 kortene i et rykte!</string>
+    <string name="logsmenu_sort">Sorter på</string>
+    <string name="logsmenu_sort_all">Alle</string>
+    <string name="logsmenu_sort_podtverdil">Bekreftet av</string>
+    <string name="logsmenu_sort_xodil">Spiller</string>
+    <string name="mainmenu_about">Om</string>
+    <string name="mainmenu_donate">Donér</string>
+    <string name="mainmenu_new">Nytt spill</string>
+    <string name="mainmenu_players">Spillere</string>
+    <string name="maintab_logs">Rykter</string>
+    <string name="maintab_menu_logstext">Logger</string>
+    <string name="maintab_menu_people">Spillere</string>
+    <string name="maintab_table">Oversikt</string>
+    <string name="maintab_textlogs">Ryktelogg</string>
+    <string name="mark_ask">Har spurt etter</string>
+    <string name="mark_no">Nei</string>
+    <string name="mark_question">Ikke sikker</string>
+    <string name="mark_remove">Slett markering</string>
+    <string name="mark_yes">Ja</string>
+    <string name="setup_dialog_info_msg">
+Velg din gjest og antall spillere. Velg ryktekortene du har på hånden.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">
+Du valgte mindre enn 3 kort. Velg ryktekortene du har på hånden:</string>
+    <string name="setup_edittext_hint">spillernavn -</string>
+    <string name="setup_txt1">Velg spilltype:</string>
+    <string name="setup_txt2">Velg din spiller:</string>
+    <string name="setup_txt3">Skriv inn spillernavn og velg hvem som spiller.</string>
+    <string name="setup_txt4">Velg hvilke kort du har på hånden:</string>
+    <string name="setup_txtbtnBack">Tilbake</string>
+    <string name="setup_txtbtnNext">Neste</string>
+    <string name="setup_txtbtnStart">Start spill</string>
+    <string name="tab_dialog_newgame_msg">Nåværende spill vil bli slettet. Starte nytt spill?</string>
+    <string name="tab_dialog_newgame_titile">Nytt spill</string>
+    <string name="tab_dialog_no">Nei</string>
+    <string name="tab_dialog_yes">Ja</string>
+    <string name="tab_title_logs">Rykter</string>
+    <string name="tab_title_table">Oversikt</string>
+    <string name="table_notplay_text">X</string>
+    <string name="table_title_mark">har kortet</string>
+    <string name="table_you_text">Du</string>
+    <string name="title_people">Gjester</string>
+    <string name="title_place">Rom</string>
+    <string name="title_weapon">Våpen</string>
+</resources>

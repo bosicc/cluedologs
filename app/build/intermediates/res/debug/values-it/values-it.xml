@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values-it/string.xml -->
+    <eat-comment/>
+    <string name="about_dev_email">Invia email</string>
+    <string name="about_dev_website">Visita il sito</string>
+    <string name="about_main_text">Questo gioco è stato progettato per una facile tenuta dei registri nel gioco Cluedo. Esso consente di contrassegnare le carte e controllato per prendere appunti sulle schede in cui non siete sicuri. Inoltre, il programma prevede la possibilità di registrazione del gioco, vale a dire, la registrazione di tutte le mosse dei giocatori. http://leleka.in.ua tradotto.</string>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="logs_alert_title">Attenzione!</string>
+    <string name="logs_alert_title_sort_podtverdil">Mostra tutti confermano:</string>
+    <string name="logs_alert_title_sort_xodil">Mostra tutto il corso:</string>
+    <string name="logs_btnpodtverdil">Confermato</string>
+    <string name="logs_btnxodit">Fa una mossa nel gioco</string>
+    <string name="logs_notconfirm">NON verificata!</string>
+    <string name="logs_toast_podtverdil">Che ha confermato: </string>
+    <string name="logs_toast_xoda">Tutti i del corso: </string>
+    <string name="logs_txt1">Scegliere una persona che: passeggiate, suoni, e che lo ha confermato.</string>
+    <string name="logs_txt2">Selezionare la voce che è in corso ha confermato!</string>
+    <string name="logs_txt3">Creare una nuova udienza, la selezione di un nuovo giocatore che va.</string>
+    <string name="logs_txt4">Selezionare tutte e tre le carte per la voce!</string>
+    <string name="logsmenu_sort">Ordinamento</string>
+    <string name="logsmenu_sort_all">Tutto</string>
+    <string name="logsmenu_sort_podtverdil">Confermato</string>
+    <string name="logsmenu_sort_xodil">Andando</string>
+    <string name="mainmenu_about">Informazioni sul gioco</string>
+    <string name="mainmenu_donate">Sostienici</string>
+    <string name="mainmenu_new">Nuovo gioco</string>
+    <string name="mainmenu_players">I nomi dei giocatori</string>
+    <string name="maintab_menu_people">I nomi dei giocatori</string>
+    <string name="mark_ask">Domande</string>
+    <string name="mark_no">No</string>
+    <string name="mark_question">Non so</string>
+    <string name="mark_remove">Rimuovere il segno</string>
+    <string name="mark_yes">Si</string>
+    <string name="setup_dialog_info_msg">Scegli il tuo personaggio e il numero di giocatori. Biglietti di Corrispondenza sono voci che si hanno a portata di mano.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">Lei ha parlato di almeno 3 carte. Biglietti di corrispondenza sono voci che si hanno a portata di mano.</string>
+    <string name="setup_edittext_hint">nome del giocatore - </string>
+    <string name="setup_txt1">Selezionare il tipo di gioco:</string>
+    <string name="setup_txt2">Scegli il tuo personaggio ed i nomi dei giocatori:</string>
+    <string name="setup_txt3">Immettere i nomi dei giocatori e segnare chi gioca:</string>
+    <string name="setup_txt4">Scegli una carta che avete a portata di mano:</string>
+    <string name="setup_txtbtnBack">Indietro</string>
+    <string name="setup_txtbtnNext">Ulteriormente</string>
+    <string name="setup_txtbtnStart">Inizia la partita</string>
+    <string name="tab_dialog_newgame_msg">Partita in corso saranno rimossi. Creare un nuovo gioco?</string>
+    <string name="tab_dialog_newgame_titile">Nuovo gioco</string>
+    <string name="tab_dialog_no">No</string>
+    <string name="tab_dialog_yes">Si</string>
+    <string name="tab_title_logs">Corsa</string>
+    <string name="tab_title_table">Carte dei giocatori</string>
+    <string name="table_title_mark">avere il mappa</string>
+    <string name="table_you_text">Voi</string>
+    <string name="title_people">Ospiti</string>
+    <string name="title_place">Camere</string>
+    <string name="title_weapon">Arma</string>
+</resources>

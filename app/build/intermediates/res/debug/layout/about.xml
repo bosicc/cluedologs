@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/bgMain">
+    <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:gravity="center_horizontal">
+            <LinearLayout android:layout_width="fill_parent" android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:gravity="center_vertical" android:paddingLeft="10dp" android:paddingTop="10dp">
+                <ImageView android:id="@+id/imageView1" android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageView>
+                <TextView style="@style/AboutTitleText" android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="fill_parent" android:text="@string/about_title_ver" android:gravity="center_horizontal"></TextView>
+            </LinearLayout>
+         <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_main_text" android:padding="5dp" style="@style/AboutText"></TextView>
+
+		 <TextView
+		     android:id="@+id/textView3"
+		     style="@style/AboutText"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:padding="5dp"
+		     android:text="@string/about_howto_text" />
+         <TextView
+		     android:id="@+id/textView4"
+		     style="@style/AboutText"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:padding="5dp"
+		     android:text="@string/about_faq_text" />
+         
+         <Button android:layout_height="wrap_content" android:background="@drawable/bglogsform" android:text="@string/about_dev_website" android:textStyle="bold" android:textColor="#99cc33" android:layout_width="150dp" android:id="@+id/btnWebsite"></Button>
+         <Button android:layout_height="wrap_content" android:background="@drawable/bglogsform" android:textStyle="bold" android:textColor="#99cc33" android:layout_width="150dp" android:id="@+id/btnEmail" android:text="@string/about_dev_email"></Button>
+        </LinearLayout>       
+    </ScrollView>
+   
+</RelativeLayout>
+<!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/layout/about.xml -->

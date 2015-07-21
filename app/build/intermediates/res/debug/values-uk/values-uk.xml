@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values-uk/strings.xml -->
+    <eat-comment/>
+    <string name="about_dev_email">Написати Email</string>
+    <string name="about_dev_website">Відвідати Сайт</string>
+    <string name="about_main_text">Ця гра розроблена для полегшення ведения записів грі Cluedo. Вона дозволяе помічати перевірені карти та робити помітки на картах де ви не впевненні. Також, в программі передбачена можливість ведения логів гри, а саме, записи всіх ходів гравців.</string>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="logs_alert_title">Увага!</string>
+    <string name="logs_alert_title_sort_podtverdil">Показати всі підтвердження:</string>
+    <string name="logs_alert_title_sort_xodil">Показати всі хода:</string>
+    <string name="logs_btnpodtverdil">Підтвердив</string>
+    <string name="logs_btnxodit">Ходить</string>
+    <string name="logs_notconfirm">НЕ підтверджено!</string>
+    <string name="logs_toast_podtverdil">Хто підтвердив: </string>
+    <string name="logs_toast_xoda">Усі хода: </string>
+    <string name="logs_txt1">Оберіть хто: ходит, слух та кто підтвердив.</string>
+    <string name="logs_txt2">Оберіть хто підтвердиі поточний чутку!</string>
+    <string name="logs_txt3">"Создайте новый слух, выбрав нового игрока, который ходит.</string>
+    <string name="logs_txt4">Оберіть всі 3 карти для расповсюдження чутки!</string>
+    <string name="logsmenu_sort">Сортувати</string>
+    <string name="logsmenu_sort_all">Всі</string>
+    <string name="logsmenu_sort_podtverdil">Підтвердив</string>
+    <string name="logsmenu_sort_xodil">Ходив</string>
+    <string name="mainmenu_about">Про гру</string>
+    <string name="mainmenu_donate">Підтримайте Нас</string>
+    <string name="mainmenu_new">Новая гра</string>
+    <string name="mainmenu_players">імена гравців</string>
+    <string name="maintab_menu_people">Имена гровців</string>
+    <string name="mark_ask">Спитав</string>
+    <string name="mark_no">Ні</string>
+    <string name="mark_question">Не знаю</string>
+    <string name="mark_remove">Видалити помітку</string>
+    <string name="mark_yes">Так</string>
+    <string name="setup_dialog_info_msg">Оберіть своего персонажа та кількість гравців. Відмітьте карти cлухів, які у вас на руках.</string>
+    <string name="setup_dialog_notenoughtpcards_msg">Ви помітили меньше 3-х карт. Відмітьте карти cлухів, які у вас на руках.</string>
+    <string name="setup_edittext_hint">им\'я гравця - </string>
+    <string name="setup_txt1">Оберіть тип гри:</string>
+    <string name="setup_txt2">Оберіть вашего персонажа та імена гравців:</string>
+    <string name="setup_txt3">Введіть імена гравців та помітьте тих хто у грі</string>
+    <string name="setup_txt4">Оберіть карти які у вас на руках:</string>
+    <string name="setup_txtbtnBack">Назад</string>
+    <string name="setup_txtbtnNext">Далі</string>
+    <string name="setup_txtbtnStart">Почати гру</string>
+    <string name="tab_dialog_newgame_msg">Поточна игра буде видалена. Створити нову гру?</string>
+    <string name="tab_dialog_newgame_titile">Нова гра</string>
+    <string name="tab_dialog_no">Ні</string>
+    <string name="tab_dialog_yes">Так</string>
+    <string name="tab_title_logs">Ходи</string>
+    <string name="tab_title_table">Карти гравців</string>
+    <string name="table_title_mark"> маэ карту </string>
+    <string name="table_you_text">Ти</string>
+    <string name="title_people">Гості</string>
+    <string name="title_place">Кімнаты</string>
+    <string name="title_weapon">Зброя</string>
+</resources>
