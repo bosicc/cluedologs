@@ -26,6 +26,7 @@ import android.app.ListActivity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -119,6 +120,15 @@ public class LogsActivity extends ListActivity {
         scale = getResources().getDisplayMetrics().density;
 
         mCurentDialogList = new ArrayList<PlayerPOJO>();
+
+        findViewById(R.id.btnMarket).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToMarket = new Intent(Intent.ACTION_VIEW)
+                        .setData(Uri.parse("market://details?id=com.boco.cluedo"));
+                startActivity(goToMarket);
+            }
+        });
 
         mBtnXodit.setOnClickListener(new OnClickListener() {
             @Override

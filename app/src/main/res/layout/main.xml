@@ -7,7 +7,43 @@
     android:background="@color/bgMain">
     <ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent">
         <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:gravity="center_horizontal">
-    		<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/main_logo" android:id="@+id/mainlogo" android:paddingTop="5dp" android:paddingBottom="15dp"></ImageView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/bgPeople4list">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText2"
+                    android:text="@string/trynew"
+                    android:textColor="@color/bgPeopleSgtGrey"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignTop="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:paddingBottom="1dp"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_new_cluedologs"
+                    android:id="@+id/imageView"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/en_generic_rgb_wo_60"
+                    android:id="@+id/btnMarket"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@+id/editText2"
+                    android:layout_below="@+id/editText2"/>
+            </RelativeLayout>
+    		<ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/main_logo" android:id="@+id/mainlogo" android:paddingTop="5dp" android:paddingBottom="15dp"
+                android:layout_marginTop="20dp"></ImageView>
     		<Button android:text="@string/mainmenu_new" android:layout_height="wrap_content" android:layout_width="200dp" android:id="@+id/btnNew"></Button>
     		<Button android:text="@string/mainmenu_about" android:layout_height="wrap_content" android:layout_width="200dp" android:id="@+id/btnAbout"></Button>
     		<Button android:text="@string/mainmenu_donate" android:id="@+id/btnDonate" android:layout_height="wrap_content" android:layout_width="200dp" android:visibility="gone"></Button>

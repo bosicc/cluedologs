@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values-ru/strings.xml -->
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values-ru/strings.xml -->
     <eat-comment/>
     <string name="about_dev_email">Написать Email</string>
     <string name="about_dev_website">Посетить Сайт</string>
@@ -53,4 +53,5 @@
     <string name="title_people">Гости</string>
     <string name="title_place">Комнаты</string>
     <string name="title_weapon">Оружие</string>
+    <string name="trynew">Новый Cluedo Logs. Попробуй!</string>
 </resources>

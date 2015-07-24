@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values-en-rUS/strings.xml -->
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values-en-rUS/strings.xml -->
     <eat-comment/>
     <string name="about_dev_email">Send Email</string>
     <string name="about_dev_website">Visit Website</string>

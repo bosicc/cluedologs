@@ -12,4 +12,4 @@
         android:layout_alignParentLeft="true"
         android:gravity="center" style="@style/TitleText" android:layout_marginLeft="10dp"/>
 </RelativeLayout>
-<!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/layout/list_section.xml -->
+<!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/layout/list_section.xml -->

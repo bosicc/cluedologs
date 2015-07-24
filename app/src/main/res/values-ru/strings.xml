@@ -71,6 +71,7 @@
     
     
     <string name="alert_dialog_ok">ОК</string>
-   
-   
+
+    <string name="trynew">Новый Cluedo Logs. Попробуй!</string>
+
 </resources>

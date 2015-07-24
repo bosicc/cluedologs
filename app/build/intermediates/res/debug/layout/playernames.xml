@@ -7,4 +7,4 @@
 	<ListView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/listView" android:layout_below="@+id/imageView1"></ListView>
 	<ImageButton android:src="@drawable/btn_no" android:layout_height="wrap_content" android:id="@+id/OkButton" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:paddingTop="5dp" android:paddingRight="5dp" android:background="@drawable/bgempty"></ImageButton>
 </RelativeLayout>
-<!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/layout/playernames.xml -->
+<!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/layout/playernames.xml -->

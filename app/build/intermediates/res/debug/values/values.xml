@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="category">
         <item>@string/title_people</item>
@@ -1360,7 +1360,7 @@
         <item>Yxa</item>
         <item>Hantel</item>
     </string-array>
-    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="bgBlack">#FF000000</color>
     <color name="bgMain">#FFefefef</color>
@@ -1390,7 +1390,7 @@
     <color name="textTitle">#FF000000</color>
     <color name="textTitleAbout">#FF3366CC</color>
     <color name="textTitleLogs">#FFffffff</color>
-    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="about_dev_email">Send Email</string>
     <string name="about_dev_website">Visit Website</string>
@@ -1453,7 +1453,8 @@
     <string name="title_people">People</string>
     <string name="title_place">Places</string>
     <string name="title_weapon">Weapon</string>
-    <!-- From: file:/home/yurii/proj/cluedologs/app/src/main/res/values/styles.xml -->
+    <string name="trynew">New Cluedo Logs. Try it!</string>
+    <!-- From: file:/home/bopr/proj/cluedologsold1/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AboutText">
         <item name="android:textSize">16dp</item>
