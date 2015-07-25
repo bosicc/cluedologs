@@ -1,19 +1,46 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 14
+    compileSdkVersion 22
     buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.bosicc.cluedo"
         minSdkVersion 14
-        targetSdkVersion 21
+        targetSdkVersion 22
+        versionCode 32
+        versionName "1.4.0"
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'readme'
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(RELEASE_STORE_FILE_OLD)
+            storePassword RELEASE_STORE_PASSWORD_OLD
+            keyAlias RELEASE_KEY_ALIAS_CLUEDO_OLD
+            keyPassword RELEASE_KEY_PASSWORD_CLUEDO_OLD
+        }
+    }
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            proguardFiles 'proguard-android.txt', 'proguard-rules.pro', 'proguard-guava.pro'
         }
     }
 }
