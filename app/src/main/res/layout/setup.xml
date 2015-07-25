@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgMain"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LLlist"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tex1"
+                    style="@style/TitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="@string/setup_txt1" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerGameType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/tex2"
+                    style="@style/TitleText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="@string/setup_txt2" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinnerYourPerson"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </Spinner>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_down" >
+                </ImageView>
+
+                <Button
+                    android:id="@+id/btnPlayerName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/bglogsform"
+                    android:padding="10dp"
+                    android:text="@string/setup_txt3"
+                    android:textColor="@color/textTitleLogs"
+                    android:textStyle="bold" >
+                </Button>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/text4"
+            style="@style/TitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgSetupHeader"
+            android:padding="5dp"
+            android:text="@string/setup_txt4"
+            android:visibility="gone" >
+        </TextView>
+
+        <ExpandableListView
+            android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/bgMain"
+            android:visibility="gone" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgSetupHeader"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setup_txtbtnBack"
+            android:textStyle="bold"
+            android:visibility="invisible" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/setup_txtbtnNext"
+            android:textStyle="bold" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout><!--   -->
